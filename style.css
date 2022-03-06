@@ -120,4 +120,7 @@ hr {
     margin: 2% auto;
     max-width: 100%;
   }
+  p{
+    width: 100%;
+  }
 }
