@@ -1,0 +1,3190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Html & css brad traversy udemy
+  </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div>
+    <a href="BT_JS.html" target="_blank">BradTraversy JavaScript</a>
+  </div>
+  <div>
+    <a href="html5.html" target="_blank">Infosis Html5</a>
+  </div>
+  <div>
+    <a href="css3.html" target="_blank">Infosis Css3</a>
+  </div>
+  <div>
+    <a href="python.html" target="_blank">Infosis Python</a>
+  </div>
+  <h3>How web Works !</h3>
+  <p>The internet is a global network of computers</p>
+  <p>Each computer/router has a IP address.IP addresses are assigned by the internet service providers.we have v4,v6
+    IP addresses</p>
+  <p>Computers talk to each other using the TCP/IP protocol.</p>
+  <p>HTTP handles web traffic (requests/responses)</p>
+  <h5>web servers</h5>
+  <p>Websites/web pages are files stored on computers that run a piece of software called a web server(Apache,nginx
+    etx)</p>
+  <p>we basically build a website from our local machine and then upload it to a hosing company or a server.</p>
+  <p>Hosting companies provide space on a server for your website.</p>
+  <p>And we need Domain names which can be purchased from registrars and linked to your hosting account /server</p>
+  <p>DNS is used to map IP addresses to domain names.</p>
+  <img src="img/bt-hc15.jpeg" alt="">
+  <h4>Roles</h4>
+  <p>html by itself is used to display content.</p>
+  <p>css is used to style the content and the layout.</p>
+  <p>html - content display/structure.</p>
+  <p>css - style & design</p>
+  <p>javascript - dynamic front end programming</p>
+  <p>php,python,c#,js - backend programming</p>
+  <p>Mysql,Mongodb - database/storage</p>
+
+
+
+  <h3>HTML</h3>
+
+  <h4>Basic layout</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1">Code</button>
+  <div id="demo1" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    &lt!DOCTYPE html>
+    &lthtml>
+      &lthead>
+        &lttitle>My Website&lt/title>
+      &lt/head>
+      &ltbody>
+        &lt!-- This is a comment -->
+        &lth1>My Website&lt/h1>
+        &ltp>This is my very first website&lt/p>
+        &ltp>web site content here&lt/p>
+      &lt/body>
+    &lt/html>
+</pre>
+      </code>
+  </div>
+  <img src="img/bt-hc6.jpg" alt="">
+
+  <h4>Html Formatting</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo90">Code</button>
+  <div id="demo90" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+&ltbody>
+    &lt!-- Just for more info from Genc-cts udemy -->
+    &lth1>HTML Formatting&lt/h1>
+    This is just text.
+    &ltp>This is a paragraph.&lt/p> 
+    &ltb>This is bold text.&lt/b>
+    &ltbr>    
+    &ltstrong>This is strong text.&lt/strong>
+    &lti>This is italic text&lt/i>
+    &ltbr>
+    &ltem>This is emphasized text&lt/em>
+    &ltbr>
+    &lth1>This is an example of a &ltsmall>small&lt/small> text formatting&lt/h1>
+    &ltbr>
+    &lth1>This is an example of a &ltmark>marked&lt/mark> text formatting&lt/h1>   
+&lt/body>
+</pre>
+      </code>
+  </div>
+
+  <h4>Other Html elements-Citations & Quotations</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo89">Code</button>
+  <div id="demo89" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+&ltbody>
+  &lt!-- Just for more info from Genc-cts udemy -->
+  &ltp>Here is a quote: &ltq>Inspirational quote would go right here.&lt/q>&lt/p>
+  &ltp>&ltcite>This Course&lt/cite> by Andrew Eddy. Taugh in 2015.&lt/p>
+  &ltp>Here is a quote by Andrew Eddy:&lt/p>
+  &ltblockquote cite="http://www.udemy.com">
+  Every time i type words. I hope that I wont have
+  to type to many  more. A quote is but a persons 
+  imagination laid out in words and feelings.
+  &lt/blockquote>
+  &ltaddress>
+  Written by Andrew Eddy.&ltbr> 
+  Visit us at:&ltbr>
+  udemy.com&ltbr>
+  3766, Ausland&ltbr>
+  USA
+  &lt/address>
+  &ltp>The &ltabbr title="Andrew Charles Eddy">ACE&lt/abbr> is the teacher of this course.&lt/p>
+  &ltbdo dir="rtl">This text will be written from right to left&lt/bdo>
+  &lt!--slly subscript,superscript,del,underline etc,.  -->
+&lt/body>
+</pre>
+      </code>
+  </div>
+
+
+  <h4>Meta tags</h4>
+  <p>They describe a page's content, and they don't appear in the body of the web page</p>
+  <p>All of these are meta the only difference is the different attributes.</p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2">Code</button>
+  <div id="demo2" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    &lt!DOCTYPE html>
+    &lthtml lang="en">
+    &lthead>
+      &ltmeta charset="UTF-8">
+      &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+      &ltmeta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+      &ltmeta name="description" content="This is my website description">
+      &ltmeta name="keywords" content="web development, web design">
+      &lt!-- Do not index page -->
+      &ltmeta name="robots" content="NOINDEX, NOFOLLOW">
+      &lttitle>Meta Tags&lt/title>
+    &lt/head>
+    &ltbody>
+    &lt/body>
+    &lt/html>
+</pre>
+</code>
+  </div>
+
+  <h4>Typography</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo3">Code</button>
+  <div id="demo3" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+&ltbody>
+    &lt!-- Headings -->
+    &lth1>Heading 1&lt/h1>
+    &lth2>Heading 2&lt/h2>
+    &lth3>Heading 3&lt/h3>
+    &lth4>Heading 4&lt/h4>
+    &lth5>Heading 5&lt/h5>
+    &lth6>Heading 6&lt/h6>
+    
+    &lt!-- Paragraph -->
+    &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorem tempore, sunt voluptatum
+        &ltstrong>exercitationem eius nulla consectetur!&lt/strong> Facilis aspernatur sapiente, incidunt optio odio
+        consequuntur eos alias possimus hic laborum consectetur numquam aliquid dolorem &ltem>voluptates distinctio assumenda?
+        Natus culpa veritatis, possimus laborum dolores&lt/em> autem voluptas necessitatibus itaque minus hic blanditiis
+        soluta ut enim quam esse laboriosam &ltdel>iusto harum tenetur animi impedit&lt/del> explicabo architecto molestias
+        nulla in.
+        &lt!-- Line Break -->
+        &ltbr>
+        &ltbr>
+        Itaque ratione rem esse iusto, dolor eveniet expedita, eum quia, totam culpa pariatur! Impedit inventore suscipit
+        qui placeat explicabo in voluptas
+        &lt!-- Horizontal Rule -->
+        &lthr>
+        facilis obcaecati deserunt dolor deleniti quisquam voluptatem? Fugit nam, magni explicabo error porro dolores?
+    &lt/p>
+&lt/body>
+</pre>
+</code>
+  </div>
+  <img src="img/bt-hc7.jpg" alt="">
+  <h4>Links & Images</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo4">Code</button>
+  <div id="demo4" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+&ltbody>
+    &lt!-- External link -->
+    &ltp>
+        &lta href="http://google.com">Click For Google&lt/a>
+    &lt/p>
+    &ltp>
+        &lta href="http://google.com" target="_blank">Click For Google new tab&lt/a>
+    &lt/p>
+    
+    &lt!-- Internal link -->
+    &ltp>
+        &lta href="/04_typography.html">Typography&lt/a>
+    &lt/p>
+    
+    &lt!-- Local image -->
+    &ltimg src="/images/sample.jpg" alt="My Image" width="200">
+    
+    &lt!-- Remote image -->
+    &ltimg src="https://source.unsplash.com/200x200/?building" alt="My Image 2">
+
+
+    &lt!-- Just for sample from Genc-cts udemy -->
+    &lta href="http://www.google.com">
+      &ltimg src="https://www.google.com/images/srpr/logo11w.png" alt="Google Logo" height="200px" width="200px">
+  &lt/a>
+
+  &lt!-- to link pages within our own website -->
+
+  &lta href="link.html" target="_blank">Go to Link Page&lt/a>
+
+&lt/body>
+</pre>
+</code>
+  </div>
+  <img src="img/bt-hc8.jpg" alt="">
+
+  <h4>Lists & Tables</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo5">Code</button>
+  <div id="demo5" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+&ltbody>
+    &lt!-- Unordered lists -->
+    &ltul>
+        &ltli>Item 1&lt/li>
+        &ltli>Item 2&lt/li>
+        &ltli>Item 3&lt/li>
+        &ltli>Item 4&lt/li>
+    &lt/ul>
+    
+    &lt!-- Ordered Lists -->
+    &ltol>
+        &ltli>Item 1&lt/li>
+        &ltli>Item 2&lt/li>
+        &ltli>Item 3&lt/li>
+        &ltli>Item 4&lt/li>
+    &lt/ol>
+    
+    &lt!-- Nested lists -->
+    &ltul>
+        &ltli>Item 1&lt/li>
+        &ltli>Item 2
+        &ltul>
+            &ltli>Nested Item 1&lt/li>
+            &ltli>Nested Item 2&lt/li>
+        &lt/ul>
+        &lt/li>
+        &ltli>Item 3&lt/li>
+        &ltli>Item 4&lt/li>
+    &lt/ul>
+    
+    &lt!-- Just for more info from Genc-cts udemy -->
+    &lt!-- Description List -->  
+    &ltdl>
+      &ltdt>Average Number&lt/dt>
+      &ltdd>99.7256&lt/dd>
+          &ltul>
+              &ltli>Apple&lt/li>
+              &ltli>Orange&lt/li>
+          &lt/ul>
+      &ltdt>Average Height&lt/dt>
+      &ltdd>5ft 9in&lt/dd>
+    &lt/dl>
+
+    &lt!-- Tables -->
+    &lttable style="width: 600px">
+        &ltthead>
+        &lttr>
+            &ltth>First Name&lt/th>
+            &ltth>Last Name&lt/th>
+            &ltth>Email&lt/th>
+        &lt/tr>
+        &lt/thead>
+        &lttbody>
+        &lttr>
+            &lttd>John&lt/td>
+            &lttd>Doe&lt/td>
+            &lttd>jdoe@gmail.com&lt/td>
+        &lt/tr>
+        &lttr>
+            &lttd>Kate&lt/td>
+            &lttd>Smith&lt/td>
+            &lttd>kate@gmail.com&lt/td>
+        &lt/tr>
+        &lttr>
+            &lttd>Jeff&lt/td>
+            &lttd>Wilson&lt/td>
+            &lttd>jeff@gmail.com&lt/td>
+        &lt/tr>
+        &lt/tbody>
+    &lt/table>
+&lt/body>
+</pre>
+</code>
+  </div>
+  <img src="img/bt-hc9.jpg" alt="">
+  <h4>Forms & Inputs</h4>
+  <p>html and css are to display the form. But server side programming languages are used to process the form.</p>
+  <p>action - this is where the form is going to be submitted.</p>
+  <p>The for attribute needs to be matched with the id of the input.To highlight it ok.</p>
+  <p>The name attribute is used on the server side.</p>
+  <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank">w3Forms&Inputs</a>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo6">Code</button>
+  <div id="demo6" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+&ltbody>
+    &ltform action="process.php">
+        &lt!-- Text -->
+        &ltdiv>
+        &ltlabel for="name">Name&lt/label>&ltbr>
+        &ltinput type="text" id="name" name="name" value="John Doe">
+        &lt/div>
+
+        &lt!-- Email -->
+        &ltdiv>
+        &ltlabel for="email">Email&lt/label>&ltbr>
+        &ltinput type="email" name="email" id="email" placeholder="Enter an email">
+        &lt/div>
+
+        &lt!-- Textarea -->
+        &ltdiv>
+        &ltlabel for="message">Message&lt/label>&ltbr>
+        &lttextarea name="message" id="message" cols="50" rows="5">&lt/textarea>
+        &lt/div>
+
+        &lt!-- Select -->
+        &ltdiv>
+        &ltlabel for="sex">Sex&lt/label>
+        &ltselect name="sex" id="sex">
+            &ltoption value="male">Male&lt/option>
+            &ltoption value="female" selected>Female&lt/option>
+            &ltoption value="other">Other&lt/option>
+        &lt/select>
+        &lt/div>
+
+        &lt!-- Number -->
+        &ltdiv>
+        &ltlabel for="age">Age&lt/label>&ltbr>
+        &ltinput type="number" name="age" id="age">
+        &lt/div>
+
+        &lt!-- Date -->
+        &ltdiv>
+        &ltlabel for="bithdate">Birthdate&lt/label>&ltbr>
+        &ltinput type="date" name="birthdate" id="birthdate">
+        &lt/div>
+
+        &lt!-- Radio -->
+        &ltdiv>
+        &ltlabel for="membership">Membership&lt/label>
+        &ltinput type="radio" name="membership" value="simple" id="membership"> Simple
+        &ltinput type="radio" name="membership" value="standard" id="membership" checked> Standard
+        &ltinput type="radio" name="membership" value="super" id="membership"> Super
+        &lt/div>
+
+        &lt!-- Checkbox -->
+        &ltdiv>
+        &ltlabel for="likes">I Like..&lt/label>
+        &ltinput type="checkbox" name="likes" value="bike" id="likes"> Bike
+        &ltinput type="checkbox" name="likes" value="car" id="likes"> Car
+        &ltinput type="checkbox" name="likes" value="boat" id="likes"> Boat
+        &lt/div>
+
+        &lt!-- Input submit -->
+        &ltinput type="submit" value="Submit">
+        &lt!-- Button submit -->
+        &lt!-- &ltbutton type="submit">Submit&lt/button> -->
+        &ltbutton type="reset">Reset&lt/button>
+    &lt/form>
+&lt/body>
+</pre>
+</code>
+  </div>
+  <img src="img/bt-hc10.jpg" alt="">
+  <h4>Block & Inline</h4>
+  <p>block - this elements take the 100% width of the page, and will start in a new line.</p>
+  <p>inline - this elements doesnot span across the whole page, it only takes what it needs and the next thing will go
+    right of it i.e the next thing will not start in the new line.</p>
+  <p>div is a block level element so it pushes the next thing down.</p>
+  <p>Think of div as a styling block for the content.</p>
+  <p>span is a inline element.</p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo7">Code</button>
+  <div id="demo7" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    &ltbody>
+        &ltp style="border:2px green solid">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga doloribus aperiam dicta &ltstrong>voluptatibus ut, quisquam&lt/strong> aut perferendis sequi, ad ullam quae eius eveniet nihil? Ab ipsam praesentium voluptatum dolorem temporibus.&lt/p>
+        &ltp style="border:2px green solid">Lorem&lt/p>
+      
+        &lta style="border:2px red solid" href="#">A Link&lt/a>
+        &lta style="border:2px red solid" href="#">A Link&lt/a>
+        &ltul>
+          &ltli>Item&lt/li>
+          &ltli>Item&lt/li>
+        &lt/ul>
+      &lt/body>
+</pre>
+</code>
+  </div>
+  <img src="img/bt-hc11.jpg" alt="">
+  <h4>Ids & Class</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo8">Code</button>
+  <div id="demo8" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+&lthead>
+    &ltmeta charset="UTF-8">
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+    &ltmeta http-equiv="X-UA-Compatible" content="ie=edge">
+    &lttitle>Div, span, id and class&lt/title>
+    &ltstyle>
+        #main-header{
+        /* apply your styles here. */
+        font-style: italic;
+        }
+        .card {
+        border: 1px solid #ccc;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 10px;
+        }
+    
+        .enhance {
+        color: yellow;
+        background-color: black;
+        }
+    &lt/style>
+    &lt/head>
+    
+    &ltbody>
+    &ltdiv id="main-header" class="card">
+        &lth1>My Website&lt/h1>
+        &ltp>A site about me&lt/p>
+    &lt/div>
+    &ltul id="main-nav">
+        &ltli>&lta href="#">Home&lt/a>&lt/li>
+        &ltli>&lta href="#">About&lt/a>&lt/li>
+        &ltli>&lta href="#">Contact&lt/a>&lt/li>
+    &lt/ul>
+    &ltdiv id="about" class="card">
+        &lth3>About&lt/h3>
+        &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit &ltspan class="enhance">expedita quae, molestias
+            magnam recusandae ducimus&lt/span> dolore itaque sit dolores error qui repudiandae aliquam nam? Ad, tempore amet
+        voluptate enim itaque minima quasi quae esse quis incidunt sint provident sapiente aspernatur!&lt/p>
+    &lt/div>
+    
+    &ltdiv id="contact" class="card">
+        &lth3>Contact Me&lt/h3>
+        &ltul>
+        &ltli>Address: 50 Main st, Boston MA&lt/li>
+        &ltli>Phone: (555) 555-5555&lt/li>
+        &ltli>Email: me@somethingcool.com&lt/li>
+        &lt/ul>
+    &lt/div>
+    
+    &ltdiv id="footer">
+        &ltp>Copyright &copy; 2019&lt/p>
+    &lt/div>
+&lt/body>
+</pre>
+</code>
+  </div>
+  <img src="img/bt-hc12.jpg" alt="">
+  <h4>Entities & Symbols</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo9">Code</button>
+  <div id="demo9" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+&ltbody>
+    &lt!-- Non breaking space -->
+    &ltp>Hello, my name is &nbsp; &nbsp; &nbsp; &nbsp;Brad&lt/p>
+    &lt!-- Greater than and less than -->
+    &ltp>5 & gt; 2&lt/p>
+    &ltp>5 & #62; 2&lt/p>
+    &ltp>1 & lt; 2&lt/p>
+    &ltp>1 & #60; 2&lt/p>
+    &lt!-- Copyright -->
+    &ltp>& copy;&lt/p>
+    &ltp>& reg;&lt/p>
+    &lt!-- Currency -->
+    &ltp>& cent;&lt/p>
+    &ltp>& pound;&lt/p>
+    &ltp>& yen;&lt/p>
+    &ltp>& euro;&lt/p>
+    &lt!-- Suits -->
+    &ltp>& spades;&lt/p>
+    &ltp>& clubs;&lt/p>
+    &ltp>& hearts;&lt/p>
+    &ltp>& diams;&lt/p>
+    
+    &lt!-- Coputer code -->
+    &ltcode>
+        &lt;?php echo 'Hello' ?&gt;
+    &lt/code>
+    &ltp>Save the file by pressing &ltkbd>Ctrl + S&lt/kbd>&lt/p>
+&lt/body>
+</pre>
+</code>
+  </div>
+  <img src="img/bt-hc13.jpg" alt="">
+  <h4>Semantic tags</h4>
+  <p>For proper organization,accessibility</p>
+  <p>header, footer, nav, main, section, article, aside </p>
+  <p>header usually placed at top, can have logo, even navigation links are present,search bar etc,</p>
+  <p>nav is used for navigation</p>
+  <p>main is used to wrap the main content of the page</p>
+  <p>section can have different sections as you wish</p>
+  <p>aticle used when we have article post or blog post</p>
+  <p>aside is just a sidebar content, not the main content of the page, like ads etc,</p>
+  <div> <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">w3Semantics</a></div>
+
+  <img src="img/bt-hc14.jpeg" alt="">
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo10">Code</button>
+  <div id="demo10" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    &lt!DOCTYPE html>
+    &lthtml lang="en">
+      &lthead>
+        &ltmeta charset="UTF-8" />
+        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0" />
+        &ltmeta http-equiv="X-UA-Compatible" content="ie=edge" />
+        &lttitle>HTML5 Semantic Tags&lt/title>
+        &ltstyle>
+          * {
+            box-sizing: border-box;
+          }
+    
+          ul {
+            padding: 0;
+            list-style: none;
+          }
+    
+          body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            line-height: 1.4;
+          }
+    
+          #header {
+            margin-bottom: 15px;
+            background: #333;
+            color: #fff;
+            padding: 10px;
+          }
+    
+          #main {
+            float: left;
+            width: 69%;
+          }
+    
+          #sidebar {
+            float: right;
+            width: 29%;
+          }
+    
+          .clr {
+            clear: both;
+          }
+    
+          #footer {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+          }
+    
+          .text-center {
+            display: block;
+            text-align: center;
+          }
+    
+          .card {
+            border: 1px solid #ddd;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 10px;
+          }
+        &lt/style>
+      &lt/head>
+      &ltbody>
+        &lt!-- Header -->
+        &ltdiv id="header" class="card">
+          &lth1>My Website&lt/h1>
+          &ltp>Just Another Website&lt/p>
+        &lt/div>
+    
+        &lt!-- Main Content (left) -->
+        &ltdiv id="main">
+          &lt!-- Welcome Section -->
+          &ltdiv id="welcome" class="card">
+            &lth2>Welcome To Our Website&lt/h2>
+            &ltp>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              cupiditate itaque possimus numquam corporis odit deserunt voluptas
+              repellat ad ex earum magnam mollitia magni eaque nisi, excepturi nam
+              temporibus! Sed. &ltbr />
+              &lta href="#" class="text-center">Click For More&lt/a>
+            &lt/p>
+          &lt/div>
+          &lt!-- Blog Section -->
+          &ltdiv id="blog">
+            &lth2>From Our Blog&lt/h2>
+            &lt!-- Article One -->
+            &ltdiv class="article">
+              &lth3>Article One&lt/h3>
+              &ltp>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+                totam accusantium officiis!
+              &lt/p>
+            &lt/div>
+            &lt!-- Article Two -->
+            &ltdiv class="article">
+              &lth3>Article Two&lt/h3>
+              &ltp>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+                totam accusantium officiis!
+              &lt/p>
+            &lt/div>
+          &lt/div>
+        &lt/div>
+    
+        &lt!-- Sidebar (right) -->
+        &ltdiv id="sidebar" class="card">
+          &lth3>Navigation&lt/h3>
+          &lt!-- Navigation -->
+          &ltul id="main-nav">
+            &ltli>&lta href="index.html">Home&lt/a>&lt/li>
+            &ltli>&lta href="about.html">About&lt/a>&lt/li>
+            &ltli>&lta href="contact.html">Contact&lt/a>&lt/li>
+          &lt/ul>
+          &lthr />
+          &lth3>Contact Us&lt/h3>
+          &ltul>
+            &ltli>&ltstrong>Address:&lt/strong> 50 Main st, Boston MA&lt/li>
+            &ltli>&ltstrong>Phone:&lt/strong> (555) 555-5555&lt/li>
+            &ltli>&ltstrong>Email:&lt/strong> me@somethingcool.come&lt/li>
+          &lt/ul>
+        &lt/div>
+    
+        &ltdiv class="clr">&lt/div>
+    
+        &lt!-- Footer -->
+        &ltdiv id="footer">
+          &ltp class="text-center">Copyright &copy; My Website 2019&lt/p>
+        &lt/div>
+      &lt/body>
+    &lt/html>
+    
+</pre> 
+</code>
+  </div>
+
+  <p>The above same with semantic tages as shown below.we used div for above code.</p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo11">Code</button>
+  <div id="demo11" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+&lt!DOCTYPE html>
+&lthtml lang="en">
+    &lthead>
+    &ltmeta charset="UTF-8" />
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0" />
+    &ltmeta http-equiv="X-UA-Compatible" content="ie=edge" />
+    &lttitle>HTML5 Semantic Tags&lt/title>
+    &ltstyle>
+        * {
+        box-sizing: border-box;
+        }
+
+        ul {
+        padding: 0;
+        list-style: none;
+        }
+
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #333;
+        line-height: 1.4;
+        }
+
+        #header {
+        margin-bottom: 15px;
+        background: #333;
+        color: #fff;
+        padding: 10px;
+        }
+
+        #main {
+        float: left;
+        width: 69%;
+        }
+
+        #sidebar {
+        float: right;
+        width: 29%;
+        }
+
+        .clr {
+        clear: both;
+        }
+
+        #footer {
+        background: #333;
+        color: #fff;
+        padding: 10px;
+        }
+
+        .text-center {
+        display: block;
+        text-align: center;
+        }
+
+        .card {
+        border: 1px solid #ddd;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 10px;
+        }
+    &lt/style>
+    &lt/head>
+    &ltbody>
+    &lt!-- Header -->
+    &ltheader id="header" class="card">
+        &lth1>My Website&lt/h1>
+        &ltp>Just Another Website&lt/p>
+    &lt/header>
+
+    &lt!-- Main Content (left) -->
+    &ltmain id="main">
+        &lt!-- Welcome Section -->
+        &ltsection id="welcome" class="card">
+        &lth2>Welcome To Our Website&lt/h2>
+        &ltp>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            cupiditate itaque possimus numquam corporis odit deserunt voluptas
+            repellat ad ex earum magnam mollitia magni eaque nisi, excepturi nam
+            temporibus! Sed. &ltbr />
+            &lta href="#" class="text-center">Click For More&lt/a>
+        &lt/p>
+        &lt/section>
+        &lt!-- Blog Section -->
+        &ltsection id="blog">
+        &lth2>From Our Blog&lt/h2>
+        &lt!-- Article One -->
+        &ltarticle class="article">
+            &lth3>Article One&lt/h3>
+            &ltp>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+            totam accusantium officiis!
+            &lt/p>
+        &lt/article>
+        &lt!-- Article Two -->
+        &ltarticle class="article">
+            &lth3>Article Two&lt/h3>
+            &ltp>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+            totam accusantium officiis!
+            &lt/p>
+        &lt/article>
+        &lt/section>
+    &lt/main>
+
+    &lt!-- Sidebar (right) -->
+    &ltaside id="sidebar" class="card">
+        &lth3>Navigation&lt/h3>
+        &lt!-- Navigation -->
+        &ltnav>
+        &ltul id="main-nav">
+            &ltli>&lta href="index.html">Home&lt/a>&lt/li>
+            &ltli>&lta href="about.html">About&lt/a>&lt/li>
+            &ltli>&lta href="contact.html">Contact&lt/a>&lt/li>
+        &lt/ul>
+        &lt/nav>
+        &lthr />
+        &lth3>Contact Us&lt/h3>
+        &ltul>
+        &ltli>&ltstrong>Address:&lt/strong> 50 Main st, Boston MA&lt/li>
+        &ltli>&ltstrong>Phone:&lt/strong> (555) 555-5555&lt/li>
+        &ltli>&ltstrong>Email:&lt/strong> me@somethingcool.come&lt/li>
+        &lt/ul>
+    &lt/aside>
+
+    &ltdiv class="clr">&lt/div>
+
+    &lt!-- Footer -->
+    &ltfooter id="footer">
+        &ltp class="text-center">Copyright &copy; My Website 2019&lt/p>
+    &lt/footer>
+    &lt/body>
+&lt/html>
+    
+</pre>
+</code>
+  </div>
+  <img src="img/bt-hs1.jpg" alt="">
+
+  <h4>Html4 vs Html5</h4>
+  <img src="img/bt-hc46.jpeg" alt="">
+  <h3>CSS</h3>
+  <p>css used for styling the web page.</p>
+  <p>They actually make our web pages best in terms of look and feel.</p>
+  <h4>Basics</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo12">Code</button>
+  <div id="demo12" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+index.html
+
+&lthead>
+    &ltlink rel="stylesheet" href="css/style.css"> &lt!-- external sheet -->
+    &lt!-- can also include more than one stylesheet -->
+    &lttitle>Implementing CSS&lt/title>
+    &ltstyle>
+      /* Internal CSS */
+      h2 {
+        color: green;
+      }
+    &lt/style>
+&lt/head>
+&ltbody>
+    &lt!-- Inline CSS -->
+    &lth1 style="color:red">Heading One&lt/h1>
+    &lth2>Heading Two&lt/h2>
+    &lth3>Heading Three&lt/h3>
+&lt/body>
+
+style.css
+
+h3 {
+    color: blue;
+  }
+</pre>
+</code>
+  </div>
+  <h4>Selectors</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo13">Code</button>
+  <div id="demo13" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    &lthead>
+        &lttitle>CSS Selectors&lt/title>
+        &ltstyle>
+          /* Element Selectors */
+          body {
+            background-color: #333;
+          }
+      
+          /* . is for classes */
+          .primary-heading {
+            color: blue;
+          }
+      
+          /* # is for IDs */
+          #welcome {
+            background-color: #f4f4f4;
+          }
+      
+          /* Multiple Selectors */
+          #welcome, #about {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 5px;
+          }
+      
+          /* Nested Selectors */
+          #welcome p {
+            font-size: 20px;
+          }
+      
+          #about {
+            color: white;
+          }
+        &lt/style>
+      &lt/head>
+      &ltbody>
+        &ltdiv id="welcome">
+          &lth2 class="primary-heading">Welcome&lt/h2>
+          &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod qui iusto 
+          perferendis nisi officia quidem ad enim maiores animi maxime.&lt/p>
+        &lt/div>
+        &ltdiv id="about">
+          &lth2>About&lt/h2>
+          &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laudantium 
+          voluptatum dolorum iure, eos et distinctio porro provident ut assumenda.&lt/p>
+        &lt/div>
+      &lt/body>
+</pre>
+</code>
+  </div>
+  <img src="img/bt-hc1.jpg" alt="">
+  <h4>Fonts</h4>
+  <p>Use web safe fonts.</p>
+  <p>We can also use google fonts and can link them.</p>
+  <p>we use this units to font-size,margins,padding,line heights etc,</p>
+  <p>em - is just a multiplier of its parent element.</p>
+  <p>rem - is a multiplier of the root element.</p>
+  <div> <a href="https://www.color-hex.com/" target="_blank">color-hex for reference</a></div>
+
+  <img src="img/bt-hc4.jpeg" alt="">
+  <img src="img/bt-hc5.jpeg" alt="">
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo14">Code</button>
+  <div id="demo14" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    &lthead>
+        &ltmeta charset="UTF-8">
+        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+        &ltmeta http-equiv="X-UA-Compatible" content="ie=edge">
+        &ltlink href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        &lttitle>Fonts&lt/title>
+        &ltstyle>
+          body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            line-height: 1.6em;
+          }
+      
+          #welcome p span {
+            font-weight:bold;
+          }
+      
+          #about p span {
+            font-style: italic;
+          }
+        &lt/style>
+      &lt/head>
+      &ltbody>
+          &ltdiv id="welcome">
+              &lth2 class="primary-heading">Welcome&lt/h2>
+              &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit. &ltspan>Quod qui iusto perferendis nisi officia quidem ad enim&lt/span> maiores animi maxime.&lt/p>
+            &lt/div>
+            &ltdiv id="about">
+              &lth2>About&lt/h2>
+              &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit.&ltspan>Eveniet laudantium voluptatum dolorum iure,&lt/span> eos et distinctio porro provident ut assumenda.&lt/p>
+            &lt/div>
+      &lt/body>
+</pre>
+</code>
+  </div>
+  <img src="img/bt-hc2.jpg" alt="">
+  <h4>Colors</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo15">Code</button>
+  <div id="demo15" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    &lthead>
+        &lttitle>Colors&lt/title>
+        &ltstyle>
+          h1 {
+            /* Color Name */
+            color:red;
+          }
+      
+          h2 {
+            /* RGB */
+            color: rgb(255,255,0);
+          }
+      
+          h3 {
+            /* Hex */
+            color: #b67b67;
+          }
+        &lt/style>
+      &lt/head>
+      &ltbody>
+        &lth1>Heading One&lt/h1>
+        &lth2>Heading Two&lt/h2>
+        &lth3>Heading Three&lt/h3>
+      &lt/body>
+</pre>
+</code>
+  </div>
+  <img src="img/bt-hc3.jpg" alt="">
+  <h4>Backgrounds & Borders</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo16">Code</button>
+  <div id="demo16" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    &lthead>
+        &lttitle>Backgrounds & Borders&lt/title>
+        &ltstyle>
+          #box-1 {
+            background-color:blanchedalmond;
+            /* border-width: 3px;
+            border-color: red;
+            border-style: solid; */
+            border: 3px solid red;
+            border-radius: 10px;
+          }
+      
+          #box-2 {
+            background: #333;
+            color: #fff;
+            border-top: blue solid 3px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 20px;
+          }
+      
+          #box-3 {
+            /* background-image: url('./img/stars.jpg');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover; */
+            background: url('./img/stars.jpg') no-repeat center center/cover;
+            color: #fff;
+            height: 300px;
+            width: 600px;
+          }
+      
+          #box-4 {
+            background: url('./img/leaf.png') no-repeat center center;
+            background-attachment: fixed;
+            /* image fixed to browser window */
+          }
+        &lt/style>
+      &lt/head>
+      &ltbody>
+        &ltdiv id="box-1">
+          &lth3>Box One&lt/h3>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+        &lt/div>
+        &ltbr>
+        &ltdiv id="box-2">
+          &lth3>Box Two&lt/h3>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+        &lt/div>
+        &ltdiv id="box-3">
+          &lth3>Box Three&lt/h3>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+        &lt/div>
+        &ltdiv id="box-4">
+          &lth3>Box Four&lt/h3>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+          &ltp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia possimus harum labore voluptatem. Praesentium rerum sint eaque blanditiis et.&lt/p>
+        &lt/div>
+      &lt/body>
+</pre>
+</code>
+  </div>
+
+
+  <div class="container">
+    <div id="carousel-demo2" class="carousel slide" data-ride="carousel">
+      <!-- Carousel Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-demo" data-slide-to="1"></li>
+        <li data-target="#carousel-demo" data-slide-to="2"></li>
+      </ol>
+      <!-- Carousel Items -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/bt-hc16.jpg" class="" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="img/bt-hc17.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="img/bt-hc18.jpg" alt="">
+        </div>>
+      </div>
+      <!-- Carousel Left and Right Controls -->
+      <a href="#carousel-demo2" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#carousel-demo2" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+
+
+  <h4>Box model</h4>
+  <p>Browser has its own default stylings like padding,margin etc,</p>
+  <p>em is retlative to the number of pixels of the font size of its parent. And we can overwrite them.</p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo17">Code</button>
+  <div id="demo17" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    &lthead>
+        &lttitle>Box Model / Margin & Padding&lt/title>
+        &ltstyle>
+          /* CSS Reset */
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; - to not to mix up padding & width etc,
+                                    -  i.e if width = 500 and padding = 120 then without this property
+                                    - we end up totally 120+500+120 =740px okk
+                                    - so only we keep this property then within 500px only that 120L+120R padding will be given.
+          }
+      
+          .box {
+            background: #f4f4f4;
+            border: 2px #777 solid;
+            width: 500px;
+      
+            /* Padding on all sides */
+            padding: 20px;
+      
+            /* Padding per side */
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+      
+            /* Padding shorthand = top, right, bottom, left */
+            padding: 10px 20px 10px 20px;
+      
+            /* Padding shorthand = top/bottom left/right */
+            padding: 10px 20px;
+      
+            /* Margin on all sides */
+            margin: 20px;
+      
+            /* Margin per side */
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+      
+            /* Margin shorthand = top, right, bottom, left */
+            margin: 10px 20px 10px 20px;
+      
+            /* Margin shorthand = top/bottom left/right */
+            margin: 10px 20px;
+          }
+      
+          .box h3 {
+              padding-bottom: 10px;
+            }
+        &lt/style>
+      &lt/head>
+      &ltbody>
+        &ltdiv class="box">
+          &lth3>Box One&lt/h3>
+          &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nulla beatae id, dolorum accusamus neque atque similique consectetur eaque odio?&lt/p>
+        &lt/div>
+        &ltdiv class="box">
+          &lth3>Box Two&lt/h3>
+          &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nulla beatae id, dolorum accusamus neque atque similique consectetur eaque odio?&lt/p>
+        &lt/div>
+      &lt/body>
+</pre>
+</code>
+  </div>
+  <img src="img/bt-hc19.jpg" alt="">
+  <h4>Float align</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo18">Code</button>
+  <div id="demo18" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+&lthead>
+    &lttitle>Float & Alig&lt/title>
+    &ltstyle>
+          * {
+            box-sizing: border-box;
+          }
+      
+          body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4em;
+          }
+      
+          .container { 
+            max-width: 960px; - to get displayed in mobile devices also we go from width to max-width
+                              - then all the text will be viewe without scroll bar regardless of the screen size.
+                              - and once you reach 960 it will stop expanding okk
+            margin: 30px auto; - To middle the things. tb,lr=auto
+          }
+      
+          .clr {
+            clear: both; - floated elements need to be cleared ok,
+          }
+      
+          .box {
+            background: #f4f4f4;
+            border: 1px solid #333;
+            padding: 20px;
+            margin-bottom: 15px;
+          }
+      
+          .box p {
+            /* Text Align */
+            text-align: left;
+            text-align: right;
+            text-align: center;
+            text-align: justify; - edges all even.
+          }
+      
+          #box-2 {
+            float: left;
+            width: 68%;
+          }
+      
+          #box-3 {
+            float: right;
+            width: 30%;
+          }
+    &lt/style>
+    &lt/head>
+    &ltbody>
+    &ltdiv class="container">
+        &ltdiv id="box-1" class="box">
+        &lth3>Heading&lt/h3>
+        &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor, soluta esse voluptas aliquam eligendi veritatis illo impedit minus unde&lt/p>
+        &lt/div>
+        &ltdiv id="box-2" class="box">
+        &lth3>Heading&lt/h3>
+        &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor, soluta esse voluptas aliquam eligendi veritatis illo impedit minus unde&lt/p>
+        &lt/div>
+        &ltdiv id="box-3" class="box">
+        &lth3>Heading&lt/h3>
+        &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor, soluta esse voluptas aliquam eligendi veritatis illo impedit minus unde&lt/p>
+        &lt/div>
+      
+        &ltdiv class="clr"&lt/div>
+      
+        &ltdiv id="box-4" class="box">
+        &lth3>Heading&lt/h3>
+        &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor, soluta esse voluptas aliquam eligendi veritatis illo impedit minus unde&lt/p>
+        &lt/div>
+    &lt/div>
+    &lt/body>
+</pre>
+</code>
+  </div>
+  <img src="img/bt-hc20.jpg" alt="">
+  <h4>Links & buttons</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo19">Code</button>
+  <div id="demo19" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    &lthead>
+        &ltmeta charset="UTF-8">
+        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+        &ltmeta http-equiv="X-UA-Compatible" content="ie=edge">
+        &lttitle>Links & Buttons&lt/title>
+        &ltstyle>
+          body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          }
+      
+          a {
+            color: #333;
+            text-decoration: none;
+          }
+      
+          a:hover {
+            color: coral;
+          }
+      
+          /* a:visited {
+            color: darkmagenta;- not used much
+          } */
+      
+          a:active {
+            color: red; - not used much
+          }
+      
+          /* Button Styling */
+          .btn {
+            background: #4c6ca0;
+            color: #fff;
+            border: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+      
+          .btn:hover {
+            color: #f4f4f4;
+            background: #446190;
+          }
+        &lt/style>
+      &lt/head>
+      &ltbody>
+      
+        &ltdiv>
+          &lta href="#">My Link&lt/a>
+        &lt/div>
+        &ltbr>
+        
+        &lta class="btn" href="#">My Link&lt/a>
+        &ltbr>
+        &ltbr>
+        &ltbutton class="btn">My Button&lt/button>
+      &lt/body>
+</pre>
+</code>
+  </div>
+  <img src="img/bt-hc21.jpg" alt="">
+  <h4>Menus</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo20">Code</button>
+  <div id="demo20" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    &lthead>
+        &lttitle>Menu Styling&lt/title>
+        &ltstyle>
+          body {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+      
+          /* Navbar Styling */
+          .navbar {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background: #4c6ca0;
+            border-radius: 5px;
+            overflow: auto;- without this when we use float left as below, the background
+                           - will not be displayed i.e when we floated the background got collapsed
+                           -So with this property the background will pertain to whatever content is inside of it.
+                           -overflow:hidden = also can be done when sth goes out the element and when we don't want
+                           - that scroll bar.
+          }
+      
+          .navbar li {
+            float: left;
+          }
+      
+          .navbar li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+          }
+      
+          .navbar li a:hover {
+            background-color: #446190;
+            color: #f4f4f4;
+          }
+      
+          /* Side Menu Styling */
+          .side-menu {
+            list-style: none;
+            border: 1px #ddd solid;
+            border-radius: 10px;
+            width: 300px;
+            padding: 20px;
+          }
+      
+          .side-menu li {
+            font-size: 18px;
+            line-height: 2.4em;
+            border-bottom: dotted 1px #ddd;
+          }
+      
+          .side-menu li:last-child {
+            border: none;
+          }
+      
+          .side-menu li a {
+            color: #333;
+            text-decoration: none;
+          }
+      
+          .side-menu li a:hover {
+            color: coral;
+          }
+        &lt/style>
+      &lt/head>
+      &ltbody>
+        &ltul class="navbar">
+          &ltli>&lta href="#">Home&lt/a>&lt/li>
+          &ltli>&lta href="#">About&lt/a>&lt/li>
+          &ltli>&lta href="#">Services&lt/a>&lt/li>
+          &ltli>&lta href="#">Contact&lt/a>&lt/li>
+        &lt/ul>
+        &ltbr>&ltbr>
+        &ltul class="side-menu">
+          &ltli>&lta href="#">Home&lt/a>&lt/li>
+          &ltli>&lta href="#">About&lt/a>&lt/li>
+          &ltli>&lta href="#">Services&lt/a>&lt/li>
+          &ltli>&lta href="#">Contact&lt/a>&lt/li>
+        &lt/ul>
+      &lt/body>
+</pre>
+</code>
+  </div>
+  <img src="img/bt-hc22.jpg" alt="">
+  <h4>Inline blocks</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo21">Code</button>
+  <div id="demo21" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    &lthead>
+        &lttitle>Inline & Block Styling&lt/title>
+        &ltstyle>
+          li {
+            display: inline;
+          }
+      
+          li a {
+            padding-right: 20px;
+          }
+      
+          img {
+            display: block;
+            margin: auto; to make it center.
+          }
+      
+          .box {
+            width: 32.8%;
+            /*display: inline*/ this won't work bcz we can't used width on inline okk. so the solution to go across is to use inline block.
+            display: inline-block; - so it goes Horizontal and also allows width.
+            box-sizing: border-box; - to include padding within width okkk
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 15px;
+          }
+        &lt/style>
+      &lt/head>
+      &ltbody>
+        &ltul>
+          &ltli>&lta href="#">Technology&lt/a>&lt/li>
+          &ltli>&lta href="#">Business&lt/a>&lt/li>
+          &ltli>&lta href="#">Fashion&lt/a>&lt/li>
+        &lt/ul>
+      
+        &ltbr>&ltbr>
+      
+        &ltimg src="./img/leaf.png" alt="My image">
+      
+        &ltbr>&ltbr>
+      
+        &ltdiv class="box">
+          &lth3>Heading&lt/h3>
+          &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iure in fugiat laudantium officia aliquam ex? Sint sit quibusdam quas!&lt/p>
+        &lt/div>
+        &ltdiv class="box">
+          &lth3>Heading&lt/h3>
+          &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iure in fugiat laudantium officia aliquam ex? Sint sit quibusdam quas!&lt/p>
+        &lt/div>
+        &ltdiv class="box">
+          &lth3>Heading&lt/h3>
+          &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iure in fugiat laudantium officia aliquam ex? Sint sit quibusdam quas!&lt/p>
+        &lt/div>
+      &lt/body>
+</pre>
+</code>
+  </div>
+  <img src="img/bt-hc23.jpg" alt="">
+  <h4>Positioning</h4>
+  <img src="img/bt-hc25.jpeg" alt="">
+  <p>when absolute is used with its parent set to relative - then we can position the absolute location relative to that
+    parent using top,bottom,left,right properties i.e we can use this properties for absolute and it will be retative to
+    its parent</p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo22">Code</button>
+  <div id="demo22" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  <head>
+  &lthead>
+    &lttitle>CSS Positioning&lt/title>
+    &ltstyle>
+      body {
+        height: 4000px;
+        border:1px solid blue;
+      }
+  
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 4px solid violet;
+      }
+  /* by default the position: static will be static */
+  
+      .container {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background: #333;
+      }
+  
+      #box-1 {
+        position: relative;
+        top: 50px;
+        left: 300px;
+        z-index: 1;/* with out this ,the box-1 will be behind the container*/
+        background: red;
+      }
+      /*The higher the z-index the closer to you , it's going to be*/
+      /*tf the red box will come above the gray*/
+  
+      #box-2 {
+        position: absolute;/* absolute come in picture when this element has a parent with relative or*/
+        top: 100px;/* if no relative parent then it's going to use just the body i.e the whole window ok*/
+        left: 100px;
+        background: yellow;
+      }
+      #box-3 {
+        position: absolute;
+        bottom: 100px;
+        right: 100px;
+        background: green;
+      }
+      #box-4 {
+        position: fixed; /* fixed to window sixe*/
+        background: blue;
+      }
+      #box-5 {
+        /*used for navigation menu to stick to top*/
+        position: sticky; /* sticky similar to fixed but we can stick it to certain position like top etc.*/
+        top: 0;
+        background: orange;
+        z-index: -1;/* so orange goes behind the blue*/
+      }
+    &lt/style>
+  &lt/head>
+  &ltbody>
+    &ltdiv id="box-1" class="box">1&lt/div>
+    &ltdiv class="container">
+      Container
+      &ltdiv id="box-2" class="box">2&lt/div>
+      After box2
+      &ltdiv id="box-3" class="box">3&lt/div>
+      CEnd
+    &lt/div>
+    Check
+    &ltdiv id="box-4" class="box">4&lt/div>
+    &ltdiv id="box-5" class="box">5&lt/div>
+  &lt/body>
+</pre>
+</code>
+  </div>
+
+  <div class="container">
+    <div id="carousel-demo3" class="carousel slide" data-ride="carousel">
+      <!-- Carousel Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-demo3" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-demo3" data-slide-to="1"></li>
+        <li data-target="#carousel-demo3" data-slide-to="2"></li>
+      </ol>
+      <!-- Carousel Items -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/bt-hc26.jpg" class="" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="img/bt-hc27.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="img/bt-hc28.jpg" alt="">
+        </div>>
+      </div>
+      <!-- Carousel Left and Right Controls -->
+      <a href="#carousel-demo3" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#carousel-demo3" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+
+
+  <h4>Form styling</h4>
+  <h5>Targetting and pickent elements is where your talent lies in css.And styling can be done accordingly once we
+    clearly target a element in the window.Also try to maintain the order, in terms of styling .Do one by one, don't
+    make it clumy at a once.</h5>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo23">Code</button>
+  <div id="demo23" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  &lthead>
+    &lttitle>Form Styling&lt/title>
+    &ltlink
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    &ltstyle>
+      * {
+        box-sizing: border-box;
+        margin:0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Raleway', sans-serif;
+        background: #344a72;
+        color: #fff;
+        line-height: 1.8;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      #container {
+        margin: 30px auto;
+        max-width: 400px;
+        padding: 20px;
+      }
+
+      .form-wrap {
+        background: #fff;
+        padding: 15px 25px;
+        color: #333;
+      }
+
+      .form-wrap h1,
+      .form-wrap p {
+        text-align: center;
+      }
+
+      .form-wrap .form-group {
+        margin-top: 15px;
+      }
+
+      .form-wrap .form-group label {
+        display: block;
+        color: #666;
+      }
+
+      .form-wrap .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: #ddd 1px solid;
+        border-radius: 5px;
+      }
+
+      .form-wrap button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        background: #49c1a2;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .form-wrap button:hover {
+        background: #37a08e
+      }
+
+      .form-wrap .bottom-text {
+        font-size: 13px;
+        margin-top: 20px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      footer a {
+        color:#49c1a2
+      }
+    &lt/style>
+  &lt/head>
+  &ltbody>
+    &ltdiv id="container">
+      &ltdiv class="form-wrap">
+        &lth1>Sign Up&lt/h1>
+        &ltp>It's free and only takes a minute&lt/p>
+        &ltform>
+          &ltdiv class="form-group">
+            &ltlabel for="first-name">First Name&lt/label>
+            &ltinput type="text" name="firstName" id="first-name" />
+          &lt/div>
+          &ltdiv class="form-group">
+            &ltlabel for="last-name">Last Name&lt/label>
+            &ltinput type="text" name="lastName" id="last-name" />
+          &lt/div>
+          &ltdiv class="form-group">
+            &ltlabel for="email">Email&lt/label>
+            &ltinput type="email" name="email" id="email" />
+          &lt/div>
+          &ltdiv class="form-group">
+            &ltlabel for="password">Password&lt/label>
+            &ltinput type="password" name="password" id="password" />
+          &lt/div>
+          &ltdiv class="form-group">
+            &ltlabel for="password2">Confirm Password&lt/label>
+            &ltinput type="password" name="pasword2" id="password2" />
+          &lt/div>
+          &ltbutton type="submit" class="btn">Sign Up&lt/button>
+          &ltp class="bottom-text">
+            By clicking the Sign Up button, you agree to our
+            &lta href="#">Terms & Conditions&lt/a> and
+            &lta href="#">Privacy Policy&lt/a>
+          &lt/p>
+        &lt/form>
+      &lt/div>
+      &ltfooter>
+        &ltp>Already have an account? &lta href="#">Login Here&lt/a>&lt/p>
+      &lt/footer>
+    &lt/div>
+  &lt/body>
+</pre>
+</code>
+  </div>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo24">Code</button>
+  <div id="demo24" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  &ltstyle>
+    * {
+      /* 
+      -May want to add "border-box for "box-sizing so padding does not affect width
+      -Reset margin and padding 
+     */
+    }
+
+    body {
+      /* 
+        -Background color is #344a72
+      */
+    }
+
+    a {
+      /* 
+      Underlined links are ugly :)
+     */
+    }
+
+    #container {
+      /* 
+      -Remember, margin: auto on left and right will center a block element 
+      -I would also set a "max-width" for responsiveness
+      -May want to add some padding
+      */
+    }
+
+    .form-wrap {
+      /* 
+        This is the white area around the form and heading, etc
+      */
+    }
+
+    .form-wrap h1,
+    .form-wrap p {
+      /* 
+        May want to center these
+      */
+    }
+
+    .form-wrap .form-group {
+      /* 
+        Each label, input is wrapped in .form-group
+      */
+    }
+
+    .form-wrap .form-group label {
+      /* 
+        Label should be turned into a block element
+      */
+    }
+
+    .form-wrap .form-group input {
+      /* 
+        Inputs should reach accross the .form-wrap 100% and have some padding
+      */
+    }
+
+    .form-wrap button {
+      /* 
+        Button should wrap accross 100% and display as block
+        Background color for button is #49c1a2
+      */
+    }
+
+    .form-wrap button:hover {
+      /* 
+        Hover background color for button is #37a08e
+      */
+    }
+
+    .form-wrap .bottom-text {
+      /* 
+        Bottom text is smaller
+      */
+    }
+
+    footer {
+      /* 
+      Should be centered
+     */
+    }
+
+    footer a {
+      /* 
+        Footer link color is #49c1a2
+      */
+    }
+  &lt/style>
+</pre>
+</code>
+  </div>
+  <img src="img/bt-hc24.jpg" alt="">
+  <h4>Important</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo25">Code</button>
+  <div id="demo25" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+&lthead>
+  &ltstyle>
+  /* order of precidence*/
+  /* 
+    normally the further down the style then , that gets applied
+    but targetting a class will override the, targetting actual element 
+      i.e(.hello{} will override h1{})
+    and note ids will have high importance */
+    
+      .hello{
+      color:red;
+    }
+
+    /* display:none - will just completely remove the element from the browser /dom */
+    /* this comes very much usefull when building the responsive websites, like when we need to remove some elements when displayed on mobile screens */
+    h1{
+      /* display: none; */
+      visibility: hidden; /* the content may go away but it still takes up that space.so its still there in terms of space.*/
+      color:blue;
+    }
+/* when importing stylesheets and we when want our style to override a style then we can use the important flag*/
+/* color:blue !important;*/
+/* so it doesn't matter whether it has a class or id since it has important flag that style will be applied*/
+  
+/* Also note that we can give negative margins but we cannot give negative paddings but try them to not to use*/
+&lt/style>
+&lt/head>
+
+&ltbody>
+  &lth1 class="hello">Helloworld&lt/h1>
+  &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eligendi officia optio culpa laudantium sint eius perferendis repellat at, 
+    dolorem vero facilis, illum tenetur sapiente repudiandae ut amet saepe deleniti!&lt/p>
+&lt/body>
+</pre>
+</code>
+  </div>
+
+  <h3>Project 1 - Hotel Website</h3>
+  <p>Design is very important before diving into the project.A rough sketch</p>
+  <p>And the we take that design and use html,css,js so as to recreate it to run in the browser.</p>
+  <p>To get design ideas look at other websites and themes for inspiration.</p>
+  <p>Just to get ideas but not to copy.</p>
+  <p>search - bootstrap themes,fontawesome</p>
+  <p>create proper folder structures.like for css,images etc,</p>
+  <p>home page is saved as index.html</p>
+  <p>You can go by component by component in terms of styling.</p>
+  <p>Or you can first do your html and then do stylings.</p>
+
+  <p>IMP: you should have a clear idea of , what element you want to style and so when nested with many elements you
+    have extract them individually and target and then specify your stylings.</p>
+  <p>like a div with class name navbar,has h1,has p,has a,has ul, has li, has a.</p>
+  <p>so you have to target each of them and specify the stylings.you should have clear idea of what actually is
+    happening.</p>
+  <p>opacity:0.9 (0-1) - through this we can overlap,lay,see through ,transparancy high means more transparancy.</p>
+
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          index.html
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse " data-parent="#accordion">
+        <!-- show -->
+        <div class="card-body">
+          <code>
+<pre class="code-fullwidth">
+  &lt!DOCTYPE html>
+  &lthtml lang="en">
+  &lthead>
+    &ltmeta charset="UTF-8">
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+    &ltmeta http-equiv="X-UA-Compatible" content="ie=edge">
+    &ltmeta name="description" content="Welcome to the most extraordinary hotel in Boston Massachusetts">
+    &ltmeta name="keywords" content="hotel,boston hotel,new england hotel">
+    &ltlink rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    &ltlink rel="stylesheet" href="css/style.css">
+    &lttitle>Hotel BT | Welcome&lt/title>
+  &lt/head>
+  &ltbody>
+    &ltheader>
+      &ltnav id="navbar">
+        &ltdiv class="container">
+          &lth1 class="logo">&lta href="index.html">HBT&lt/a>&lt/h1>
+          &ltul>
+            &ltli>&lta class="current" href="index.html">Home&lt/a>&lt/li>
+            &ltli>&lta href="about.html">About&lt/a>&lt/li>
+            &ltli>&lta href="contact.html">Contact&lt/a>&lt/li>
+          &lt/ul>
+        &lt/div>
+      &lt/nav>
+  
+      &ltdiv id="showcase">
+        &ltdiv class="container">
+          &ltdiv class="showcase-content">
+            &lth1>&ltspan class="text-primary">Enjoy&lt/span> Your Stay&lt/h1>
+            &ltp class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, eligendi laboriosam. Repellendus officia harum eaque.&lt/p>
+            &lta class="btn" href="about.html">About Our Hotel&lt/a>
+          &lt/div>
+        &lt/div>
+      &lt/div>
+    &lt/header>
+  
+    &ltsection id="home-info" class="bg-dark">
+      &ltdiv class="info-img">&lt/div>
+      &ltdiv class="info-content">
+        &lth2>&ltspan class="text-primary">The History&lt/span> Of Our Hotel&lt/h2>
+        &ltp>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
+            aliquam dolor alias iste autem, quaerat magni unde accusantium qui
+            fuga placeat quidem quo pariatur, voluptatum, ea sequi? Corporis,
+            explicabo quisquam dolor placeat praesentium nesciunt mollitia quos
+            nobis natus voluptatum asperiores!
+        &lt/p>
+        &lta href="about.html" class="btn btn-light">Read More&lt/a>
+      &lt/div>
+    &lt/section>
+  
+    &ltsection id="features">
+      &ltdiv class="box bg-light">
+        &lti class="fas fa-hotel fa-3x">&lt/i>
+        &lth3>Great Location&lt/h3>
+        &ltp>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, omnis?&lt/p>
+      &lt/div>
+      &ltdiv class="box bg-primary">
+          &lti class="fas fa-utensils fa-3x">&lt/i>
+          &lth3>Free Meals&lt/h3>
+          &ltp>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, omnis?&lt/p>
+      &lt/div>
+      &ltdiv class="box bg-light">
+          &lti class="fas fa-dumbbell fa-3x">&lt/i>
+          &lth3>Fitness Room&lt/h3>
+          &ltp>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, omnis?&lt/p>
+      &lt/div>
+    &lt/section>
+  
+    &ltdiv class="clr">&lt/div>
+  
+    &ltfooter id="main-footer">
+      &ltp>Hotel BT &copy; 2019, All RIghts Reserved&lt/p>
+    &lt/footer>
+  &lt/body>
+  &lt/html>
+</pre>
+</code>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+          contact.html
+        </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <code>
+<pre class="code-fullwidth">
+  &lt!DOCTYPE html>
+  &lthtml lang="en">
+  &lthead>
+    &ltmeta charset="UTF-8">
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+    &ltmeta http-equiv="X-UA-Compatible" content="ie=edge">
+    &ltmeta name="description" content="Welcome to the most extraordinary hotel in Boston Massachusetts">
+    &ltmeta name="keywords" content="hotel,boston hotel,new england hotel">
+    &ltlink rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    &ltlink rel="stylesheet" href="css/style.css">
+    &lttitle>Hotel BT | Contact&lt/title>
+  &lt/head>
+  &ltbody>
+    &ltheader>
+      &ltnav id="navbar">
+        &ltdiv class="container">
+          &lth1 class="logo">&lta href="index.html">HBT&lt/a>&lt/h1>
+          &ltul>
+            &ltli>&lta href="index.html">Home&lt/a>&lt/li>
+            &ltli>&lta href="about.html">About&lt/a>&lt/li>
+            &ltli>&lta class="current" href="contact.html">Contact&lt/a>&lt/li>
+          &lt/ul>
+        &lt/div>
+      &lt/nav>
+    &lt/header>
+  
+    &ltsection id="contact-form" class="py-3">
+      &ltdiv class="container">
+        &lth1 class="l-heading">&ltspan class="text-primary">Contact&lt/span> Us&lt/h1>
+        &ltp>Please fill out the form below to contact us&lt/p>
+        &ltform action="process.php">
+          &ltdiv class="form-group">
+            &ltlabel for="name">Name&lt/label>
+            &ltinput type="text" name="name" id="name">
+          &lt/div>
+          &ltdiv class="form-group">
+            &ltlabel for="email">Email&lt/label>
+            &ltinput type="email" name="email" id="email">
+          &lt/div>
+          &ltdiv class="form-group">
+            &ltlabel for="message">Message&lt/label>
+            &lttextarea name="message" id="message">&lt/textarea>
+          &lt/div>
+          &ltbutton type="submit" class="btn">Submit&lt/button>
+        &lt/form>
+      &lt/div>
+    &lt/section>
+  
+    &ltsection id="contact-info" class="bg-dark">
+      &ltdiv class="container">
+          &ltdiv class="box">
+              &lti class="fas fa-hotel fa-3x">&lt/i>
+              &lth3>Location&lt/h3>
+              &ltp>50 Main st, Boston MA&lt/p>
+            &lt/div>
+            &ltdiv class="box">
+                &lti class="fas fa-phone fa-3x">&lt/i>
+                &lth3>Phone Number&lt/h3>
+                &ltp>(617) 555-5555&lt/p>
+            &lt/div>
+            &ltdiv class="box">
+                &lti class="fas fa-envelope fa-3x">&lt/i>
+                &lth3>Email Address&lt/h3>
+                &ltp>frontdesk@hotelbt.co&lt/p>
+            &lt/div>
+      &lt/div>
+    &lt/section>
+  
+    &ltfooter id="main-footer">
+      &ltp>Hotel BT &copy; 2019, All RIghts Reserved&lt/p>
+    &lt/footer>
+  &lt/body>
+  &lt/html>
+</pre>
+</code>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          about.html
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <code>
+<pre class="code-fullwidth">
+  &lt!DOCTYPE html>
+  &lthtml lang="en">
+  &lthead>
+    &ltmeta charset="UTF-8">
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+    &ltmeta http-equiv="X-UA-Compatible" content="ie=edge">
+    &ltmeta name="description" content="Welcome to the most extraordinary hotel in Boston Massachusetts">
+    &ltmeta name="keywords" content="hotel,boston hotel,new england hotel">
+    &ltlink rel="stylesheet" href="css/style.css">
+    &lttitle>Hotel BT | About&lt/title>
+  &lt/head>
+  &ltbody>
+    &ltheader>
+      &ltnav id="navbar">
+        &ltdiv class="container">
+          &lth1 class="logo">&lta href="index.html">HBT&lt/a>&lt/h1>
+          &ltul>
+            &ltli>&lta href="index.html">Home&lt/a>&lt/li>
+            &ltli>&lta class="current" href="about.html">About&lt/a>&lt/li>
+            &ltli>&lta href="contact.html">Contact&lt/a>&lt/li>
+          &lt/ul>
+        &lt/div>
+      &lt/nav>
+    &lt/header>
+  
+    &ltsection id="about-info" class="bg-light py-3">
+      &ltdiv class="container">
+        &ltdiv class="info-left">
+          &lth1 class="l-heading">&ltspan class="text-primary">About&lt/span> Hotel BT&lt/h1>
+          &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem veritatis illo, similique labore voluptate nulla animi dolorum eius laborum illum, nesciunt quod reprehenderit dicta autem vel nobis minima sit deleniti!&lt/p>
+          &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit. A velit voluptatem impedit voluptate. Doloribus, voluptas dolore! Cupiditate aliquid sequi deserunt.&lt/p>
+        &lt/div>
+        &ltdiv class="info-right">
+          &ltimg src="./img/photo-2.jpg" alt="hotel">
+        &lt/div>
+      &lt/div>
+    &lt/section>
+  
+    &ltdiv class="clr">&lt/div>
+  
+    &ltsection id="testimonials" class="py-3">
+      &ltdiv class="container">
+        &lth2 class="l-heading">What Our Guests Say&lt/h2>
+        &ltdiv class="testimonial bg-primary">
+          &ltimg src="./img/person-1.jpg" alt="Samantha">
+          &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi quibusdam, dolorum maxime cum numquam quisquam, deleniti eum incidunt, velit non consectetur. Facere, ipsa maxime, ullam id amet odio laboriosam sit iusto tempore fugit exercitationem, a dolore quo maiores nisi!&lt/p>
+        &lt/div>
+  
+        &ltdiv class="testimonial bg-primary">
+            &ltimg src="./img/person-2.jpg" alt="Jen">
+            &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi quibusdam, dolorum maxime cum numquam quisquam, deleniti eum incidunt, velit non consectetur. Facere, ipsa maxime, ullam id amet odio laboriosam sit iusto tempore fugit exercitationem, a dolore quo maiores nisi!&lt/p>
+          &lt/div>
+      &lt/div>
+    &lt/section>
+  
+    &ltfooter id="main-footer">
+      &ltp>Hotel BT &copy; 2019, All RIghts Reserved&lt/p>
+    &lt/footer>
+  &lt/body>
+  &lt/html>
+</pre>
+          </code>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+          style.css
+        </a>
+      </div>
+      <div id="collapseFour" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <code>
+<pre class="code-fullwidth">
+    /* Reset */
+    * {
+      margin: 0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    
+    /* Main Styling */
+    html,body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.7em;
+    }
+    
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+    
+    h1, h2, h3 {
+      padding-bottom: 20px;
+    }
+    
+    p {
+      margin: 10px 0;
+    }
+    
+    /* Utility Classes - used through out ok */
+    .container {
+      margin: auto;
+      max-width: 1100px;
+      overflow: auto;
+      padding: 0 20px;
+    }
+    
+    .text-primary {
+      color: #f7c08a;
+    }
+    
+    .lead {
+      font-size: 20px;
+    }
+    
+    .btn {
+      display: inline-block;
+      font-size: 18px;
+      color: #fff;
+      background: #333;
+      padding: 13px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      background: #f7c08a;
+      color: #333;
+    }
+    
+    .btn-light {
+      background: #f4f4f4;
+      color: #333;
+    }
+    
+    .bg-dark {
+      background: #333;
+      color: #fff;
+    }
+    
+    .bg-light {
+      background: #f4f4f4;
+      color: #333;
+    }
+    
+    .bg-primary {
+      background: #f7c08a;
+      color: #333;
+    }
+    
+    .clr {
+      clear: both;
+    }
+    
+    .l-heading {
+      font-size: 40px;
+    }
+    
+    /* Padding */
+    .py-1 { padding: 10px 0; }
+    .py-2 { padding: 20px 0; }
+    .py-3 { padding: 30px 0; }
+    
+    /* Navbar */
+    #navbar {
+      background: #333;
+      color: #fff;
+      overflow: auto;
+    }
+    
+    #navbar a {
+      color: #fff;
+    }
+    
+    #navbar h1 {
+      float: left;
+      padding-top: 20px;
+    }
+    
+    #navbar ul {
+      list-style: none;
+      float: right;
+    }
+    
+    #navbar ul li {
+      float: left;
+    }
+    
+    #navbar ul li a {
+      display: block;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    #navbar ul li a:hover, 
+    #navbar ul li a.current {
+      background: #444;
+      color: #f7c08a;
+    }
+    
+    /* Showcase */
+    #showcase {
+      background: url('../img/showcase.jpg') no-repeat center center/cover;
+      height: 600px;
+    }
+    
+    #showcase .showcase-content {
+      color: #fff;
+      text-align: center;
+      padding-top: 170px;
+    }
+    
+    #showcase .showcase-content h1 {
+      font-size: 60px;
+      line-height: 1.2em;
+    }
+    
+    #showcase .showcase-content p {
+      padding-bottom: 20px;
+      line-height: 1.7em;
+    }
+    
+    /* Home Info */
+    #home-info {
+      height: 400px;
+    }
+    
+    #home-info .info-img {
+      float: left;
+      width: 50%;
+      background: url('../img/photo-1.jpg') no-repeat;
+      min-height: 100%;
+    }
+    
+    #home-info .info-content {
+      float: right;
+      width: 50%;
+      height: 100%;
+      text-align: center;
+      padding: 50px 30px;
+      overflow: hidden;
+    }
+    
+    #home-info .info-content p {
+      padding-bottom: 30px;
+    }
+    
+    /* Features */
+    .box {
+      float: left;
+      width: 33.3%;
+      padding: 50px;
+      text-align:center;
+    }
+    
+    .box i {
+      margin-bottom: 10px;
+    }
+    
+    /* About Info */
+    #about-info .info-right {
+      float: right;
+      width: 50%;
+      min-height: 100%;
+    }
+    
+    #about-info .info-right img {
+      display: block;
+      margin: auto;
+      width: 70%;
+      border-radius: 50%;
+    }
+    
+    #about-info .info-left {
+      float: left;
+      width: 50%;
+      min-height: 100%;
+    }
+    
+    /* Testimonials */
+    #testimonials {
+      height: 600px;
+      background: url('../img/test-bg.jpg') no-repeat center center/cover;
+      padding-top: 100px;
+    }
+    
+    #testimonials h2 {
+      color: #fff;
+      text-align: center;
+      padding-bottom: 40px;
+    }
+    
+    #testimonials .testimonial {
+      padding: 20px;
+      margin-bottom: 40px;
+      border-radius: 5px;
+      opacity: 0.9;
+    }
+    
+    #testimonials .testimonial img {
+      width: 100px;
+      float: left;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+    
+    /* Contact Form */
+    #contact-form .form-group {
+      margin-bottom: 20px;
+    }
+    
+    #contact-form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    #contact-form input, 
+    #contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px #ddd solid;
+    }
+    
+    #contact-form textarea {
+      height: 200px;
+    }
+    
+    #contact-form input:focus, 
+    #contact-form textarea:focus {
+      outline: none;
+      border-color: #f7c08a;
+    }
+    
+    /* Footer */
+    #main-footer {
+      text-align: center;
+      background: #444;
+      color: #fff;
+      padding: 20px;
+    }
+</pre>
+          </code>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div id="carousel-demo" class="carousel slide" data-ride="carousel">
+      <!-- Carousel Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-demo" data-slide-to="1"></li>
+        <li data-target="#carousel-demo" data-slide-to="2"></li>
+        <li data-target="#carousel-demo" data-slide-to="3"></li>
+        <li data-target="#carousel-demo" data-slide-to="4"></li>
+        <li data-target="#carousel-demo" data-slide-to="5"></li>
+      </ol>
+      <!-- Carousel Items -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/bt-hc29.jpg" class="" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="img/bt-hc30.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="img/bt-hc31.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="img/bt-hc32.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="img/bt-hc33.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="img/bt-hc34.jpg" alt="">
+        </div>
+      </div>
+      <!-- Carousel Left and Right Controls -->
+      <a href="#carousel-demo" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#carousel-demo" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+
+  <h3>Responsive Layouts</h3>
+  <p>Responsive design is nothing but use html/css to make a website or app layout adapt to different screen sizes. </p>
+  <p>It is necessary to build responsive layouts</p>
+  <p>Layouts should render on any form factor.</p>
+
+  <h4>Media Queries</h4>
+  <p>we can do media queries for both width and height.</p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo25">Code</button>
+  <div id="demo25" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  &lt!DOCTYPE html>
+  &lthtml lang="en">
+  &lthead>
+    &ltmeta charset="UTF-8">
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+    &ltmeta http-equiv="X-UA-Compatible" content="ie=edge">
+    &lttitle>Media Queries&lt/title>
+    &ltstyle>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: gray;
+        color: white;
+        text-align: center;
+        padding-top: 100px;
+      }
+  
+      h1 {
+        display: none;
+      }
+  
+      /* so first for mobile first design we do the stylings and then for larger
+           screens we use the min-width*/ 
+  
+      /* Smartphones */
+      /* screen , print are few media types-by default it is all so don't bother*/
+  
+      @media only screen and (max-width: 500px) {
+  
+        /* max-width: 500px = for sizes &lt 500 this stylings gets applied
+           min-width: 500px = for sizes>500 this stylings gets applied  */
+  
+        body {
+          background: red;
+        }
+  
+        #smartphone h1 {
+          display: block;
+        }
+      }
+  
+      /* Tablet 
+  
+      max-width: 768px , it is just like targeting everything under 768px (0 to 768)
+      @media(max-width: 768px){
+  
+      }
+      from 501 to 768 ok
+      @media(min-width: 501px) and (max-width: 768px) {
+      
+          }
+      */
+      @media(min-width: 501px) and (max-width: 768px) {
+        body {
+          background: blue;
+        }
+  
+        #tablet h1 {
+          display: block;
+        }
+      }
+  
+      /* Normal */
+      @media(min-width: 769px) and (max-width: 1200px) {
+        body {
+          background: green;
+        }
+  
+        #normal h1 {
+          display: block;
+        }
+      }
+  
+      /* Widescreen */
+      @media(min-width: 1201px) {
+        body {
+          background: black;
+        }
+  
+        #widescreen h1 {
+          display: block;
+        }
+      }
+  
+      /* Landscape */
+      @media(max-height: 500px) {
+        body {
+          background: orange;
+        }
+  
+        #landscape h1 {
+          display: block;
+        }
+        
+      }
+    &lt/style>
+    &lt!-- &ltlink rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css"> -->
+    &lt!-- so above style sheet only gets loaded only if the screen is 768 or less..
+         and it is placed always below the main stylesheet. -->
+         
+  &lt/head>
+  &ltbody>
+    &ltdiv id="widescreen">&lth1>Widescreen&lt/h1>&lt/div>
+    &ltdiv id="normal">&lth1>Normal&lt/h1>&lt/div>
+    &ltdiv id="tablet">&lth1>Tablet&lt/h1>&lt/div>
+    &ltdiv id="smartphone">&lth1>Smartphone&lt/h1>&lt/div>
+    &ltdiv id="landscape">&lth1>Landscape&lt/h1>&lt/div>
+  &lt/body>
+  &lt/html>
+</pre>
+</code>
+  </div>
+
+  <div class="container">
+    <div id="carousel-demo4" class="carousel slide" data-ride="carousel">
+      <!-- Carousel Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-demo4" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-demo4" data-slide-to="1"></li>
+        <li data-target="#carousel-demo4" data-slide-to="2"></li>
+        <li data-target="#carousel-demo4" data-slide-to="3"></li>
+        <li data-target="#carousel-demo4" data-slide-to="4"></li>
+        <li data-target="#carousel-demo4" data-slide-to="5"></li>
+        <li data-target="#carousel-demo4" data-slide-to="6"></li>
+      </ol>
+      <!-- Carousel Items -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/bt-hc35.jpg" class="" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="img/bt-hc36.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="img/bt-hc37.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="img/bt-hc38.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="img/bt-hc39.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="img/bt-hc40.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="img/bt-hc41.jpg" alt="">
+        </div>
+      </div>
+      <!-- Carousel Left and Right Controls -->
+      <a href="#carousel-demo4" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#carousel-demo4" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+
+  <h4>em & rem units</h4>
+  <p>em is a multiplier to the font size of its parent container or its parent element.</p>
+  <p>em - used with margin,font-size,padding</p>
+  <p>lot don't use bcz - if fs=20px and in a div which has p element with fs=1.5em then total = 30px and padding = 1em
+    now the total padding = 30px ok so not recommended.</p>
+  <p>rem is relative to the font size of the root html element and its (roots - html element) default font size is 16px.
+  </p>
+  <p>rem is always used relative to root. so it is less confusing.</p>
+  <p>rem is recommended.</p>
+
+  <h4>vh & vw units</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo26">Code</button>
+  <div id="demo26" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  &lt!DOCTYPE html>
+  &lthtml lang="en">
+  &lthead>
+    &ltmeta charset="UTF-8">
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+    &ltmeta http-equiv="X-UA-Compatible" content="ie=edge">
+    &lttitle>Vh & Vw Units&lt/title>
+    &ltstyle>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+  
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+  
+      header {
+        background: #333 url('https://source.unsplash.com/daily') no-repeat center center/cover;
+        color: #fff;
+        height: 100vh; /* even 100% won't work(will fit only upto content)so we use 100vh to fit the screen regardless
+                             of how big or small the browser is ., vh used most frequtent now a days for landing pages. Try check with device controls in crome ok*/
+                             /* sumilarly if we write 100vw it will go horizontally whilt vh wil go vertically*/
+  
+        text-align: center;
+        padding: 2rem;
+        padding-top: 15rem;
+      }
+  
+      header h1 {
+        font-size: 3rem;
+      }
+  
+      header p {
+        margin: 1rem 0;
+      }
+  
+      .btn {
+        display: inline-block;
+        text-decoration: none;
+        background: #f4f4f4;
+        color: #333;
+        padding: 0.75rem 2rem;
+      }
+  
+      section {
+        padding: 2rem;
+      }
+  
+      @media(max-height: 450px) {
+        header {
+          padding-top: 5rem;
+        }
+      }
+    &lt/style>
+  &lt/head>
+  &ltbody>
+    &ltheader>
+      &lth1>Welcome To Our Website&lt/h1>
+      &ltp>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto necessitatibus sunt recusandae a facere totam?&lt/p>
+      &lta href="#" class="btn">Find Out More&lt/a>
+    &lt/header>
+  
+    &ltsection>
+      &lth3>About Our Company&lt/h3>
+      &ltp>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos repellendus nulla eaque maxime in eveniet aut, cumque reiciendis fugit voluptas saepe distinctio voluptatem excepturi quam rerum tempore debitis possimus? Aliquid adipisci dolorum doloribus voluptate doloremque sed libero dignissimos itaque cumque qui totam, nemo molestiae amet architecto dolore nihil ipsa facilis?&lt/p>
+    &lt/section>
+  &lt/body>
+  &lt/html>
+</pre>
+</code>
+  </div>
+  <div class="container">
+    <div id="carousel-demo5" class="carousel slide" data-ride="carousel">
+      <!-- Carousel Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-demo5" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-demo5" data-slide-to="1"></li>
+      </ol>
+      <!-- Carousel Items -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/bt-hc42.jpg" class="" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="img/bt-hc43.jpg" alt="">
+        </div>
+      </div>
+      <!-- Carousel Left and Right Controls -->
+      <a href="#carousel-demo5" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#carousel-demo5" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+
+  <h4>Hotel project - with responsiveness</h4>
+  <p>All code is same as previous, lets see only the styles added for the mobile view for responsiveness</p>
+  <p>Below shows that the mobile.css will be loaded only when the below mentioned media condition satisfies .i.e for all
+    sizes which are less then 768px.</p>
+  <code>
+<pre class="code-fullwidth">
+  &ltlink rel="stylesheet" href="css/style.css">
+  &ltlink rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+</pre>
+</code>
+  <p>mobile.css</p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo27">Code</button>
+  <div id="demo27" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  #navbar .logo {
+    float: none;
+    text-align: center;
+  }
+  
+  #navbar ul, #navbar ul li {
+    float: none;
+  }
+  
+  #navbar ul li a {
+    padding: 5px;
+    border-bottom: #444 dotted 1px;
+  }
+  
+  /* Showcase */
+  #showcase {
+    height: 100%;
+  }
+  
+  #showcase .showcase-content {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+  
+  /* Home Info */
+  #home-info {
+    height: 550px;
+  }
+  
+  #home-info .info-img {
+    display: none;
+  }
+  
+  #home-info .info-content {
+    float: none;
+    width: 100%;
+  }
+  
+  /* Boxes */
+  .box {
+    float: none;
+    width: 100%;
+  }
+  
+  /* About */
+  #about-info .info-right, #about-info .info-left {
+    float: none;
+    width: 100%;
+  }
+  
+  #about-info .info-right {
+    margin-top: 30px;
+  }
+  
+  .l-heading {
+    text-align: center;
+  }
+  
+  /* Contact */
+  #contact-info .box {
+    border-bottom: #444 dotted 1px;
+  }
+</pre>
+</code>
+  </div>
+
+  <h3>FlexBox</h3>
+  <p>With flex/css grid we will be able to layout the things without floats or frameworks.</p>
+  <ul>
+    <li>It is modern layout mode in css3</li>
+    <li>"flex" is a value for the display property.</li>
+    <li>Replaces floats and is much more elegant to work with.</li>
+    <li>Aligns items both horizontal(row) andd vertical(column).</li>
+    <li>Flex items can be re-ordered via css.</li>
+  </ul>
+  <p>if we assign display flex to a container div or any container element , it creates a flex container.</p>
+  <p>Below has two div's inside of another div with dispaly flex., and it makes all its direct elements as flex
+    items.Therefore those 2 div's are flex items.It could be anything a list items,headings or any element.</p>
+  <p>so putting flex, it will make all the child elements just automatically align horizontally as shown below.</p>
+  <img src="img/bt-hc44.jpeg" alt="">
+  <img src="img/bt-hc45.jpeg" alt="">
+
+  <h4>Flex basics & properties</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo28">Code</button>
+  <div id="demo28" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  &lt!DOCTYPE html>
+  &lthtml lang="en">
+  &lthead>
+      &ltmeta charset="UTF-8">
+      &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+      &lttitle>Flex Basics&lt/title>
+      &ltstyle>
+          * {
+              box-sizing: border-box;
+          }
+  
+          body {
+              font-family: Arial, Helvetica, sans-serif;
+          }
+  
+          .flex-container {
+              display: flex; /* to align side by side*/
+  
+              /* flex-direction: column(row)- to change the axis,it is row by default ie main axix ie horizontally, for cross axis vertically*/
+              /* flex-direction: column-reverse;
+              flex-direction: row-reverse; */
+  
+              /* flex-wrap: wrap; */
+              /* by default it is set to no-wrap
+                 if we make the screen smaller they just shrink up until they can't shrink anymore,
+                 But if we set flex-wrap to wrap and if we try to shrink we notice that when they 
+                 get to a cetain size, they basically move on to the next row.. */
+          }
+  
+          .item {
+              background: #f4f4f4;
+              border: #ccc solid 2px;
+              margin: 10px;
+              padding: 10px;
+              text-align: center;
+              border-radius: 10px;
+              
+              flex: 1; /* short hand for the 3 propertiec fg,fs,fb eg: flex:1 0 200px;*/
+              /* a lot of times we just keep flex:1 excluding fs,fb for better responsive*/
+  
+              /* flex-shrink: 0; now nothing will shrink ok when screen sizes are reduced.*/
+              /* flex-grow: 1;  all will grow in even*/
+          }
+  
+          .item-3 {
+              flex: 2; /* now to make item3 larger */
+          }
+  
+          /* .item-1 {
+              flex-shrink: 0;
+  
+              - the default behavior is just to shrink them all at the same rate,th they are all of same width
+              - so now if say the item1 don't want t shrink  so we set flex-shrink : 0;
+          }
+          .item-2 {
+              flex-grow: 1;
+  
+              - so it is going to fill up the remaining space of the container
+  
+              flex-basis: 0;
+  
+              - it is kind of like setting the width of the item.
+          }
+          .item-3 {
+              flex-grow: 2;
+              flex-basis: 0;
+  
+               - fb : it is kind of like setting the width of the item. and now this makes sure that 
+                 item3 now grows exactly 2 times of item2.
+          } */
+      &lt/style>
+  &lt/head>
+  &ltbody>
+     
+      &ltdiv class="flex-container">   &lt!-- it  could be anything like ul etc, -->
+          &ltdiv class="item item-1"> &lt!-- it  could be anything like lis,images,div's etc, -->
+              &lth3>Item 1&lt/h3>
+          &lt/div>
+          &ltdiv class="item item-2">
+              &lth3>Item 2&lt/h3>
+          &lt/div>
+          &ltdiv class="item item-3">
+              &lth3>Item 3&lt/h3>
+          &lt/div>
+      &lt/div>
+  &lt/body>
+  &lt/html>
+</pre>
+</code>
+  </div>
+
+  <h4>Flex align & justify</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo29">Code</button>
+  <div id="demo29" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  &lt!DOCTYPE html>
+  &lthtml lang="en">
+  &lthead>
+      &ltmeta charset="UTF-8">
+      &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+      &lttitle>Flex Basics&lt/title>
+      &ltstyle>
+          * {
+              box-sizing: border-box;
+          }
+  
+          body {
+              font-family: Arial, Helvetica, sans-serif;
+          }
+  
+          .flex-container {
+              background-color: #f4f4f4;
+              display: flex;
+              flex-direction: row;
+              /* Cross axis align */
+              align-items: center; /* - it is also put on the container,not on the items 
+                                        themselves bcz..... it applies to all of the items......
+                                        flex-end,flex-start,stretch(all height of the container), etcc,
+              /* Main axis align */
+              justify-content: center;
+              height: 50vh;
+          }
+  
+          .item {
+              background: #f4f4f4;
+              border: #ccc solid 2px;
+              margin: 10px;
+              padding: 10px;
+              text-align: center;
+              border-radius: 10px;
+              /* flex: 1; */
+          }
+  
+          .item-1 {
+              align-self: flex-start;
+          }
+  
+          .item-3 {
+              align-self: flex-end;
+          }
+      &lt/style>
+  &lt/head>
+  &ltbody>
+      &ltdiv class="flex-container">
+          &ltdiv class="item item-1">
+              &lth3>Item 1&lt/h3>
+          &lt/div>
+          &ltdiv class="item item-2">
+              &lth3>Item 2&lt/h3>
+          &lt/div>
+          &ltdiv class="item item-3">
+              &lth3>Item 3&lt/h3>
+          &lt/div>
+      &lt/div>
+  &lt/body>
+  &lt/html>
+</pre>
+</code>
+  </div>
+
+  <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS-Tricks FlexBox</a>
+
+
+
+
+
+  <!-- <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo25">Code</button>
+<div id="demo25" class="collapse">
+<code>
+<pre class="code-fullwidth">
+  
+</pre>
+</code>
+</div> -->
+
+
+  <!-- <div class="container">
+  <div id="carousel-demo4" class="carousel slide" data-ride="carousel">
+  
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-demo4" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-demo4" data-slide-to="1"></li>
+    </ol>
+  
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/bt-hc35.jpg" class="" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="img/bt-hc36.jpg" alt="">
+      </div>		
+    </div>
+
+    <a href="#carousel-demo4" class="carousel-control-prev" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a href="#carousel-demo4" class="carousel-control-next" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
