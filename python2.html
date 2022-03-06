@@ -80,7 +80,7 @@
     <p>A class is defined using the class keyword in python. For example, the below code creates a class called Mobile
         without any attributes or behavior.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     class Mobile:
         pass
 </pre>
@@ -90,7 +90,7 @@
         is the name of the class.
         For example, the below code creates three Mobile objects:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     Mobile()
     Mobile()
     Mobile()
@@ -101,7 +101,7 @@
         create. Such variables that are used to access objects are called reference variables .In the below code, we are
         creating three objects, each with its own reference variable</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     mob1=Mobile()
     mob2=Mobile()
     mob3=Mobile() 
@@ -114,7 +114,7 @@
     <p>All objects have an internal unique id (just like aadhar or green card number). We can check this using the
         inbuilt id(). The below code will display the unique number associated with the object.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     class Mobile:
         pass
 
@@ -137,7 +137,7 @@
     <p>For example, in the below code we are creating two attributes price and brand, and assigning them to the two
         objects we had created.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     pass
 
@@ -156,7 +156,7 @@ mob2.brand="Samsung"
     <p>We can access the attribute values using the dot operator itself. The syntax is as shown below:</p>
     <p>reference_variable.attribute_name</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     print (mob1.brand)
     print (mob2.brand)
 </pre>
@@ -165,7 +165,7 @@ mob2.brand="Samsung"
     <p>In python, we can create attributes for a specific object alone. In the below example, the mob1 object has an ios
         version which mob2 does not have.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     pass
 
@@ -184,14 +184,14 @@ mob2.brand="Samsung"
     <p>We can update the value of an existing attribute using the dot operator. For example, the below code will change
         the ios_version of mob1 object, since the mob1 object already has that attribute.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     mob1.ios_version=11
 </pre>
 </code>
     <p>In python, if we assign a value to a non-existent attribute, it will create that attribute for that object alone.
         For example, the below code will create an attribute for mob2 object alone.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     mob2.android_version="Marshmallow"
 </pre>
 </code>
@@ -230,7 +230,7 @@ mob2.brand="Samsung"
     <p>When we create an object, the special __init__() method inside the class of that object is invoked automatically.
         This special function is called as a constructor.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def __init__(self):
         print("Inside constructor")
@@ -241,7 +241,7 @@ mob1=Mobile()
     <h4>self</h4>
     <p>self is not a keyword. self refers to the current object being executed.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def __init__(self):
         print("Id of self in constructor", id(self))
@@ -252,7 +252,7 @@ mob1=Mobile()
     <h4>Parameterless constructor</h4>
     <p>You can create a constructor without parameters. But this is rarely useful.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def __init__(self):
         print("Inside constructor")
@@ -269,7 +269,7 @@ Inside constructor
     <h4>Parameterized constructor</h4>
     <p>If a constructor takes parameters then it would be called as parameterized constructor.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def __init__(self, brand, price):
         print("Inside constructor")
@@ -291,7 +291,7 @@ Mobile 1 has brand Apple and price 20000
         practice is to create attributes inside the constructor.</p>
     <img src="img/oop8.png" alt="">
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def __init__(self, price, brand):
         print("Id of self in constructor", id(self))
@@ -310,7 +310,7 @@ Id of mob1 in driver code 140650723511544
     <p>Attributes can be created only by using the self variable and the dot operator. Without self we are only creating
         a local variable and not an attribute.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def __init__(self):
         print ("Inside the Mobile constructor")
@@ -341,7 +341,7 @@ None
     <p>Even though purchase() is accepting a parameter called self, we need not pass it when we invoke it.</p>
 
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def __init__(self):
         print("Inside constructor")
@@ -366,7 +366,7 @@ Purchasing a mobile
     <p>Similarly, when mob2 is used to invoke purchase, attribute values (Samsung and 3000) of mob2 are accessed in
         purchase().</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def __init__(self, brand, price):
         print("Inside constructor")
@@ -399,7 +399,7 @@ This mobile has brand Samsung and price 3000
     <p>We can also invoke one method from another using self.
     </p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def display(self):
         print("Displaying details")
@@ -417,7 +417,7 @@ Calculating price
     <h4>Identify invoking object </h4>
     <p>In the below code, how does return_product() method know which mobile object we are using?</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def __init__(self,price,brand):
         print (id(self))
@@ -464,7 +464,7 @@ Brand being returned is Samsung and price is 2000
             <tr>
                 <td>mob1.display()</td>
                 <td>
-                    <pre>def display(self):
+                    <pre class="code-fullwidth">def display(self):
     print(self.discount)</pre>
                 </td>
                 <td>Here, 'self' is the first parameter. Hence it refers to mob1.</td>
@@ -472,7 +472,7 @@ Brand being returned is Samsung and price is 2000
             <tr>
                 <td>mob1.display()</td>
                 <td>
-                    <pre>def display(mob_obj): 
+                    <pre class="code-fullwidth">def display(mob_obj): 
     print(mob_obj.discount)
         </pre>
                 </td>
@@ -481,7 +481,7 @@ Brand being returned is Samsung and price is 2000
             <tr>
                 <td>mob1.purchase(2)</td>
                 <td>
-                    <pre>def purchase(self,qty):
+                    <pre class="code-fullwidth">def purchase(self,qty):
     print("Total is ",self.price*qty) </pre>
                 </td>
                 <td>Here, 'self' is the first parameter. Hence it refers to ‘mob1'.The second parameter is ‘qty' which
@@ -490,7 +490,7 @@ Brand being returned is Samsung and price is 2000
             <tr>
                 <td>mob1.purchase(2)</td>
                 <td>
-                    <pre>def purchase(qty,self):
+                    <pre class="code-fullwidth">def purchase(qty,self):
     print("Total is ", qty.price*self)</pre>
                 </td>
                 <td>Here, ‘qty' is the first parameter. Hence it refers to ‘mob1'. The second parameter is 'self' which
@@ -499,7 +499,7 @@ Brand being returned is Samsung and price is 2000
             <tr>
                 <td>mob1.display()</td>
                 <td>
-                    <pre>def display():       
+                    <pre class="code-fullwidth">def display():       
     print(self.discount)</pre>
                 </td>
                 <td>This is an error, since the first parameter of a method is always a reference to the object used.
@@ -569,7 +569,7 @@ Brand being returned is Samsung and price is 2000
     <p>An object is like a balloon and the reference variable is like the ribbon connecting it to the ground.</p>
     <img src="img/oop9.png" alt="">
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def __init__(self, price, brand):
         self.price = price
@@ -586,7 +586,7 @@ print(mob1.price)
     <h4>Object without a reference</h4>
     <p>Just like a balloon without a ribbon, an object without a reference variable cannot be used later.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def __init__(self, price, brand):
         self.price = price
@@ -604,7 +604,7 @@ Mobile(1000, "Apple")
         references are referring to the same object. When you assign an already created object to a variable, a new
         object is not created.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def __init__(self, price, brand):
         print ("Inside constructor")
@@ -630,7 +630,7 @@ Id of object referred by mob2 reference variable is : 139626361807256
     <p>Just like the balloon with multiple ribbons, if we change the attribute of an object through one reference
         variable, it immediately reflects in other reference variable as there is only one balloon ultimately!</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def __init__(self, price, brand):
         self.price = price
@@ -658,7 +658,7 @@ Price of mobile 2 : 3000
     <p>Just like the balloons and ribbons, we can make one reference variable refer to another object. Now any change
         made through this reference variable will not affect the old object.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def __init__(self, price, brand):
         self.price = price
@@ -690,7 +690,7 @@ mob2 140356972580936 3000
     <p>What would be the output if we print the reference variable? Since it is an object, printing it will display the
         internal hex representation of it. How can we get a more readable output for this?</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Shoe:
     def __init__(self, price, material):
         self.price = price
@@ -707,7 +707,7 @@ O/P:
         MUST return a string and this string will be used when the object is printed. This is useful in debugging as we
         can print the values of the attributes.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Shoe:
     def __init__(self, price, material):
         self.price = price
@@ -752,7 +752,7 @@ Shoe with price: 1000 and material: Canvas
     <h3>Abstraction & Encapsulation</h3>
     <p>Consider the below given code:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def __init__(self, brand, price):
         print("Inside constructor")
@@ -779,7 +779,7 @@ mob2.purchase()
         value to it as shown below:
     </p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Customer:
     def __init__(self, cust_id, name, age, wallet_balance):
         self.cust_id = cust_id
@@ -806,7 +806,7 @@ The balance is 10000000000
     <p>Adding a double underscore makes the attribute a private attribute. Private attributes are those which are
         accessible only inside the class. This method of restricting access to our data is called encapsulation.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Customer:
     def __init__(self, cust_id, name, age, wallet_balance):
         self.cust_id = cust_id
@@ -835,7 +835,7 @@ AttributeError: 'Customer' object has no attribute '__wallet_balance'
         _Classname__attribute.</p>
     <p>This is why we get an error when we try to access a private attribute. </p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Customer:
     def __init__(self, cust_id, name, age, wallet_balance):
         self.cust_id = cust_id
@@ -866,7 +866,7 @@ AttributeError: 'Customer' object has no attribute '__wallet_balance'
     <p>If we try to assign a value to a private variable, we end up creating a new attribute in python. Thus this code
         does not give an error, but it is logically flawed and does not produce the intended result.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Customer:
     def __init__(self, cust_id, name, age, wallet_balance):
         self.cust_id = cust_id
@@ -896,7 +896,7 @@ The balance is 1000
         making it private?</p>
     <p>Note: Languages like Java, C#, etc do not allow access of private variable outside the class</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Customer:
     def __init__(self, cust_id, name, age,wallet_balance):
         self.cust_id = cust_id
@@ -932,7 +932,7 @@ The balance is 10000000000
         <li>The methods meant to access private variable values are called getter methods</li>
     </ul>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Customer:
     def __init__(self, id, name, age, wallet_balance):
         self.id = id
@@ -985,7 +985,7 @@ O/P:
     </h3>
     <p>What happens when we pass an object as a parameter to a function? In the below code, what will be the output?</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def __init__(self, price, brand):
         self.price = price
@@ -1008,7 +1008,7 @@ O/P:
         through one reference variable will affect the other as well.</p>
     <img src="img/oop15.png" alt="">
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def __init__(self, price, brand):
         self.price = price
@@ -1038,7 +1038,7 @@ Price of mob1 3000
     </p>
 
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def __init__(self, brand, price):
         self.brand = brand
@@ -1067,7 +1067,7 @@ Apple 5000
     <p>We can also store objects in a dictionary. For example, in the below code we are storing all the mobile objects
         in a dictionary and printing only those mobiles whose price is greater than 3000.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def __init__(self,brand,price):
         self.brand = brand
@@ -1096,7 +1096,7 @@ Samsung 5000
         location.</p>
 
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Customer:
     def __init__(self, cust_id, cust_name, location):
         self.cust_id = cust_id
@@ -1130,7 +1130,7 @@ Location: India, Name: Kumar, Id: 103
         limited time discount we should be able to programmatically enable and disable the discount using functions like
         this:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     def __init__(self, price, brand):
         self.price = price
@@ -1172,7 +1172,7 @@ mob4.purchase()
         since this attribute is not owned by any one object, we don’t need the self to create this attribute. Such
         variables which are created at a class level are called static variables. Here discount is a static value.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     discount = 50
     def __init__(self, price, brand):
@@ -1185,7 +1185,7 @@ class Mobile:
     <p>Now that we have created static variables, we can access them using the Class name itself. Static variable belong
         to the class and not an object. Hence we don’t need self to access static variables.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     discount = 50
     def __init__(self, price, brand):
@@ -1213,7 +1213,7 @@ Samsung mobile with price 5000 is available after discount at 2500.0
     <h4>Updating static variables</h4>
     <p>We can update the static value using the class name.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     discount = 50
     def __init__(self, price, brand):
@@ -1253,7 +1253,7 @@ Samsung mobile with price 5000 is available after discount at 5000.0
     <p>We can make our static variable as a private variable by adding a double underscore in front of it. We can also
         create getter and setter methods to access or modify it.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     __discount = 50
 
@@ -1273,7 +1273,7 @@ OP:
     <p>In the below code we are invoking the getter method using a reference variable. But the self is not used inside
         the method at all.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     __discount = 50
     def __init__(self, price, brand):
@@ -1308,7 +1308,7 @@ print(mob1.get_discount())
         <li>@staticmethod must be written on top of it</li>
     </ul>
     <code>
-<pre>
+<pre class="code-fullwidth">
     @staticmethod
     def get_discount():
         return Mobile.__discount
@@ -1321,7 +1321,7 @@ print(mob1.get_discount())
     <h4>Accessing static methods</h4>
     <p>We can access static methods directly using the class name, even without creating objects.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     __discount = 50
     def __init__(self, price, brand):
@@ -1347,7 +1347,7 @@ OP:
 </code>
     <h4>MegaSale solution</h4>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     __discount = 50
     def __init__(self, price, brand):
@@ -1400,7 +1400,7 @@ Samsung mobile with price 5000 is available after discount at 5000.0
         1000 and subsequent objects should have that value increased by 1. We can accomplish this by using a combination
         of static and instance variables as shown below:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Mobile:
     counter = 1000
     def __init__(self, price, brand):
@@ -1488,7 +1488,7 @@ Current value of counter is 1003
     <h4>Aggregation - Independent classes</h4>
     <p>Let us look at the code of both the classes:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Customer:
     def __init__(self, name, age, phone_no):
         self.__name = name
@@ -1522,7 +1522,7 @@ class Address:
         class which aggregates the other class. In the above example, the Customer aggregates the Address and hence the
         diamond symbol is near the Customer class</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Customer:
     def __init__(self, name, age, phone_no, address):
         self.__name = name
@@ -1549,7 +1549,7 @@ class Address:
 </code>
     <h4>Aggregation - Examples</h4>
     <code>
-<pre>
+<pre class="code-fullwidth">
     add1=Address(123,"5th Lane",56001)
     add2=Address(567,"6th Lane",82006)
 </pre>
@@ -1557,14 +1557,14 @@ class Address:
     <img src="img/oop19.png" style="height: 250px;width: auto;" alt="">
 
     <code>
-<pre>
+<pre class="code-fullwidth">
     cus1=Customer("Jack",24,1234,None)
     cus2=Customer("Jane",25,5678,None)    
 </pre>
 </code>
     <img src="img/oop20.png" style="height: 250px;width: auto;" alt="">
     <code>
-<pre>
+<pre class="code-fullwidth">
     add1=Address(123,"5th Lane",56001)
     add2=Address(567,"6th Lane",82006)
     cus1=Customer("Jack",24,1234,add1)
@@ -1581,7 +1581,7 @@ class Address:
     <p>Since the Customer class has aggregated the Address class, the address object is available in all the methods of
         the Customer class, just like regular attributes.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Customer:
     def __init__(self, name, age, phone_no, address):
         self.name = name
@@ -1625,7 +1625,7 @@ Jack 24 1234
     <p>Private variables cannot be accessed outside the class. This is true even in aggregation. The owning class cannot
         access the private attributes of the aggregated class directly.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 Customer as above
 
 class Address:
@@ -1651,7 +1651,7 @@ Attribute Error
         aggregated class using those methods.</p>
 
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Customer:
     def __init__(self, name, age, phone_no, address):
         self.name = name
@@ -1711,7 +1711,7 @@ Jack 24 1234
         won’t appear in the class diagram. For example, in the below code, the Customer class depends on a payment
         object for purchasing. Here payment is a local variable and not an attribute.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Customer:
     def __init__(self, name, age, phone_no):
         self.name = name
@@ -1742,7 +1742,7 @@ Paying by card
     <p>Apart from an object being passed as a parameter to the method, we can also create an object locally inside a
         method. This again is a weaker dependency which does not reflect in the class diagram.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     #Object creation
     class Customer:
         def __init__(self, name,cust_type,bill):
@@ -1769,7 +1769,7 @@ Paying by card
     <p>Also, sometimes we may access the static values of another class directly in our method. This again is a weaker
         relationship.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     #Usage of static
     class CustomerCare:
         helpline=111000
@@ -1783,7 +1783,7 @@ Paying by card
     <h4>Fun with python</h4>
     <p>Want a shortcut to print the attributes and values?</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Foo:
     def __init__(self,num1,num2):
         self.__num1=num1
@@ -1832,7 +1832,7 @@ OP:
         We will create FeaturePhone and SmartPhone classes without any attributes or methods now. We will create them
         later.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Phone:
     def __init__(self, price, brand, camera):
         self.price = price
@@ -1860,7 +1860,7 @@ Buying a phone
     <p>To create an inheritance relationship between the classes, mention the name of the parent class in brackets as
         shown:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Phone:
     def __init__(self, price, brand, camera):
         self.price = price
@@ -1903,7 +1903,7 @@ Buying a phone
     <p>Since the SmartPhone class is inheriting the Phone class, the SmartPhone class inherits the constructor of the
         Phone class.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Phone:
     def __init__(self, price, brand, camera):
         print ("Inside phone constructor")
@@ -1932,7 +1932,7 @@ Inside phone constructor
     <p>Consider the below code. Since the SmartPhone class has its own constructor, the Phone class constructor is not
         inherited. Hence the attributes in the Phone class are also not inherited.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Phone:
     def __init__(self, price, brand, camera):
         print ("Inside phone constructor")
@@ -1972,7 +1972,7 @@ AttributeError: 'SmartPhone' object has no attribute 'brand'
     <h4>Inheriting attributes</h4>
     <p>A child class cannot directly access the private attributes of the parent class.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class SmartPhone(Phone):
     def check(self):
         print(self.brand)
@@ -1991,7 +1991,7 @@ AttributeError: 'SmartPhone' object has no attribute '_SmartPhone__price'
     <h4>Inheriting methods</h4>
     <p>Apart from attributes, the child class inherits the methods of the parent class as shown:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Phone:
     def __init__(self, price, brand, camera):
         print ("Inside phone constructor")
@@ -2026,7 +2026,7 @@ Buying a phone
     <p>When the child has a method with the same name as that of the parent, it is said to override the parent’s method.
         This is called as Method Overriding. Method overriding is also called as Polymorphism.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Phone:
     def __init__(self, price, brand, camera):
         print ("Inside phone constructor")
@@ -2060,7 +2060,7 @@ Buying a smartphone
         class overridden method. To invoke anything belonging to the parent class, the child class needs to use the
         super() function, as shown below:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Phone:
     def __init__(self, price, brand, camera):
         print ("Inside phone constructor")
@@ -2098,7 +2098,7 @@ Buying a phone
     <p>super() function can be used to access the constructor or methods of the parent class, but not the attributes.
         Also super() function can be used only inside a class and not outside it</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Phone:
     def __init__(self, price, brand, camera):
         print ("Inside phone constructor")
@@ -2155,7 +2155,7 @@ Samsung
     <h4>Single level inheritance</h4>
     <p>Single inheritance enables a derived class to inherit properties and behavior from a single parent class.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Phone:
     def __init__(self, price, brand, camera):
         print ("Inside phone constructor")
@@ -2181,7 +2181,7 @@ Buying a phone
     <h4>Multi level inheritance </h4>
     <p>If a class is derived from another derived class then it is called multilevel inheritance.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Product:
     def review(self):
         print ("Product customer review")
@@ -2216,7 +2216,7 @@ Product customer review
     <p>When several classes are derived from common base class it is called hierarchical inheritance.</p>
 
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Phone:
     def __init__(self, price, brand, camera):
         print ("Inside phone constructor")
@@ -2242,7 +2242,7 @@ Buying a phone
     <h4>Multiple inheritance</h4>
     <p>If a class is derived from two or more base classes then it is called multiple inheritance.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Phone:
     def __init__(self, price, brand, camera):
         print ("Inside phone constructor")
@@ -2279,7 +2279,7 @@ Customer review
         the method in Parent class which is first in the list. In our example, the buy() of Product is inherited as it
         appears first in the list.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Phone:
     def __init__(self, price, brand, camera):
         print ("Inside phone constructor")
@@ -2330,7 +2330,7 @@ Product buy method
         you will get an error if you try to instantiate an abstract class</p>
     <img src="img/oop28.png" alt="">
     <code>
-<pre>
+<pre class="code-fullwidth">
     from abc import ABCMeta, abstractmethod
     class Product(metaclass=ABCMeta):
         def return_policy(self):
@@ -2348,7 +2348,7 @@ Product buy method
     <p>Let us extend the concept of abstract further. All products must have a return_policy() method which will display
         the number of days within which the products have to be returned </p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Product:
     def return_policy(self):
         pass
@@ -2362,7 +2362,7 @@ class Shoe(Product):
     <p>Now each type of product will have its own return_policy(), so we will override the return_policy() in each of
         the child classes.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Product:
     def return_policy(self):
         pass
@@ -2379,7 +2379,7 @@ class Shoe(Product):
     <p>Since the return_policy() is overridden in each of the child classes, the parent class return_policy() is never
         used and hence it becomes redundant.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Product:
     def return_policy(self):
         pass
@@ -2410,7 +2410,7 @@ All shoes must be returned within 7 days of purchase
         return_policy() of furniture by invoking the method, it will invoke the redundant return_policy() of the parent
     </p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     from abc import ABCMeta
     class Product(metaclass=ABCMeta):
         def return_policy(self):
@@ -2429,7 +2429,7 @@ All shoes must be returned within 7 days of purchase
         of Product class MUST override the abstract method. We can make our return_policy() an abstract method as shown
         below:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     from abc import ABCMeta, abstractmethod
     class Product(metaclass=ABCMeta):
         @abstractmethod
@@ -2440,7 +2440,7 @@ All shoes must be returned within 7 days of purchase
     <h4>Instantiating abstract class</h4>
     <p>Even if one method is abstract, then we will get an error if we try to instantiate the class.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     from abc import ABCMeta, abstractmethod
     class Product(metaclass=ABCMeta):
         @abstractmethod
@@ -2458,7 +2458,7 @@ All shoes must be returned within 7 days of purchase
     <p>If a method is abstract, then the Subclass must override the abstract method. Else we cannot instantiate the
         subclass also.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     from abc import ABCMeta, abstractmethod
     class Product(metaclass=ABCMeta):
         @abstractmethod
@@ -2479,7 +2479,7 @@ All shoes must be returned within 7 days of purchase
     <p>If a child class overrides the abstract method, then its own child classes need not override the abstract method.
     </p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     from abc import ABCMeta, abstractmethod
     class Product(metaclass=ABCMeta):
         @abstractmethod
@@ -2524,7 +2524,7 @@ All shoes must be returned within 7 days of purchase
         price is invalid or price is beyond the credit card balance, we can transfer the control to an except block by
         raising an exception. In Python, we can raise exception by using the raise keyword.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class CreditCard:
     def __init__(self, card_no, balance):
         self.card_no = card_no
@@ -2561,7 +2561,7 @@ while(True):
     <p>We can do this by raising exception with a message as shown. In this approach, the print statements/presentation
         are not mixed with the business logic. If we don’t use exceptions.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class CreditCard:
     def __init__(self,card_no,balance):
         self.card_no=card_no
@@ -2600,7 +2600,7 @@ while(True):
     <p>The solution is to create custom exceptions. Exception is an inbuilt class in python and we can create our own
         exception by inheriting the Exception class as shown:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class InvalidPrice(Exception):
     pass
 class WrongCard(Exception):
@@ -2613,7 +2613,7 @@ class WrongCard(Exception):
     <p>We can use raise these custom exceptions and handle them differently in our except block as shown:
     </p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class InvalidPrice(Exception):
     pass
 class WrongCard(Exception):
@@ -2655,7 +2655,7 @@ while(True):
     <h4>Custom exceptions - Order of except</h4>
     <p>Can you guess what will be the output of the below code?</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class InvalidPrice(Exception):
     pass
 class WrongCard(Exception):
@@ -2678,7 +2678,7 @@ Exception
         Exception is parent class to InvalidPrice it can handle the exception of type InvalidPrice.</p>
     <p>Therefore, the parent class except blocks must always come after the child class except block</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class InvalidPrice(Exception):
     pass
 class WrongCard(Exception):
@@ -2697,7 +2697,7 @@ except Exception as e:
     <h4>In-built exceptions - Order of except</h4>
     <p>What is the output of the below code?</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 try:
     1/0
 except Exception:

@@ -170,7 +170,7 @@
         <h4>Selection Constructs</h4>
         <p>if-else statements</p>
         <code>
-<pre>
+<pre class="code-fullwidth">
     if (Runway=="free") then
        display "Land"
     else if (Fuel_Status=="low") then
@@ -301,7 +301,7 @@
         </table>
         <p>In Python, the data type of a value can be identified by using type(value).</p>
         <code>
-<pre>
+<pre class="code-fullwidth">
     print(type(3))
     print(type("Hello World"))
     print(type(False))
@@ -328,7 +328,7 @@
             <li>During output, we display the computed values in variables to the end users.</li>
         </ul>
         <code>
-<pre>
+<pre class="code-fullwidth">
     num=100 
     msg="Hello"
 </pre>
@@ -425,7 +425,7 @@
             and Multiplication, followed by Addition and Subtraction.
         </p>
         <code>
-<pre>
+<pre class="code-fullwidth">
     5+4*9%(3+1)/6-1
     O/P:
     4
@@ -444,7 +444,7 @@
         <hr />
         <h3>Implicit & Explicit Type Conversion</h3>
         <code>
-<pre>
+<pre class="code-fullwidth">
     num=1 + 1.0
     The result is 2.0 !
 </pre>
@@ -457,7 +457,7 @@
         <p>If we want the output as 2, then we have to explicitly convert the float 1.0 into integer 1. This is known as
             explicit conversion. Explicit conversion involves mentioning the data type within brackets explicitly.</p>
         <code>
-<pre>
+<pre class="code-fullwidth">
     num=1 + int(1.0)
     The result will be 2 !
 </pre>
@@ -514,7 +514,7 @@
         <img src="img/pic22.png" alt="">
         <h4>Formatting Output</h4>
         <code>
-<pre>
+<pre class="code-fullwidth">
     print("Let's see some examples.\n\nDid you notice the empty lines?")
     print("Do you notice\t the tab space?\nDid you see that I have moved to next line?")
     print("Do you want a \" in your text?")
@@ -544,7 +544,7 @@
         <img src="img/pic5.png" alt="">
         <p>Let's see how we can use return in different ways in a function.</p>
         <code>
-<pre>
+<pre class="code-fullwidth">
     #Code1
     print("code-1")
     def func1(a,b):
@@ -620,7 +620,7 @@
         <h4>Selection Control Structures</h4>
         <p>if-else, else if ladder, nested if</p>
         <code>
-<pre>
+<pre class="code-fullwidth">
     ticket_status="Confirmed"
     luggage_weight=32
     weight_limit=30  #Weight limit for the airline
@@ -652,7 +652,7 @@
             the sequence, the loop runs once.</p>
         <img src="img/pic24.png" alt="">
         <code>
-<pre>
+<pre class="code-fullwidth">
     print("Flight has landed")
     print("Proceed for immigration check")
     for passenger_count in 1,2,3,4,5:
@@ -665,7 +665,7 @@
             difference of step between each value. </p>
         <p>It is not mandatory to give step. The default value of step is 1.</p>
         <code>
-<pre>
+<pre class="code-fullwidth">
     start=1
     end=10
     step=2
@@ -689,7 +689,7 @@
             called as while loop.</p>
         <img src="img/pic23.png" alt="">
         <code>
-<pre>
+<pre class="code-fullwidth">
     baggage_count=100
     no_of_baggage_picked=0
     while(baggage_count>0):
@@ -700,7 +700,7 @@
     </code>
         <p>Nested Loops- loop inside another loop</p>
         <code>
-<pre>
+<pre class="code-fullwidth">
     number_of_passengers=5
     number_of_baggage=2
     security_check=True
@@ -740,7 +740,7 @@
             use
             continue statement.</p>
         <code>
-<pre>
+<pre class="code-fullwidth">
     for passenger in "A","A", "FC", "C", "FA",  "SP", "A", "A":
     if(passenger=="FC" or passenger=="FA"):
         print("No check required")
@@ -849,7 +849,7 @@
         <h4>List iteration</h4>
         <p>Iteration in lists can be done using while,for loops</p>
         <code>
-<pre>
+<pre class="code-fullwidth">
     list_of_airlines=["AI","EM","BA"]
 
     print("Iterating the list using range()")
@@ -867,7 +867,7 @@
             Instead
             we can check using if..in syntax.</p>
         <code>
-<pre>
+<pre class="code-fullwidth">
     list_of_airlines=["AI","EM","BA"]
 
     airline="AI"
@@ -908,7 +908,7 @@
         </table>
         <p>extract the airlines from the 1st to the 3rd index positions</p>
         <code>
-<pre>
+<pre class="code-fullwidth">
     sub_list = list_of_airlines[1:4] 
 </pre> 
 </code>
@@ -921,7 +921,7 @@
         <p>Negative indices can also be used for slicing.</p>
         <p> Also list_of_airlines[-4:-1] will give us the same output as list_of_airlines[1:4]</p>
         <code>
-<pre>
+<pre class="code-fullwidth">
     list_of_airlines=["AI","SJ","JA","EM","AA"]
     print("1)",list_of_airlines[1:4])
     print("2)",list_of_airlines[-4:-1])
@@ -952,7 +952,7 @@
 </code>
         <h4>List of Lists</h4>
         <code>
-<pre>
+<pre class="code-fullwidth">
     #This is a list of lists
     #Stores airline and number of flights operated by them
     airline_details=[["AI",8], ["EM",10],["BA",7]]
@@ -1083,7 +1083,7 @@
         <img src="img/pic25.png" alt="">
         <img src="img/pic26.png" alt="">
         <code>
-<pre>
+<pre class="code-fullwidth">
     #Creating a tuple
     lunch_menu=("Welcome Drink","Veg Starter","Non-Veg Starter","Veg Main Course","Non-Veg Main Course","Dessert")
     
@@ -1150,7 +1150,7 @@
             a
             string. All the remaining operations are similar to lists. But like tuple, strings are also IMMUTABLE.</p>
         <code>
-<pre>
+<pre class="code-fullwidth">
     #Creating a string
     pancard_number="AABGT6715H"
     
@@ -1252,7 +1252,7 @@
             </tbody>
         </table>
         <code>
-<pre>
+<pre class="code-fullwidth">
     boarding_call="Good Evening, this is the final call to AI passengers for the flight AI 466 which is planned to take off at 8.40A.M."
 
     if(boarding_call.startswith("Good Evening")):
@@ -1312,7 +1312,7 @@
                 <tr>
                     <td>Iterating through the dictionary</td>
                     <td>
-                        <pre>for key,value in crew_details.items():
+                        <pre class="code-fullwidth">for key,value in crew_details.items():
         print(key,":",value)
 </pre>
                     </td>
@@ -1345,7 +1345,7 @@
             </tbody>
         </table>
         <code>
-<pre>
+<pre class="code-fullwidth">
     #Creating a dictionary
     crew_details={
                 "Pilot":"Kumar",
@@ -1447,7 +1447,7 @@
             </tbody>
         </table>
         <code>
-<pre>
+<pre class="code-fullwidth">
     #list of passengers
     passengers_list=["George","Annie", "Jack","Annie","Henry", "Helen","Maria","George","Jack","Remo"]
     
@@ -1509,7 +1509,7 @@
             the random module.
         </p>
         <code>
-<pre>
+<pre class="code-fullwidth">
     import random
     x=10
     y=50
@@ -1521,7 +1521,7 @@
         <h4>math</h4>
         <img src="img/pic28.png" alt="">
         <code>
-<pre>
+<pre class="code-fullwidth">
     import math
     num1=234.01
     num2=6
@@ -1574,7 +1574,7 @@
             </tbody>
         </table>
         <code>
-<pre>
+<pre class="code-fullwidth">
     import time
     import datetime
     
@@ -1638,7 +1638,7 @@
             In python we will observe the following:</p>
         <img src="img/pic14.png" alt="">
         <code>
-<pre>
+<pre class="code-fullwidth">
 def display1(flight_number, seating_capacity):
     print("Flight Number:", flight_number)
     print("Seating Capacity:", seating_capacity)
@@ -1730,7 +1730,7 @@ Total baggage weight in kg: 25
             Once the except block is executed, the code continues to execute other statements outside except block.
         </p>
         <code>
-<pre>
+<pre class="code-fullwidth">
 #calculating airport expenditure
 def calculate_expenditure(list_of_expenditure):
     total=0
@@ -1764,7 +1764,7 @@ Returning back from function.
                     <td>ZeroDivisionError</td>
                     <td>When a value is divided by zero</td>
                     <td>
-                        <pre>
+                        <pre class="code-fullwidth">
                 num_list=[]
                 total=10
                 avg=total/len(num_list)</pre>
@@ -1775,7 +1775,7 @@ Returning back from function.
                     <td>TypeError</td>
                     <td>When we try to do an operation with incompatible data types</td>
                     <td>
-                        <pre>
+                        <pre class="code-fullwidth">
                 total=10
                 total+="20"
             </pre>
@@ -1785,7 +1785,7 @@ Returning back from function.
                     <td>NameError</td>
                     <td>When we try to access a variable which is not defined</td>
                     <td>
-                        <pre>
+                        <pre class="code-fullwidth">
                 avg=total/10 where total is not defined
             </pre>
                     </td>
@@ -1794,7 +1794,7 @@ Returning back from function.
                     <td>IndexError</td>
                     <td>When we try to access an index value which is out of range</td>
                     <td>
-                        <pre>
+                        <pre class="code-fullwidth">
                 num_list=[1,2,3,4]
                 value=num_list[4]
             </pre>
@@ -1806,7 +1806,7 @@ Returning back from function.
                         for
                         it</td>
                     <td>
-                        <pre>
+                        <pre class="code-fullwidth">
                 #string is a valid data type for int() but the 
                 value “A” is invalid, as "A" can't be 
                 converted into int.
@@ -1823,7 +1823,7 @@ Returning back from function.
             action or message for every unique error that occurs.</p>
         <p>Here is the same expenditure calculation code with additional average expenditure calculation.</p>
         <code>
-<pre>
+<pre class="code-fullwidth">
 def calculate_expenditure(list_of_expenditure):
     total=0
     try:
@@ -1861,7 +1861,7 @@ calculate_expenditure(list_of_values)
             to
             the function call where we have another opportunity to catch it. </p>
         <code>
-<pre>
+<pre class="code-fullwidth">
 def calculate_sum(list_of_expenditure):
     total=0
     try:
@@ -1898,7 +1898,7 @@ Name error occured
             block will ALWAYS be executed.</p>
 
         <code>
-<pre>
+<pre class="code-fullwidth">
     balance=1000
     amount="300Rs"
     def take_card():
@@ -1956,7 +1956,7 @@ Name error occured
         <h4>Importing packages</h4>
         <p>Let's assume that the ManageFlights.py inside Flights package has the below code:</p>
         <code>
-<pre>
+<pre class="code-fullwidth">
     airline="Smart Airlines"
     def add(no_of_flights):
         print(no_of_flights," flights added to the fleet")
@@ -1967,14 +1967,14 @@ Name error occured
             the ManageFlights module and use it.</p>
         <p>Import can be done in two ways:</p>
         <code>
-<pre>
+<pre class="code-fullwidth">
     Method 1:
     from Flights import ManageFlights #from packagename import modulename
     ManageFlights.add(10)
 </pre>
 </code>
         <code>
-<pre>
+<pre class="code-fullwidth">
     Method 2:
     import Flights.ManageFlights #import packagename.modulename
     Flights.ManageFlights.add(10)
@@ -1988,7 +1988,7 @@ Name error occured
         <p>Employees->Manage.py->add()</p>
         <p>To avoid naming conflicts during import we can use one of the below techniques:</p>
         <code>
-<pre>
+<pre class="code-fullwidth">
 method1:
 import Flights.Manage
 import Employees.Manage
@@ -2045,7 +2045,7 @@ add2()
             close
             all the files, once the operations are completed.</p>
         <code>
-<pre>
+<pre class="code-fullwidth">
     flight_file=open("flight.txt","w")
     flight_file.write("Hello")
     flight_file.close()
@@ -2057,7 +2057,7 @@ add2()
             exception.
             In such a case, let's see how we can use try except block to catch this exception.</p>
         <code>
-<pre>
+<pre class="code-fullwidth">
  try:
     flight_file=open("flight.txt","r")
     text=flight_file.read()
@@ -2075,7 +2075,7 @@ except:
         <p>When we want to write a code that will run in all situations, we can put it in a finally block.
             Since closing a file is necessary we can do it in the finally block instead of in the try block.</p>
         <code>
-<pre>
+<pre class="code-fullwidth">
 try:
     flight_file=open("flight.txt","r")
     text=flight_file.read()
@@ -2099,7 +2099,7 @@ finally:
 <p>While normal functions are defined using the def keyword in Python, anonymous functions are defined using the lambda keyword. Hence, anonymous functions are sometimes also referred to as lambda functions, and they are often used interchangeably.</p>
 <p>You need to keep in your knowledge that lambda functions are syntactically restricted to a single expression.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     Syntax:
 
     lambda arguments: expression
@@ -2107,7 +2107,7 @@ finally:
 </code>
 <p>The main advantage of using the lambda function is executing a lambda function that evaluates its expression and then automatically returns its result. So there’s always an implicit return statement. That’s why some people refer to lambdas as single expression functions. </p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     code with def function:
 
     def squares(num):
@@ -2121,7 +2121,7 @@ finally:
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     code with lambda function:
 
     f = lambda x:x**2
@@ -2131,7 +2131,7 @@ finally:
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     string ='GeeksforGeeks'
     # lambda returns a function object
     print(lambda string : string)
@@ -2141,7 +2141,7 @@ finally:
 </code>
 <p>Lambda functions are often used with other functions to solve complex tasks within a few lines rather than a block of code. These functions are namely filter, map, and reduce.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
 #1 With list comprehensions
 tables = [lambda x=x: x*10 for x in range(1, 11)]
 for table in tables:
@@ -2194,7 +2194,7 @@ and this goes on till the end of the list like (((((5+8)+10)+20)+50)+100).*/
 <p>The filter() function, as the name suggests, will create a new list and store only the elements that satisfy a particular condition and will filter out the remaining values.</p>
 <p>The filter() operation takes a function object and an iterable and creates a new list. A successful computation is performed whenever the condition is satisfied and returns true.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     Print only the even numbers for a list of elements.
 
     def even(a):
@@ -2211,7 +2211,7 @@ and this goes on till the end of the list like (((((5+8)+10)+20)+50)+100).*/
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     #filter(function, sequence)
 
     a = [1, 2, 3, 4, 5]
@@ -2222,7 +2222,7 @@ and this goes on till the end of the list like (((((5+8)+10)+20)+50)+100).*/
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
 # function that filters vowels
 def fun(variable):
 	letters = ['a', 'e', 'i', 'o', 'u']
@@ -2247,7 +2247,7 @@ e
 <p>The map() function iterates through all items in the given iterable and executes the function we passed as an argument on each of them. This is similar to the filter() function.</p>
 <p>It can be used to obtain Boolean values of true and false on the conditional list or just map each element to its respective output.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     Print the squares of each element in a list.
 
     def square(a):
@@ -2264,7 +2264,7 @@ e
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     #map(fun, iter)
 
     a = [1, 2, 3, 4, 5]
@@ -2275,7 +2275,7 @@ e
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
 #1
 def addition(n):
     return n + n
@@ -2314,7 +2314,7 @@ OP:
 <p>Unlike the previous two functions, namely filter() and map(), the reduce function works slightly different. It goes through the list of iterable numbers and proceeds to return only a single value.</p>
 <p>This function can be useful in performing calculations like addition or multiplication of a list with a simple code rather than a longer code block.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     Print the product of all the elements in the list.
 
     def prod(a):
@@ -2330,7 +2330,7 @@ OP:
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     from functools import reduce
 
     a = [1, 2, 3, 4, 5]
@@ -2344,7 +2344,7 @@ OP:
 <h4>List comprehensions:</h4>
 <p>List comprehensions offer a succinct way to create lists based on existing lists. When using list comprehensions, lists can be built by leveraging any iterable, including strings and tuples.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     syntax:
 
     newlist = [expression for item in iterable if condition == True]
@@ -2357,7 +2357,7 @@ OP:
 <p>You can set the outcome to whatever you like</p>
 <p>The expression can also contain conditions, not like a filter, but as a way to manipulate the outcome:</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
     newlist = [x for x in fruits]
     print(newlist)
@@ -2388,7 +2388,7 @@ OP:
 </code>
 <p>You can also replicate nested if statements with a list comprehension:</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     number_list = [x for x in range(100) if x % 3 == 0 if x % 5 == 0]
     print(number_list)
     OP:
@@ -2399,7 +2399,7 @@ OP:
 </p>
 <p>Nested Loops in a List Comprehension</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     my_list = []
 
     for x in [20, 40, 60]:
@@ -2413,7 +2413,7 @@ OP:
 </code>
 <p>beginning with the x * y operation. This will be followed by the outer for loop, then the inner for loop.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     my_list = [x * y for x in [20, 40, 60] for y in [2, 4, 6]]
     print(my_list)
     OP:

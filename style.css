@@ -111,3 +111,13 @@ hr {
   display: block;
   margin-bottom: 1em;
 }
+
+@media(max-width:768px) {
+  html{
+    padding-left: 4%;
+  }
+  body{
+    margin: 2% auto;
+    max-width: 100%;
+  }
+}

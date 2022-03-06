@@ -49,7 +49,7 @@
 <h4>How to write CSS style rules?</h4>
 <p>CSS is a style sheet markup language. CSS styles are written as a property value pair.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     Syntax:
 
     property: value   
@@ -76,7 +76,7 @@
 <h4>Inline Styling</h4>
 <p>We can use the style attribute to specify the styling. This is referred to as inline styling. We can style only one element at a time using Inline styling</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lt!DOCTYPE html>
     &lthtml>
     &lthead>
@@ -102,7 +102,7 @@
 <p>We can specify the style rules separately within the style tag in an HTML web page. This is referred to as internal/embedded styling as we embed the styling along with HTML</p>
 <p>Internal styling affects only the HTML elements of the webpage in which the internal style rules are written</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lt!DOCTYPE html>
     &lthtml>
     &lthead>
@@ -140,7 +140,7 @@
 <p>We can specify the styling in a separate file. This is referred to as external styling.</p>
 <p>We save the external file with a .css extension. The external CSS file is included in the HTML webpage using the Link tag</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &ltlink rel="stylesheet" type="text/css" href="style.css">
 
 </pre>
@@ -154,7 +154,7 @@
     The href attribute specifies the name and path of the external CSS file to be included</p>
 
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lt!DOCTYPE html>
     &lthtml>
     &lthead>
@@ -175,7 +175,7 @@
 </code>
 <p>mystyle.css</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     body {
         font-size: large;
       }
@@ -196,7 +196,7 @@
 <p>In order to import CSS files, we need to write the import statement within the style tag.</p>
 <p>Syntax:</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &ltstyle type="text/css">
         @import url("http://www.xyz.com/style.css")
    &lt/style>
@@ -207,7 +207,7 @@
 
     Consider a CSS file style.css</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     body {
         background-color: lightgrey;
       }
@@ -224,7 +224,7 @@
 <p>If you need to import this style.css file within another CSS file say sample.css file, then you can import as shown below</p>
 
 <code>
-<pre>
+<pre class="code-fullwidth">
     @import url('style.css')
     div {
       border: lightgrey dashed 3px;
@@ -248,7 +248,7 @@
 <p>Element selectors are used for styling elements </p>
 <p>We can style the elements by selecting them using element selector as shown below</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     body {
         background-color: lightgrey;
       }
@@ -261,7 +261,7 @@
 <p>Id selectors are used for styling an element specifically</p>
 <p>We can use the id selector as shown below</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     #pid {
         background-color: yellow;
         color: green;
@@ -271,7 +271,7 @@
 </code>
 <p>We can add an id attribute to the HTML element as shown below</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &ltp id="pid">Paragraph1</p>
 
 </pre>
@@ -284,7 +284,7 @@
 <p>Class selectors are used for providing the same styling for multiple elements.</p>
 <p>Class selectors can be used as shown below</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     .red {
         color: red;
     }
@@ -293,7 +293,7 @@
 </code>
 <p>We apply a class to the HTML using the class attribute</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &ltp class="red">Paragraph1&lt/p>
     &ltp class="red">Paragraph2&lt/p>
     
@@ -310,7 +310,7 @@
     We separate the parent and child elements using space while writing the style rules using contextual selectors.</p>
 <p>We can use contextual selectors as shown below</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &ltdiv>
         &ltp class="red">Paragraph1&lt/p>
         &ltp class="red">Paragraph2&lt/p>
@@ -319,7 +319,7 @@
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     div p {
         background-color: yellow;
         color: green;
@@ -341,7 +341,7 @@
     The multiple HTML elements that we group to provide a common styling should be separated using a comma.</p>
 <p>We can group the selectors as shown below</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     h1,h2,h3 {
         color: maroon;
       }
@@ -364,7 +364,7 @@
 <p>Example:
 </p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     border: inherit
 </pre>
 </code>
@@ -374,7 +374,7 @@
 <p>Both the first and second paragraphs are present within a div tag, and the div tag is applied with color and background-color, but the paragraphs are not applied with any styling. But the paragraph tags inherit the styling from their parent element.</p>
 <p>Observe the below code </p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lth1>Train Reservation Login&lt/h1> 
 	&ltp style="font-size: 20px;"> Train reservation system website can be used to book trains for different destinations.&ltbr>
 		&ltspan style="font-size: 80%;">Please login to book your train.&lt/span> 
@@ -385,7 +385,7 @@
 <p>If the span is not applied with font-size then it will inherit from the paragraph and the font-size of p will be 20px.</p>
 <p>Observe the below code</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &ltbody>
         &lth1>Train Reservation Login&lt/h1> 
             &ltp style="font-size: 20px;"> Train reservation system website can be used to book trains for different destinations.&ltbr>
@@ -402,7 +402,7 @@
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     body {
         width: 500px;
         height: 300px;
@@ -414,7 +414,7 @@
 <p>The border property is applied to the body tag but the h1, p, and form tags will not be applied with border. This is because border property is not inherited.</p>
 <p>But if we provide border: inherit to the form tag then the form will inherit the border property.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &ltform style="border:inherit" id="login_form">&ltbr>
         Enter your Username: &ltinput type="text">&ltbr>&ltbr>
         Enter your Password: &ltinput type="password">&ltbr>&ltbr>                
@@ -437,7 +437,7 @@
 <img src="img/c16.PNG" alt="">
 
 <code>
-<pre>
+<pre class="code-fullwidth">
     &ltbody>
         &lta href="Home.html">Home&lt/a>|
         &lta href="Login.html">Login&lt/a>|
@@ -448,7 +448,7 @@
 </code>
 <p>We can apply pseudo-classes to link as shown below</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     a:hover {
         background-color: black;
         color: white;
@@ -467,7 +467,7 @@
     </p>
    
 <code>
-<pre>
+<pre class="code-fullwidth">
     &ltbody>
         &lth1>Register Form&lt/h1>
         &ltform>
@@ -482,7 +482,7 @@
 </code>
 <p>We can apply pseudo-classes to input elements as shown below</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     input[type="text"]:enabled {
         background-color: lightblue;
       }
@@ -496,7 +496,7 @@
 <p>The first letter of the paragraph is rendered in bigger font-size and purple color using the :first-letter pseudo-class.
 <p>We can apply the :first-letter pseudo-class as shown below</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     p::first-letter {
         color: #8a2be2;
         font-size: 200%;
@@ -520,7 +520,7 @@
 <img src="img/c19.png" alt="">
 <p> Let us see the usage of relational selectors in the below example.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lthtml>
         &lthead>
         &lttitle>Relational Selectors&lt/title>
@@ -547,7 +547,7 @@
 </code>
 <p>selector.css</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     p
     {
         margin-left:50px;
@@ -595,7 +595,7 @@
 
 </ul>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lt!DOCTYPE html>
 
     &lthead>
@@ -640,7 +640,7 @@
 <p> Let us see the usage of attribute selectors in the below example.</p>
 <p>Attributeselector.html</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lt!DOCTYPE html>
     &lthtml> 
     &lthead>
@@ -662,7 +662,7 @@
 </code>
 <p>selector.css</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     input[type="text"] {
         background-color: lightblue;
         width: 150px;
@@ -681,7 +681,7 @@
 <p>Output</p>
 <img src="img/c23.jpg" alt="">
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lt!DOCTYPE html>
     &lthtml>
     
@@ -756,7 +756,7 @@
 <li>Avoid usage of ID selectors as much as possible, since they are of higher specificity, it is difficult to override them at a later point.</li>
 </ul>
 <code>
-<pre>
+<pre class="code-fullwidth">
     p,
     h4,
     h5{
@@ -766,7 +766,7 @@
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     p,h4,h5{
         text-align: left /* Not an appropriate way to apply CSS for multiple selectors. */
         }
@@ -817,7 +817,7 @@
 <p>3 refers to the number of elements</p>
 <p>The style rule with the highest specificity always wins.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &ltsection class="sclass" id="sid"> 
         &ltp class="pclass" id="pid">Cascading order&lt/p> 
     &lt/section> 
@@ -825,7 +825,7 @@
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     #sid #pid {
         color: blue;
       }
@@ -843,7 +843,7 @@
 <h4>!important Keyword </h4>
 <p>In case if any style property is important, and should not be overwritten by any, other selectors, we can specify the !important keyword against the property. </p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     color: limegreen !important; 
 
 </pre>
@@ -852,7 +852,7 @@
 <h4>Overview of Cascading Order</h4>
 <p>Selectors priority:</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &ltbody> 
         &ltsection class="sclass" id="sid"> 
             &ltp class="pclass" id="pid">Cascading order&lt/p> 
@@ -862,7 +862,7 @@
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     #sid {
         color: red !important;
       }
@@ -878,7 +878,7 @@
 
 <p>!important Keyword:</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     #pid {
         color: red !important;
       }
@@ -896,7 +896,7 @@
     
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     p#pid {
         color: green;
       }
@@ -910,7 +910,7 @@
 <p>Hence paragraph will be rendered in red color</p>
 
 <code>
-<pre>
+<pre class="code-fullwidth">
     #sid #pid {
         color: blue;
       }
@@ -931,7 +931,7 @@
     
     When you create a paragraph in HTML and when you check the styling in developer tools you will observe some default style is added by the browser</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     p {
         display: block;
         -webkit-margin-before: 1em;
@@ -947,7 +947,7 @@
 <h4>Demo : Cascading Order</h4>
 <p>Understand the usage of attribute selectors</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lt!DOCTYPE html>
     &lthtml> 
     &lthead> 
@@ -965,7 +965,7 @@
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     sid {
         color: blue;
         font-size: 10px;
@@ -1001,7 +1001,7 @@
 
 </ul>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lt!DOCTYPE html>
     &lthtml>
     &lthead>
@@ -1072,7 +1072,7 @@
     Let us learn about opacity property.</p>
 <p>We can use the opacity property to change the opacity or transparency level of the HTML elements. Using this property the opacity of the entire element changes.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     div
     {
        background-color:red;
@@ -1088,7 +1088,7 @@
 </ul>
 <p>opacity.html</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lthtml>
         &lthead>
         &lttitle>Opacity Property&lt/title>
@@ -1107,7 +1107,7 @@
 </code>
 <p>opacity.css</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     #parent
     {
         background-color:#2196f3;
@@ -1146,7 +1146,7 @@
 <p>Ex: RGBA(0,255,0,0.7);</p>
 <img src="img/c29.jpg" alt="">
 <code>
-<pre>
+<pre class="code-fullwidth">
     #parent
     {
         background-color:#2196f3;
@@ -1182,7 +1182,7 @@
     <li>Along with opacity, we will be able to specify saturation and lightness.</li>
 </ul>
 <code>
-<pre>
+<pre class="code-fullwidth">
     Ex : HSL(240,100%,50%);
 
     Ex: HSLA(128,70%,20%,0.15);
@@ -1190,7 +1190,7 @@
 </code>
 <h4>Demo : Color Models</h4>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lthtml>
         &lthead>
         &lttitle>CSS3 Colors&lt/title>
@@ -1215,7 +1215,7 @@
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     #color_rgba {
         background-color:rgba(255, 193,7,0.38);
         color:#fff;
@@ -1245,7 +1245,7 @@
 <h4>Tryout : Color Models</h4>
 <p>Observe how colors are applied to the div elements using RGBA, HSL, and HSLA color models.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lt!DOCTYPE html>
     &lthtml>
     
@@ -1338,38 +1338,38 @@
 <p>The font property is a shorthand for font-style, font-variant, font-weight, font-stretch, font-size, line-height, and font-family
 </p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     font-family: "comic sans ms", Arial;
 </pre>
 </code>
 <p>font-style: Specifies the style of the font. Values can be normal (default), italic, oblique</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     font-style: italic;
 </pre>
 </code>
 <p>font-variant: Specifies the variant of the font. Values can be normal (default) and small-caps</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     font-variant: small-caps;
 </pre>
 </code>
 <p>font-size: Specifies the size of the font. Values can be x-small, small, medium, large, and can be a specific number with pixels unit.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     font-size: x-small;
     font-size: 20px;    
 </pre>
 </code>
 <p>font-weight: Specifies the weight of the font. Values can be normal, bold, bolder, light, x-large.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     font-weight: bold;
 </pre>
 </code>
 <p>line-height: Specifies the height of the line.When line-height is specified without unit, then the number will be multiplied with font-size.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     line-height: 10px;
     line-height: 1cm;
     line-height: 0.5;    
@@ -1383,7 +1383,7 @@
 <p>Assign a name to our custom font and specify the source of our font file.</p>
 <p>syntax </p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     @font-face {
         font-family: name;
         src: url(“pathofthecustomfontfile.”);
@@ -1393,7 +1393,7 @@
 </code>
 <h4>Demo : Font Properties</h4>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lt!DOCTYPE html>
     &lthtml> 
     &lthead> 
@@ -1413,7 +1413,7 @@
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     .fontfamily {
         font-family: "comic sans ms", Arial;
       }
@@ -1444,7 +1444,7 @@
 <img src="img/c36.PNG" alt="">
 <h4>Demo : Font Properties</h4>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lthtml>
         &lthead>
         &lttitle>Login Page&lt/title>
@@ -1465,7 +1465,7 @@
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     #login_form
     {
         width: 400px;
@@ -1530,42 +1530,42 @@
 
 <p>text-align: Specifies the horizontal alignment of the text</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     text-align: right;
 
 </pre>
 </code>
 <p>text-decoration: Specifies whether the text should be underlined or overlined. Values can be none (default), underline, overline, line-through</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     text-decoration: underline;
 
 </pre>
 </code>
 <p>text-transform: Specifies whether the text should be rendered in uppercase, lowercase, or camelcase. Values can be capitalized, uppercase, lowercase.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     text-transform: capitalize;
 
 </pre>
 </code>
 <p>letter-spacing: Specifies the spacing between the letters</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     letter-spacing: 90px;
 
 </pre>
 </code>
 <p>word-spacing: Specifies the spacing between the words</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     word-spacing: 90px;
 
 </pre>
 </code>
 <p>text-indent: Specifies the indentation of the text. Values can be left, right, center and justify</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     text-indent: 90px;
 
 </pre>
@@ -1574,7 +1574,7 @@
 
     The text-shadow property adds a shadow to the text of any HTML element</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     text-shadow: 10px 6px 2px black;
 
 </pre>
@@ -1585,7 +1585,7 @@
 <p>The fourth value specifies the shadow color. </p>
 <h4>Demo</h4>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lt!DOCTYPE html>
     &lthtml> 
     &lthead> 
@@ -1610,7 +1610,7 @@
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     .uppercase {
         text-transform: uppercase;
       }
@@ -1630,7 +1630,7 @@
 <img src="img/c38.PNG" alt="">
 <h4>Demo : Text Shadow</h4>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lthtml>
         &lthead>
         &lttitle>Login Page&lt/title>
@@ -1651,7 +1651,7 @@
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     #login_form
     {
         width: 400px;
@@ -1701,7 +1701,7 @@
 <h4>Demo : Multiple Text Shadows</h4>
 <p>We can provide multiple shadows to the text-shadow property by providing comma-separated values.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     #login_form
     {
         width: 400px;
@@ -1751,7 +1751,7 @@
 <h4>Demo : Glow Effect</h4>
 <p>Glow effect can be produced by providing zero value to the horizontal and vertical distance properties and by providing high value to blur distance property to the text-shadow property.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     #login_form
     {
         width: 400px;
@@ -1802,7 +1802,7 @@
 <h4>Tryout : Text Shadow</h4>
 <p>Observe how the text-shadow property is applied to the heading.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lt!DOCTYPE html>
     &lthtml>
     &lthead>
@@ -1836,7 +1836,7 @@
 <h4>Border Property</h4>
 <p>Let us understand how to provide a border to an HTML element. We can use the border property.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &ltbody>
         &lth3>Box model&lt/h3>
         &ltdiv>
@@ -1849,7 +1849,7 @@
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     div {
         border: 2px solid lightgrey;
       }
@@ -1864,7 +1864,7 @@
 <p>The border-style property can be specified as border-style-left, border-style-right, border-style-top, border-style-bottom</p>
 
 <code>
-<pre>
+<pre class="code-fullwidth">
     border: 3px dashed lightgrey;
 
 </pre>
@@ -1883,7 +1883,7 @@
 <p>border-bottom-right: can be used to provide bottom right radius</p>
 
 <code>
-<pre>
+<pre class="code-fullwidth">
     border: lightgrey dashed 3px;
     border-radius: 30px 15px 25px 50px;
     
@@ -1894,7 +1894,7 @@
 <p>We can specify the width and height to an HTML element as shown below</p>
 
 <code>
-<pre>
+<pre class="code-fullwidth">
     &ltbody>
         &lth3>Box model&lt/h3>
         &ltdiv>
@@ -1907,7 +1907,7 @@
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     div {
         border: lightgrey dashed 3px;
         width: 220px;
@@ -1920,7 +1920,7 @@
 <h4>Padding Property</h4>
 <p>Let us check out how we provide padding to the HTML element</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     border: lightgrey dashed 3px;
     padding: 20px;
     
@@ -1931,7 +1931,7 @@
 
     We can provide top, right, bottom and left padding specifically also</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     div {
         border: lightgrey dashed 3px;
         padding: 10px 20px 30px 40px;
@@ -1955,7 +1955,7 @@
 
     We can provide margin-top, margin-right, margin-bottom,margin-left values</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     div {
         border: lightgrey dashed 3px;
         padding: 20px;
@@ -1982,7 +1982,7 @@
 
 <h4>Tryout:Box Model</h4>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lt!DOCTYPE html>
     &lthtml lang="en">
       &lthead>
@@ -2072,7 +2072,7 @@
 </ul>
 <h4>Demo : Border Radius</h4>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lthtml>
         &lthead>
         &lttitle>Border-radius&lt/title>
@@ -2086,7 +2086,7 @@
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     div{
         width:200px;
         height:200px;
@@ -2101,7 +2101,7 @@
 <p> we observe that Each corner has a different border-radius value.</p>
 <h4>Tryout : Border Radius</h4>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lt!DOCTYPE html>
     &lthtml>
     
@@ -2144,7 +2144,7 @@
 <h4>Box Shadow</h4>
 <p>CSS3 allows us to add shadow to any element in the web page using the box-shadow property.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     box-shadow:5px 10px 6px 2px rgba(30,50,40,0.5);
 
 </pre>
@@ -2168,7 +2168,7 @@
 </ul>
 <h4>Demo : Box Shadow</h4>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lthtml>
         &lthead>
         &lttitle>Login Page&lt/title>
@@ -2189,7 +2189,7 @@
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     #login_form
     {
         width: 400px;
@@ -2238,7 +2238,7 @@
 <h4>Tryout : Box Shadow</h4>
 <p>Change the horizontal offset and vertical offset to negative values and also change the blur distance values of box-shadow property and observe the changes.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lt!DOCTYPE html>
     &lthtml>
      
@@ -2288,7 +2288,7 @@
 <p> Let us see the usage of the border-image shorthand property in the below example.</p>
 
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lthtml>
         &lthead>
         &lttitle>Border-Image&lt/title>
@@ -2302,7 +2302,7 @@
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     img
     {
         margin-left:150px;
@@ -2329,7 +2329,7 @@
 <h4>Demo : Border Image</h4>
 <p> Let us see the usage of the border-image property by specifying the properties individually in the below example.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lthtml> 
         &lthead> 
             &lttitle>Border Image&lt/title>
@@ -2343,7 +2343,7 @@
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     #myDIV 
     { 
         border: 15px solid transparent; 
@@ -2394,7 +2394,7 @@
 
 <h4> Demo : Translate</h4>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lthtml>
         &lthead>
             &lttitle>Translate Demo&lt/title>
@@ -2410,7 +2410,7 @@
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     img
     {
        width:200px;
@@ -2446,7 +2446,7 @@
 </ol>
 <h4>Demo : Scale</h4>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &ltbody>
         &ltimg src="images/Toy.jpg" alt="Toy">&lt/img>
         &ltimg id="scale" src="images/Toy.jpg" alt="ToyTranslate">&lt/img>
@@ -2454,7 +2454,7 @@
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     img
     {
        width:200px;
@@ -2495,7 +2495,7 @@
 </ol>
 <h4>Demo : Rotate</h4>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &ltbody>
         &ltimg src="images/Toy.jpg" alt="Toy">&lt/img>
         &ltimg id="rotate" src="images/Toy.jpg" alt="ToyRotate">&lt/img>
@@ -2503,7 +2503,7 @@
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     img
 {
    width:200px;
@@ -2528,7 +2528,7 @@ img#rotate
 
 <h4>Demo : Rotate</h4>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lt!DOCTYPE html>
     &lthtml>
     &lthead>
@@ -2578,7 +2578,7 @@ img#rotate
 </code>
 <img src="img/c70.png" alt="">
 <code>
-<pre>
+<pre class="code-fullwidth">
 ptable tr:hover{
     transform:rotate(5deg);
     background-color:#aaa;
@@ -2606,7 +2606,7 @@ ptable tr:hover{
 </ol>
 <h4>Demo : Skew</h4>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &ltbody>
         &ltimg src="images/Toy.jpg" alt="Toy">&lt/img>
         &ltimg id="skew" src="images/Toy.jpg" alt="ToySkew">&lt/img>
@@ -2614,7 +2614,7 @@ ptable tr:hover{
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     img
     {
     width:200px;
@@ -2639,7 +2639,7 @@ ptable tr:hover{
 
 <h4>Demo : Skew</h4>
 <code>
-<pre>
+<pre class="code-fullwidth">
     table tr:hover{
         transform: skew(7deg,7deg);
         background-color:#aaa;
@@ -2653,7 +2653,7 @@ ptable tr:hover{
 
 <h4>Tryout : Transformations</h4>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &lt!doctype html>
     &lthead>
         &lttitle>Transformations&lt/title>
@@ -2706,7 +2706,7 @@ ptable tr:hover{
     <li>The duration of the effect.</li>
 </ul>
 <code>
-<pre>
+<pre class="code-fullwidth">
     transition: height 3s;
 
 </pre>
@@ -2724,7 +2724,7 @@ ptable tr:hover{
 <p>The Cubic Bezier curve is defined by 4 points P0, P1, P2, and P3.</p>
 <p>P0 and P3 are the start and end of the curve hence they have values 0 and 1 by default. We specify the x and y coordinate values for P1 and P2 to the cubic bezier curve function.</p>
 <code>
-<pre>
+<pre class="code-fullwidth">
     cubic-bezier(x1,y1,x2,y2)
 
 </pre>
@@ -2745,7 +2745,7 @@ ptable tr:hover{
     <li>step-end which is equivalent to steps(1, end)</li>
 </ul>
 <code>
-<pre>
+<pre class="code-fullwidth">
     div
     {
         transition: 4s steps(4);
@@ -2760,14 +2760,14 @@ ptable tr:hover{
 <p>Line 3: The transition will be broken into 4 intervals.</p>
 <h4>Demo : Transitions</h4>
 <code>
-<pre>
+<pre class="code-fullwidth">
     &ltbody>
         &ltimg src="images/Toy.jpg" alt="ToyImage">&lt/img>
     &lt/body>
 </pre>
 </code>
 <code>
-<pre>
+<pre class="code-fullwidth">
     img{
         width: 100px;
         height: 100px;

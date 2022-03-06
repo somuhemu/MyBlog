@@ -72,7 +72,7 @@
         and shrink based on the elements added to or removed from it. Initially, it is created with a certain capacity
         and based on elements getting added or removed, the capacity is increased or decreased respectively.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     #Do not remove the below import statement
     import sys
     
@@ -114,7 +114,7 @@
         addition or insertion of elements.</p>
     <p>Algorithm steps:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     add(element):
     1. When the list is initially created, it is created with a certain capacity.
     2. While adding the elements, if the list is filled to the capacity,
@@ -127,7 +127,7 @@
     <p>Note: The space after adding the element can be used for further adding or inserting the elements. However, they
         should be considered only as reserved space. We cannot directly access that space.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     marias_lst=[]
     print("Empty list created!!!")
     print("List details:")
@@ -160,7 +160,7 @@
     <img src="img/ds8.png" style="height: 200px;width: auto;" alt="">
     <p>Algorithm steps:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     insert(pos, element):
     1. If the list is filled to capacity
        a. Create a new list with increased capacity
@@ -174,7 +174,7 @@
     <p>Note: The space after adding the element can be used for further adding or inserting the elements. However, they
         should be considered only as reserved space. We cannot directly access that space.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     marias_lst=[]
     marias_lst.append("Sugar")
     marias_lst.append("Tea Bags")
@@ -186,7 +186,7 @@
     <h4>Delete operation</h4>
     <p>Algorithm steps:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     delete(pos):
     1. Shift left all the existing elements from index 
        position (pos+1) by 1 position
@@ -205,7 +205,7 @@
         before displaing it.</p>
     <p>Here is a code that implements the look up functionality of an Organization's Directory.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Employee:
     def __init__(self, name, emp_id, email_id):
         self.__name=name
@@ -277,7 +277,7 @@ Henry Jack 23456 Jacky_xyz@organization.com
     <p>Creation of a node which contains item name, “Sugar”.</p>
     <code>
 
-<pre>
+<pre class="code-fullwidth">
 class Node:
     def __init__(self,data):
         self.__data=data
@@ -305,7 +305,7 @@ Sugar
     <p>To link the nodes and create a linked list, let’s create a new class, LinkedList with two attributes, head and
         tail both initialized to None as shown below.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     class LinkedList:
     def __init__(self):
         self.__head=None
@@ -321,7 +321,7 @@ Sugar
         the items in the list starting from the first item.</p>
     <p>Algorithm steps:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     display()
     1. Call the head node as temp
     2. While temp is not None,
@@ -334,7 +334,7 @@ Sugar
         list.</p>
     <p>Algorithm steps:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     add(data)
     1. Create a new node with the data
     2. If the linked list is empty (head node is not referring to any other node), 
@@ -348,7 +348,7 @@ Sugar
     <p>Maria wants to insert an item, Salt after Sugar in the linked list.</p>
     <p>Algorithm steps:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     insert(data,data_before)
     1. Create a new node with the given data
     2. If the data_before is None,
@@ -368,7 +368,7 @@ Sugar
     <p>Maria wants to delete the items, Sugar and Milk from linked list.</p>
     <p>Algorithm steps:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     delete(data):
     1. Find the node with the given data. If found,
        a. If the node to be deleted is head node, make the next node as head node
@@ -402,7 +402,7 @@ Sugar
     <p>After memory compaction, maximum contiguous free blocks is 50% and total free blocks is 50%.</p>
     <h4>implementation of memory compaction process</h4>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Node:
     def __init__(self,data):
         self.__data=data
@@ -683,7 +683,7 @@ Total free blocks: 60.0 %
     <h4>Push Operation</h4>
     <p>Algorithm steps:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     push(data):
     1. Check whether the stack is full. If full, display appropriate message
     2. If not,
@@ -694,7 +694,7 @@ Total free blocks: 60.0 %
     <h4>Pop operation</h4>
     <p>Algorithm steps:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     pop:
     1. Check whether the stack is empty. If empty, display appropriate message
     2. If not,
@@ -713,7 +713,7 @@ Total free blocks: 60.0 %
     <img src="img/ds20.png" alt="">
     <p>Here is a code that simulates undo- redo operation.</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Stack:
     def __init__(self,max_size):
         self.__max_size=max_size
@@ -837,7 +837,7 @@ Redo: ['A', 'B', 'C', 'D', 'E']
     <h4>Enqueue Operation</h4>
     <p>Algorithm steps:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     enqueue (data):
     1. Check whether queue is full. If full, display appropriate message
     2. If not,
@@ -849,7 +849,7 @@ Redo: ['A', 'B', 'C', 'D', 'E']
 
     <p>Algorithm steps:</p>
     <code>
-<pre>
+<pre class="code-fullwidth">
     dequeue()
     1. Check whether the queue is empty. If it is empty, display appropriate message
     2. If not,
@@ -871,7 +871,7 @@ Redo: ['A', 'B', 'C', 'D', 'E']
         this implementation.
     </p>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Queue:
     def __init__(self,max_size):
         self.__max_size=max_size
@@ -967,7 +967,7 @@ Couldn't print doc3 . Not enough pages in the printer.
 </code>
     <h4>Linked List & Queue -</h4>
     <code>
-<pre>
+<pre class="code-fullwidth">
 class Queue:
     def __init__(self,max_size):
         self.__max_size=max_size
