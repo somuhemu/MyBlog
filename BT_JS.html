@@ -1,0 +1,2779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+  <!--compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h3>JavaScript Fundamentals</h3>
+  A programming language to add Functionality to our web page.
+  <h4>Insert JS into HTML</h4>
+  <p>lets see how to insert JavaScript into your html file.you can do it
+    either by linking to an external file(.js) or inside the html file(script tags).
+  </p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j1">Code</button>
+  <div id="j1" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    index.html
+
+    &ltbody>
+        &lth1>JavaScript Sandbox: Section 1&lt/h1>
+        &ltscript src="app.js">&lt/script>
+    &lt/body>
+
+    app.js
+
+    alert('hello world')
+</pre>
+</code>
+  </div>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j2">Code</button>
+  <div id="j2" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    &ltbody>
+        &lth1>JavaScript Sandbox: Section 1lt/h1>
+        &ltscript>
+            alert('hello world')
+        &lt/script>
+    &lt/body>
+</pre>
+</code>
+  </div>
+  <h4>Comments</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j3">Code</button>
+  <div id="j3" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    //single line comment
+
+    /*
+    multiline
+    comments
+    */
+</pre>
+</code>
+  </div>
+  <h4>Using The Console</h4>
+  <p>The console gives us a way to test things,debug, to output things from our code.</p>
+  <p>Do inspect from the browser, in its console do type and can check the things.</p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j4">Code</button>
+  <div id="j4" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    app.js
+
+    console.log('Hello World');
+    console.log(123);
+    console.log(true);
+    var greeting = 'Hello';
+    console.log(greeting);
+    console.log([1,2,3,4]);
+    console.log({a:1, b:2});
+    console.table({a:1, b:2});
+    
+    console.error('This is some error');
+    console.clear();
+    console.warn('This is a warning');
+    
+    console.time('Hello');
+      console.log('Hello World');
+      console.log('Hello World');
+      console.log('Hello World');
+      console.log('Hello World');
+      console.log('Hello World');
+      console.log('Hello World');
+    console.timeEnd('Hello');
+</pre>
+</code>
+  </div>
+
+  <h4>Variables</h4>
+  <p>Can Reassign variables with var,let but not with const</p>
+  <p>variables can start with letters, numbers, _, $</p>
+  <p>variables Can not start with number</p>
+  <p>var, let, const</p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j5">Code</button>
+  <div id="j5" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    var name = 'John Doe';
+    console.log(name);
+    name = 'Steve Smith';
+    console.log(name);
+
+   // Init var
+    var greeting;
+    console.log(greeting); OP: undefined
+    greeting = 'Hello';
+    console.log(greeting);
+
+    //Multi word vars
+    var firstName = 'John';  camelCase
+    var first_name = 'Sara';  Underscore snake_case
+    var FirstName = 'Tom';  PascalCase
+    var firstName;
+
+    // LET
+    let name;
+    name = 'John Doe';
+    console.log(name);
+    name = 'Steve Smith';
+    console.log(name);
+
+    // CONST
+    const name = 'John';
+    console.log(name);
+    Can not reassign
+    name = 'Sara'; OP:error
+    Have to assign a value
+    const greeting; OP:error , missing initializer
+</pre>
+</code>
+  </div>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j6">Code</button>
+  <div id="j6" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    const person = {
+    name: 'John',
+    age: 30
+    }
+
+    person.name = 'Sara';
+    person.age = 32;
+    console.log(person);
+    //thus we can change the values in that obj but cannot 
+    //assign a new obj to person thats the difference okk.
+
+
+    const numbers = [1, 2, 3, 4, 5];
+    numbers.push(6);
+    //numbers=[5,1,2,4] OP:errr bcz this is whole new array again.
+    console.log(numbers);
+
+    //use const unless you plan to change that variable.
+</pre>
+</code>
+  </div>
+  <h4>Data Types</h4>
+  <p>There are two types of datatypes.</p>
+  <p>Primitive data types: Stored directly in the location the variable accesses.Accessed by actual value.Stored on
+    the stack.</p>
+  <p>Reference data types: Accessed by reference.Objects are stored on heap.A pointer to a location in memory.</p>
+  <p>JS is a dynamically typed language.The same variable can hold multiple types.</p>
+  <p>There are supersets of Js and addons to allow static typing.eg Typescript,Flow.</p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j7">Code</button>
+  <div id="j7" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    // PRIMITIVE -6
+
+    // String
+    const name = 'John Doe';
+    // Number
+    const age = 45;
+    // Boolean
+    const hasKids = true;
+    // Null
+    const car = null;
+    // Undefined
+    let test;
+    // Symbol
+    const sym = Symbol();
+    
+    // REFERENCE TYPES / Objects
+    // Array
+    const hobbies = ['movies', 'music'];
+    // Object literal
+    const address = {
+      city: 'Boston',
+      state: 'MA'
+    }
+    const today = new Date();
+    console.log(today);
+    console.log(typeof today);
+    //Functions,Dates etc are also reference type.
+</pre>
+</code>
+  </div>
+  <h4>Type Conversion</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j8">Code</button>
+  <div id="j8" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    let val;
+    // Number to string
+    val = String(555);
+    val = String(4+4);
+    // Bool to string
+    val = String(true);
+    // Date to string
+    val = String(new Date());
+    // Array to string
+    val = String([1,2,3,4]);
+    
+    // toString()
+    val = (5).toString();
+    val = (true).toString();
+    
+    // String to number
+    val = Number('5');
+    val = Number(true); 1
+    val = Number(false); 0
+    val = Number(null); 0
+    val = Number('hello'); NaN
+    val = Number([1,2,3]); NaN
+    
+    val = parseInt('100.30');
+    val = parseFloat('100.30');
+    
+    // Output
+    // console.log(val);
+    // console.log(typeof val);
+    // //console.log(val.length); works  only with strings.
+    // console.log(val.toFixed(2)); works only with numbers.
+    
+    //type coheresion(js does it for us we don't need to do anything) :
+    //6 changed to str and contated with 5(str)
+    const val1 = String(5);
+    const val2 = 6;
+    const sum = Number(val1 + val2);
+    
+    console.log(sum); 56
+    console.log(typeof sum); String
+</pre>
+</code>
+  </div>
+  <h4>Numbers & Math object</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j9">Code</button>
+  <div id="j9" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    const num1 = 100;
+    const num2 = 50;
+    let val;
+    
+    // Simple math with numbers
+    val = num1 + num2;
+    val = num1 * num2;
+    val = num1 - num2;
+    val = num1 / num2;
+    val = num1 % num2;
+    
+    // Math Object
+    val = Math.PI;
+    val = Math.E;
+    val = Math.round(2.4);
+    val = Math.ceil(2.4);
+    val = Math.floor(2.8);
+    val = Math.sqrt(64);
+    val = Math.abs(-3);
+    val = Math.pow(8, 2);
+    val = Math.min(2,33,4,1,55,6,3,-2);
+    val = Math.max(2,33,4,1,55,6,3,-2);
+    val = Math.random();
+    
+    val = Math.floor(Math.random() * 20 + 1); (1-20)
+    
+    console.log(val);
+</pre>
+</code>
+  </div>
+  <h4>String</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j10">Code</button>
+  <div id="j10" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    const firstName = 'William';
+    const lastName = 'Johnson';
+    const age = 36;
+    const str = 'Hello there my name is Brad';
+    const tags = 'web design,web development,programming';
+    
+    let val;
+    
+    val = firstName + lastName;
+    
+    // Concatenation
+    val = firstName + ' ' + lastName;
+    
+    // Append
+    val = 'Brad ';
+    val += 'Traversy';
+    
+    val = 'Hello, my name is ' + firstName + ' and I am ' + age;
+    
+    // Escaping
+    val =  'That\'s awesome, I can\'t wait';
+    
+    // Length
+    val = firstName.length;(property not a method so no need ())
+    
+    // concat()
+    val = firstName.concat(' ', lastName);
+    
+    // Change case
+    val = firstName.toUpperCase();
+    val = firstName.toLowerCase();
+    
+    val = firstName[2];
+    
+    // indexOf()
+    val = firstName.indexOf('l');
+    val = firstName.lastIndexOf('l');
+    
+    // charAt()
+    val = firstName.charAt('2');
+    // Get last char
+    val = firstName.charAt(firstName.length - 1);
+    
+    // substring()
+    val = firstName.substring(0, 4);
+    
+    // slice()
+    val = firstName.slice(0,4);
+    val = firstName.slice(-3);
+    
+    // split()
+    val = str.split(' ');
+    val = tags.split(',');
+    
+    // replace()
+    val = str.replace('Brad', 'Jack');
+    
+    // includes()
+    val = str.includes('foo');
+    
+    console.log(val);
+</pre>
+</code>
+  </div>
+
+  <h4>Template Literals</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j11">Code</button>
+  <div id="j11" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    const namee = 'John';
+    const age = 31;
+    const job = 'Web Developer';
+    const city = 'Miami';
+    let html;
+    // Without template strings (es5)
+    html = '&ltul>&ltli>Name: ' + namee + '&lt/li>&ltli>Age: ' + age + ' &lt/li>&ltli>Job: '+ job+ ' &lt/li>&ltli>City: '+ city +' &lt/li>&lt/ul>';
+    html = '&ltul>' +
+           '&ltli>Name: ' + namee + '&lt/li>' +
+           '&ltli>Age: ' + age + '&lt/li>' +
+           '&ltli>Job: ' + job + '&lt/li>' +
+           '&ltli>City: ' + city + '&lt/li>' +
+           '&lt/ul>';
+    
+    function hello(){
+      return 'hello';
+    }
+    
+    //With template strings or literals (es6)
+    html = `
+      &ltul>
+        &ltli>Name: ${namee}&lt/li>
+        &ltli>Age: ${age}&lt/li>
+        &ltli>Job: ${job}&lt/li>
+        &ltli>City: ${city}&lt/li>
+        &ltli>${2 + 2}&lt/li>
+        &ltli>${hello()}&lt/li>
+        &ltli>${age > 30 ? 'Over 30' : 'Under 30'}&lt/li>
+      &lt/ul>
+    `;
+    document.body.innerHTML = html;
+    
+</pre>
+</code>
+  </div>
+  <h4>Arrays</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j12">Code</button>
+  <div id="j12" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    // Create some arrays
+    const numbers = [43,56,33,23,44,36,5];
+    const numbers2 = new Array(22,45,33,76,54);
+    const fruit = ['Apple', 'Banana', 'Orange', 'Pear'];
+    const mixed = [22, 'Hello', true, undefined, null, {a:1, b:1}, new Date()];
+    let val;
+    
+    // Get array length
+    val = numbers.length;
+    // Check if is array
+    val = Array.isArray(numbers);
+    // Get single value
+    val = numbers[3];
+    val = numbers[0];
+    // Insert into array
+    numbers[2] = 100;
+    // Find index of value
+    val = numbers.indexOf(36);
+    
+    //MUTATING ARRAYS
+    
+    // Add on to end
+    numbers.push(250);
+    // Add on to front
+    numbers.unshift(120);
+    // Take off from end
+    numbers.pop();
+    // Take off from front
+    numbers.shift();
+    // Splice values
+    //1,1 take only one value remove,delete
+    
+    numbers.splice(1,3);
+    // Reverse
+    numbers.reverse();
+    
+    // Concatenate array
+    val = numbers.concat(numbers2);
+    
+    // Sorting arrays
+    val = fruit.sort();
+    val = numbers.sort();//sorted by first number i.e 1st digit
+    
+    // Use the "compare function" -asc
+    val = numbers.sort(function(x, y){
+      return x - y;
+    });
+    
+    // Reverse sort - dsc
+    val = numbers.sort(function(x, y){
+      return y - x;
+    });
+    
+    // Find-takes a function as input
+    function over50(num){
+      return num > 50;
+    }
+    val = numbers.find(over50);//gets first number over fifty
+    console.log(numbers);
+    console.log(val);
+    
+</pre>
+</code>
+  </div>
+
+  <h4>Objec literals</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j13">Code</button>
+  <div id="j13" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    const person = {
+        firstName: 'Steve',
+        lastName: 'Smith',
+        age: 36,
+        email: 'steve@aol.com',
+        hobbies: ['music', 'sports'],
+        address: {
+          city: 'Miami',
+          state: 'FL'
+        },
+        getBirthYear: function(){
+          return 2017 - this.age;
+        }
+      }
+      
+      let val;
+      val = person;
+      // Get specific value
+      val = person.firstName;
+      val = person['lastName'];
+      val = person.age;
+      val = person.hobbies[1];
+      val = person.address.state;
+      val = person.address['city'];
+      val = person.getBirthYear();
+      
+      console.log(val);
+      
+      const people = [
+        {name: 'John', age: 30},
+        {name: 'Mike', age: 23},
+        {name: 'Nancy', age: 40}
+      ];
+      
+      for(let i = 0; i < people.length; i++){
+        console.log(people[i].name);
+      }
+</pre>
+</code>
+  </div>
+  <h4>Data and Time</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j14">Code</button>
+  <div id="j14" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    let val;
+    const today = new Date();
+    let birthday = new Date('9-10-1981 11:25:00');
+    birthday = new Date('September 10 1981');
+    birthday = new Date('9/10/1981');
+    
+    val = today.getMonth();
+    val = today.getDate();
+    val = today.getDay();
+    val = today.getFullYear();
+    val = today.getHours();
+    val = today.getMinutes();
+    val = today.getSeconds();
+    val = today.getMilliseconds();
+    val = today.getTime();
+    
+    birthday.setMonth(2);
+    birthday.setDate(12);
+    birthday.setFullYear(1985);
+    birthday.setHours(3);
+    birthday.setMinutes(30);
+    birthday.setSeconds(25);
+    
+    console.log(birthday);
+</pre>
+</code>
+  </div>
+  <h4>If Statements & comparision,logical,ternary operators</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j15">Code</button>
+  <div id="j15" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    // if(something){
+    //   do something
+    // } else {
+    //   do something else
+    // }
+    
+    const id = 100;
+    
+    // EQUAL TO
+    if(id == 100){
+        console.log('CORRECT');
+    } else {
+        console.log('INCORRECT');
+    }
+    
+    // NOT EQUAL TO
+    if(id != 101){
+        console.log('CORRECT');
+    } else {
+        console.log('INCORRECT');
+    }
+    
+    // EQUAL TO VALUE & TYPE
+    if(id === 100){
+        console.log('CORRECT');
+    } else {
+        console.log('INCORRECT');
+    }
+    
+    // not EQUAL TO VALUE & TYPE
+    if(id !== 100){
+        console.log('CORRECT');
+    } else {
+        console.log('INCORRECT');
+    }
+    
+    //Test if undefined
+    if(typeof id !== 'undefined'){
+        console.log(`The ID is ${id}`);
+    } else {
+        console.log('NO ID');
+    }
+    
+    //GREATER OR LESS THAN
+    if(id &lt= 100){
+        console.log('CORRECT');
+    } else {
+        console.log('INCORRECT');
+    }
+    
+    // IF ELSE
+    
+    const color = 'yellow';
+    if(color === 'red'){
+        console.log('Color is red');
+    } else if(color === 'blue'){
+        console.log('Color is blue');
+    } else {
+        console.log('Color is not red or blue');
+    }
+    
+    // LOGICAL OPERATORS
+    
+    const name = 'Steve';
+    const age = 70;
+    
+    // AND &&
+    if(age > 0 && age &lt 12){
+        console.log(`${name} is a child`);
+    } else if(age >= 13 && age &lt= 19){
+        console.log(`${name} is a teenager`);
+    } else {
+        console.log(`${name} is an adult`);
+    }
+    
+    // OR ||
+    if(age &lt 16 || age > 65){
+        console.log(`${name} can not run in race`);
+    } else {
+        console.log(`${name} is registered for the race`);
+    }
+    
+    // TERNARY OPERATOR
+    console.log(id === 100 ? 'CORRECT' : 'INCORRECT');
+    
+    // WITHOUT BRACES
+    if(id === 100)
+        console.log('CORRECT');
+    else
+        console.log('INCORRECT');
+</pre>
+</code>
+  </div>
+  <h4>Switches</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j16">Code</button>
+  <div id="j16" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    //switches are another way of validating the conditions i.e instead of if elseif okk
+    const color = 'yellow';
+    switch(color){
+      case 'red':
+        console.log('Color is red');
+        break;
+      case 'blue':
+        console.log('Color is blue');
+        break;
+      default:
+        console.log('Color is not red or blue');
+        break;
+    }
+    
+    let day;
+    switch(new Date().getDay()){
+      case 0:
+        day = 'Sunday';
+        break;
+      case 1:
+        day = 'Monday';
+        break;
+      case 2:
+        day = 'Tuesday';
+        break;
+      case 3:
+        day = 'Wednesday';
+        break;
+      case 4:
+        day = 'Thursday';
+        break;
+      case 5:
+        day = 'Friday';
+        break;
+      case 6:
+        day = 'Saturday';
+        break;
+    }
+    console.log(`Today is ${day}`);
+</pre>
+</code>
+  </div>
+
+  <h4>Function Declarations & Expressions</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j17">Code</button>
+  <div id="j17" class="collapse">
+    <code>
+<pre class="code-fullwidth"> 
+    // FUNCTION DECLARATIONS
+
+    function greet(firstName = 'John', lastName = 'Doe') {
+      // if(typeof firstName === 'undefined'){firstName = 'John'}
+      // if(typeof lastName === 'undefined'){lastName = 'Doe'}
+      //console.log('Hello');
+      return 'Hello ' + firstName + ' ' + lastName;
+    }
+    
+    function greet() {
+      console.log("hello")
+    }
+    greet()
+    
+    function greet(firstName) {
+      console.log("hello" + firstName)
+    }
+    greet('somu')
+    
+    function greet(firstName) {
+      return ("hello" + firstName)
+    }
+    console.log(greet('somu'))
+    
+    // console.log(greet());
+    
+    // FUNCTION EXPRESIONS = putting a function as an variable assignment okk
+    
+    const square = function (x) {
+      return x * x;
+    };
+    console.log(square(8));
+    
+    const square = function (x = 3) {
+      return x * x;
+    };
+    console.log(square());
+    
+    // IMMIDIATLEY INVOKABLE FUNCTION EXPRESSIONS - IIFEs =a function that we declare and run at the same time
+    
+    (function(){
+      console.log('IIFE Ran..');
+    })();
+    
+    (function(name){
+      console.log('Hello '+ name);
+    })('Brad');
+    
+    // PROPERTY METHODS= we can also put functions inside objects as well then it will become a method okk
+    
+    const todo = {
+      add: function () {
+        console.log('Add todo..');
+      },
+      edit: function (id) {
+        console.log(`Edit todo ${id}`);
+      }
+    }
+    
+    todo.delete = function () {
+      console.log('Delete todo...');
+    }
+    todo.add();
+    todo.edit(22);
+    todo.delete();
+    
+</pre>
+</code>
+  </div>
+
+  <h4>General Loops</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j18">Code</button>
+  <div id="j18" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+    // FOR LOOP
+    for(let i = 0; i &lt 10; i++){
+      if(i === 2){
+        console.log('2 is my favorite number');
+        continue;
+      }
+      if(i === 5){
+        console.log('Stop the loop');
+        break;
+      }
+      console.log('Number '+ i);
+    }
+    
+    // WHILE LOOP
+    let i = 0;
+    while(i &lt 10){
+      console.log('Number ' + i);
+      i++;
+    }
+    
+    // DO WHILE
+    let i = 100;
+    do {
+      console.log('Number ' + i);
+      i++;
+    }
+    while(i &lt 10);
+    
+    // LOOP THROUGH ARRAY
+    const cars = ['Ford', 'Chevy', 'Honda', 'Toyota'];
+    for(let i = 0; i &lt cars.length; i++){
+      console.log(cars[i]);
+    }
+    
+    // FOREACH - takes anonymus function ,a self calling function
+    cars.forEach(function(car){
+      console.log(car)
+    });
+    
+    cars.forEach(function(car, index){
+      console.log(`${index} : ${car}`);
+    });
+    
+    cars.forEach(function(car, index, array){
+      console.log(`${index} : ${car}`);
+      console.log(array);
+    });
+    
+    // MAP method
+    const users  = [
+      {id: 1, name:'John'},
+      {id: 2, name: 'Sara'},
+      {id: 3, name: 'Karen'},
+      {id: 4, name: 'Steve'}
+    ];
+    // returns an array okk
+    const ids = users.map(function(user){
+      return user.id;
+    });
+    console.log(ids);
+    
+    
+    // FOR IN LOOP- used with objects
+    const user = {
+      firstName: 'John', 
+      lastName: 'Doe',
+      age: 40
+    }
+    //tf x gives key and user[x]-gives values okk
+    for(let x in user){
+      console.log(`${x} : ${user[x]}`);
+    }
+</pre>
+</code>
+  </div>
+
+  <h4>Window object</h4>
+  <p>Document obj is a part of window obj, the window is a global obj in client side js.</p>
+  <p>Node js is a js runtime environment that runs
+    standalone process on your machine i.e your computer system is your environment in nodejs
+  </p>
+  <p>But in client side js, this course, the window or the browser is the global environment
+    note:both nodejs and chrome both use the same js engine i.e v8
+    and it works the same way but in different environments
+
+    this objects like window have a lot in them ok like the methods and properties etc</p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j19">Code</button>
+  <div id="j19" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  // WINDOW METHODS / OBJECTS / PROPERTIES
+
+  console.log('somu')
+  //we can also do
+  window.console.log("somu")
+  //but we don't do it bcx we are at the top of window obj 
+  //so no need but they are part of window obj okk just remember thats it.
+  
+  // Alert
+  alert('Hello World');
+  
+  // Prompt
+  const input = prompt();
+  alert(input);
+  
+  // Confirm-used often when were deleting sth
+  if(confirm('Are you sure')){
+    console.log('YES');
+  } else {
+    console.log('NO');
+  }
+  
+  let val;
+  // Outter height and width
+  val = window.outerHeight;
+  val = window.outerWidth;
+  // Inner height and width
+  val = window.innerHeight;
+  val = window.innerWidth;
+  
+  // Scroll points
+  val = window.scrollY;
+  val = window.scrollX;
+  
+  // Location Object
+  val = window.location;
+  val = window.location.hostname;
+  val = window.location.port;
+  val = window.location.href;
+  val = window.location.search;
+  
+  // Redirect
+  window.location.href = 'http://google.com';
+  //Reload
+  window.location.reload();
+  
+  // History Object
+  window.history.go(-2);
+  val = window.history.length;
+  
+  // Navigator Object (navigator here herer that browser itself okk)
+  val = window.navigator;
+  val = window.navigator.appName;
+  val = window.navigator.appVersion;
+  val = window.navigator.userAgent;
+  val = window.navigator.platform;
+  val = window.navigator.vendor;
+  val = window.navigator.language;
+  console.log(val);
+</pre>
+</code>
+  </div>
+  <h4>Global and Block Scope</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j20">Code</button>
+  <div id="j20" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  // Global Scope
+  var a = 1;
+  let b = 2;
+  const c = 3;
+  
+  function test() {
+    var a = 4;
+    let b = 5;
+    const c = 6;
+    console.log('Function Scope: ', a, b, c); //4 5 6 
+  }
+  
+  console.log('Global Scope: ', a, b, c);// 1 2 3
+  
+  test();
+  
+  if(true) {
+    // Block Scope
+    var a = 4;
+    let b = 5;
+    const c = 6;
+    console.log('If Scope: ', a, b, c); //4 5 6
+  }
+  
+  console.log('Global Scope: ', a, b, c); //4 2 3 observe that let and const same scope.
+  
+  for(let a = 0; a &lt 10; a++) {
+      console.log(`Loop: ${a}`);//0-9
+    }
+  console.log('Global Scope: ', a, b, c);//1 2 3
+  
+  for(var a = 0; a &lt 10; a++) {
+    console.log(`Loop: ${a}`);//0-9
+  }
+  console.log('Global Scope: ', a, b, c);//10 2 3
+  
+</pre>
+</code>
+  </div>
+
+
+  <h3>DOM Manipulation & Events</h3>
+  <p>DOM - Document Object Model</p>
+
+  <h4>What is DOM</h4>
+  <p>Tree of nodes/elements created by the browser. JS can be used to read/write/manipulate to the DOM.It is an object
+    oriented representation.</p>
+  <p>The browser gives the window object and inside that has the Document object.And this document just represents the
+    loaded document or web page</p>
+  <img src="img/bt-js1.jpg" alt="">
+  <h4>Examine the Document object</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j21">Code</button>
+  <div id="j21" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  &lt!-- Just an UI(just html it doesn't actually do anything) to explore dom -->
+  &lt!DOCTYPE html>
+  &lthtml lang="en">
+  &lthead>
+    &ltmeta charset="UTF-8">
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+    &ltmeta http-equiv="X-UA-Compatible" content="ie=edge">
+    &ltlink rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    &ltlink href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous">
+    &lttitle>Task List&lt/title>
+  &lt/head>
+  &ltbody>
+    &ltdiv class="container">
+      &ltdiv class="row">
+        &ltdiv class="col s12">
+          &ltdiv id="main" class="card">
+            &ltdiv class="card-content">
+              &ltspan class="card-title">Task List&lt/span>
+              &ltdiv class="row">
+                &ltform id="task-form">
+                  &ltdiv class="input-field col s12">
+                    &ltinput type="text" name="task" id="task" value="Walk the dog">
+                    &ltlabel for="task">New Task&lt/label>
+                  &lt/div>
+              &lt/div>
+              &ltinput type="submit" value="Add Task" class="btn">
+              &lt/form>
+            &lt/div>
+            &ltdiv class="card-action">
+              &lth5 id="task-title">Tasks&lt/h5>
+              &ltul class="collection">
+                &ltli class="collection-item">
+                  List Item
+                  &lta href="#" class="delete-item secondary-content">
+                    &lti class="fa fa-remove">&lt/i>
+                  &lt/a>
+                &lt/li> 
+                &ltli class="collection-item">
+                  List Item
+                  &lta href="#" class="delete-item secondary-content">
+                    &lti class="fa fa-remove">&lt/i>
+                  &lt/a>
+                &lt/li> 
+                &ltli class="collection-item">
+                  List Item
+                  &lta href="#" class="delete-item secondary-content">
+                    &lti class="fa fa-remove">&lt/i>
+                  &lt/a>
+                &lt/li>
+                &ltli class="collection-item">
+                  List Item
+                  &lta href="#" class="delete-item secondary-content">
+                    &lti class="fa fa-remove">&lt/i>
+                  &lt/a>
+                &lt/li>
+                &ltli class="collection-item">
+                  List Item
+                  &lta href="#" class="delete-item secondary-content">
+                    &lti class="fa fa-remove">&lt/i>
+                  &lt/a>
+                &lt/li>
+              &lt/ul>
+              &lta class="clear-tasks btn black" href="">Clear Tasks&lt/a>
+            &lt/div>
+          &lt/div>
+        &lt/div>
+      &lt/div>
+    &lt/div>
+    &ltscript src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">&lt/script>
+    &ltscript src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">&lt/script>
+    &ltscript src="app.js">&lt/script>
+  &lt/body>
+  &lt/html>
+</pre>
+</code>
+  </div>
+  <img src="img/bt-js2.jpg" alt="">
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j22">Code</button>
+  <div id="j22" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  let val;
+
+  val = document;
+  val = document.all;
+  val = document.all[2];
+  val = document.all.length;
+  val = document.head;
+  val = document.body;
+  val = document.doctype;
+  val = document.domain;
+  val = document.URL;
+  val = document.characterSet;
+  val = document.contentType;
+  
+  val = document.forms;
+  val = document.forms[0];
+  val = document.forms[0].id;
+  val = document.forms[0].method;
+  val = document.forms[0].action;
+  
+  val = document.links;
+  val = document.links[0];
+  val = document.links[0].id;
+  val = document.links[0].className;
+  val = document.links[0].classList[0];
+  
+  val = document.images;
+  
+  val = document.scripts;
+  val = document.scripts[2].getAttribute('src');
+  
+  let scripts = document.scripts;
+  
+  let scriptsArr = Array.from(scripts);
+  
+  scriptsArr.forEach(function(script) {
+    console.log(script.getAttribute('src'));
+  });
+  
+  console.log(val);
+</pre>
+</code>
+  </div>
+  <p>Here we see how we can select the elements directly.But picking elements by selectors is highly recommanded.</p>
+
+  <h4>DOM Selectors for single elements</h4>
+  <p>DOM Selectors are the document object methods that allow us to basically pull things from the dom, and we can do
+    different things with the elements or nodes.</p>
+  <p>JQuery was used for a long time to do this stuf for dom manipulation and dom selection.But now vanilla js made that
+    task much easier to work with dom.</p>
+  <p>So for dom prefer venilla js over jquery.But one thing jquery is good for is quick,simple plug ins or scripts that
+    you need to do a specific action.</p>
+  <p>Single element selectors will allow you to grab one element by its id or its class or by others. so it always
+    stores one thing.</p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j23">Code</button>
+  <div id="j23" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  // document.getElementById()
+
+  console.log(document.getElementById('task-title'));
+  
+  // Get things from the element
+  console.log(document.getElementById('task-title').id);
+  console.log(document.getElementById('task-title').className);
+  
+  const taskTitle = document.getElementById('task-title');
+  
+  // Change styling
+  taskTitle.style.background = '#333';
+  taskTitle.style.color = '#fff';
+  taskTitle.style.padding = '5px';
+  // taskTitle.style.display = 'none';
+  
+  // Change content
+  taskTitle.textContent = 'Task List';
+  taskTitle.innerText = 'My Tasks';
+  taskTitle.innerHTML = '&ltspan style="color:red">Task List&lt/span>';
+  
+  // document.querySelector()
+  
+  console.log(document.querySelector('#task-title'));
+  console.log(document.querySelector('.card-title'));
+  console.log(document.querySelector('h5'));
+  
+  document.querySelector('li').style.color = 'red';
+  document.querySelector('ul li').style.color = 'blue';
+  
+  document.querySelector('li:last-child').style.color = 'red';
+  document.querySelector('li:nth-child(3)').style.color = 'yellow';
+  document.querySelector('li:nth-child(4)').textContent = 'Hello World';
+  document.querySelector('li:nth-child(odd)').style.background = '#ccc';
+  document.querySelector('li:nth-child(even)').style.background = '#f4f4f4';
+</pre>
+</code>
+  </div>
+  <h4>DOM Selectors for multiple elements</h4>
+  <p>Multiple elements selectors will actually get all of the elements with that class and then return an html
+    collection or a node list, depending on which selector you use.</p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j24">Code</button>
+  <div id="j24" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  // document.getElementsByClassName
+
+  const items = document.getElementsByClassName('collection-item');
+  console.log(items);
+  console.log(items[0]);
+  items[0].style.color = 'red';
+  items[3].textContent = 'Hello';
+  
+  const listItems = document.querySelector('ul').getElementsByClassName('collection-item');
+  
+  console.log(listItems);
+  
+  // document.getElementsByTagName
+  let lis = document.getElementsByTagName('li');
+  console.log(lis);
+  console.log(lis[0]);
+  lis[0].style.color = 'red';
+  lis[3].textContent = 'Hello';
+  
+  // Conver HTML Collection into array
+  lis = Array.from(lis);
+  
+  lis.reverse();
+   
+  lis.forEach(function(li, index){
+    console.log(li.className);
+    li.textContent = `${index}: Hello`;
+  });
+  
+  console.log(lis);
+  
+  // document.querySelectorAll
+  const items = document.querySelectorAll('ul.collection li.collection-item');
+  
+  items.forEach(function(item, index){
+      item.textContent = `${index}: Hello`;
+  });
+  
+  const liOdd = document.querySelectorAll('li:nth-child(odd)');
+  const liEven = document.querySelectorAll('li:nth-child(even)');
+  
+  liOdd.forEach(function(li, index){
+    li.style.background = '#ccc';
+  });
+  
+  for(let i = 0; i &lt liEven.length; i++){
+    liEven[i].style.background = '#f4f4f4';
+  }
+  console.log(items);
+  
+</pre>
+</code>
+  </div>
+  <h4>Traversing the DOM</h4>
+  <p>Now we know the dom selectors.so now lets traverse the dom.i.e move up and down.so we are going to deal with
+    parents and children of specific nodes.</p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j25">Code</button>
+  <div id="j25" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  let val;
+
+  const list = document.querySelector('ul.collection');
+  const listItem = document.querySelector('li.collection-item:first-child');
+  
+  val = listItem;
+  val = list;
+  
+  // Get child nodes
+  val = list.childNodes; //returns node list , wiht text(line breaks),elements
+  val = list.childNodes[0];
+  val = list.childNodes[0].nodeName;
+  val = list.childNodes[3].nodeType;
+  
+  // 1 - Element
+  // 2 - Attribute (deprecated)
+  // 3 - Text node
+  // 8 - Comment
+  // 9 - Document itself
+  // 10 - Doctype
+  
+  
+  // Get children element nodes
+  val = list.children; //returns html collection and with out text only elements will be there.
+  val = list.children[1];
+  list.children[1].textContent = 'Hello';
+  // Children of children
+  list.children[3].children[0].id = 'test-link';
+  val = list.children[3].children[0];
+  
+  // First child
+  val = list.firstChild;//text nodes are included
+  val = list.firstElementChild;//here text nodes are not included.
+  
+  // Last child
+  val = list.lastChild;
+  val = list.lastElementChild;
+  
+  // Count child elements
+  val = list.childElementCount;
+  
+  // Get parent node
+  val = listItem.parentNode;
+  val = listItem.parentElement;
+  val = listItem.parentElement.parentElement;
+  
+  // Get next sibling
+  val = listItem.nextSibling;
+  val = listItem.nextElementSibling //2nd one
+  val = listItem.nextElementSibling.nextElementSibling //3rd one
+  val = listItem.nextElementSibling.nextElementSibling.previousElementSibling;
+  
+  // Get prev sibling
+  val = listItem.previousSibling;
+  val = listItem.previousElementSibling;
+  console.log(val);
+</pre>
+</code>
+  </div>
+  <h4>Creating Elements</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j26">Code</button>
+  <div id="j26" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  // Create element
+  const li  = document.createElement('li');
+  
+  // Add class
+  li.className = 'collection-item';
+  
+  // Add id
+  li.id = 'new-item';
+  
+  // Add attribute
+  li.setAttribute('title', 'New Item');
+  
+  // Create text node and append
+  li.appendChild(document.createTextNode('Hello World'));
+  
+  // Create new link element
+  const link = document.createElement('a');
+  // Add classes
+  link.className = 'delete-item secondary-content';
+  // Add icon html
+  link.innerHTML = '<i class="fa fa-remove"></i>';
+  
+  // Append link into li
+  li.appendChild(link);
+  
+  // Append li as child to ul
+  document.querySelector('ul.collection').appendChild(li);
+  console.log(li);
+</pre>
+</code>
+  </div>
+  <h4>Removing & Replacing Elements</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j27">Code</button>
+  <div id="j27" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  // REPLACE ELEMENT
+
+  // Create Element
+  const newHeading = document.createElement('h2');
+  // Add id
+  newHeading.id = 'task-title';
+  // New text node
+  newHeading.appendChild(document.createTextNode('Task List'));
+  
+  // Get the old heading
+  const oldHeading = document.getElementById('task-title');
+  //Parent
+  const cardAction = document.querySelector('.card-action');
+  
+  // Replace
+  cardAction.replaceChild(newHeading, oldHeading);
+  
+  // REMOVE ELEMENT
+  const lis = document.querySelectorAll('li');
+  const list = document.querySelector('ul');
+  
+  // Remove list item
+  lis[0].remove();
+  
+  // Remove child element
+  list.removeChild(lis[3]);
+  
+  // CLASSES & ATTR
+  const firstLi = document.querySelector('li:first-child');
+  const link = firstLi.children[0];
+  
+  let val;
+  
+  // Classes
+  val = link.className;
+  val = link.classList;
+  val = link.classList[0];
+  link.classList.add('test');
+  link.classList.remove('test');
+  val = link;
+  
+  // Attributes
+  val = link.getAttribute('href');
+  val = link.setAttribute('href', 'http://google.com');
+  link.setAttribute('title', 'Google');
+  val = link.hasAttribute('title');
+  link.removeAttribute('title');
+  val = link;
+  
+  console.log(val);
+</pre>
+</code>
+  </div>
+
+  <h4>Event Listener & Event Object</h4>
+  <p>Now lets do interaction with the UI. And this is where events come in, so we can listen for events on any element
+    in the dom.</p>
+  <p>Note some elements will have their default behaviour and we can also prevent them.</p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j28">Code</button>
+  <div id="j28" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  document.querySelector('.clear-tasks').addEventListener('click', function(e){
+    console.log('Hello World');
+    //e.preventDefault();
+  });
+  
+  document.querySelector('.clear-tasks').addEventListener('click', onClick);
+  function onClick(e){
+    //console.log('Clicked');
+  
+    let val;
+    val = e;
+  
+    // Event target element(the target represents the element that the event actually happened)
+    val = e.target;
+    val = e.target.id;
+    val = e.target.className;
+    val = e.target.classList;
+    e.target.innerText = "hello";
+    
+    // Event type
+    val = e.type;
+  
+    // Timestamp
+    val = e.timeStamp;
+  
+    // Coords event relative to the window
+    val = e.clientY;
+    val = e.clientX;
+  
+    // Coords event relative to the element
+    val = e.offsetY;
+    val = e.offsetX;
+  
+    console.log(val);
+  }
+</pre>
+</code>
+  </div>
+
+  <h4>Mouse Events</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="29">Code</button>
+  <div id="j29" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  const clearBtn = document.querySelector('.clear-tasks');
+  const card = document.querySelector('.card');
+  const heading = document.querySelector('h5');
+  
+  // Click
+  clearBtn.addEventListener('click', runEvent);
+
+  // Doubleclick
+  clearBtn.addEventListener('dblclick', runEvent);
+
+  // Mousedown-click hold
+  clearBtn.addEventListener('mousedown', runEvent);
+
+  // Mouseup -click hold, and then let it go then fires.
+  clearBtn.addEventListener('mouseup', runEvent);
+
+  // Mouseenter -when entered that element
+  card.addEventListener('mouseenter', runEvent);
+
+  // Mouseleave - when we come out of that element.
+  card.addEventListener('mouseleave', runEvent);
+
+  // Mouseover
+  card.addEventListener('mouseover', runEvent);
+
+  // Mouseout
+  card.addEventListener('mouseout', runEvent);
+
+  // Mousemove- fired when any movement inside that card happens.
+  card.addEventListener('mousemove', runEvent);
+  
+  //mouseenter,mouseleave will fire when we go into the main element,
+  //however mouseout,mouseover will fire off even when we go 
+  //into another element that's inside of that element
+
+  // Event Handler
+  function runEvent(e) {
+    console.log(`EVENT TYPE: ${e.type}`);
+  
+    heading.textContent= `MouseX: ${e.offsetX} MouseY: ${e.offsetY}`;
+  
+    document.body.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 40)`;
+  }
+</pre>
+</code>
+  </div>
+
+  <h4>Keyboard & Input Events</h4>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j30">Code</button>
+  <div id="j30" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  const form = document.querySelector('form');
+  const taskInput = document.getElementById('task');
+  const heading = document.querySelector('h5');
+  const select = document.querySelector('select');
+  
+  // Clear input
+  taskInput.value = '';
+  
+  form.addEventListener('submit', runEvent);
+  
+  // Keydown
+  taskInput.addEventListener('keydown', runEvent);
+
+  // Keyup
+  taskInput.addEventListener('keyup', runEvent);
+
+  // Keypress
+  taskInput.addEventListener('keypress', runEvent);
+
+  // Focus - when click in the input field.
+  taskInput.addEventListener('focus', runEvent);
+
+  // Blur - when click out of the input field.
+  taskInput.addEventListener('blur', runEvent);
+
+  // Cut
+  taskInput.addEventListener('cut', runEvent);
+
+  // Paste
+  taskInput.addEventListener('paste', runEvent);
+
+  // Input - fired when anything is done to the input field.
+  taskInput.addEventListener('input', runEvent);
+  
+  // Change
+  select.addEventListener('change', runEvent);
+  
+  function runEvent(e){
+    console.log(`EVENT TYPE: ${e.type}`);
+    console.log(e.target.value);
+    heading.innerText = e.target.value;
+  
+    // Get input value
+     console.log(taskInput.value);
+  
+     e.preventDefault();
+  }
+</pre>
+</code>
+  </div>
+
+  <h4>Event Bubbling & Delegation</h4>
+  <p>Event bubbling is the bubbling up of events through the dom.so when an event
+    happens on a particular element in the dom it will actually will bubble up through its parents.
+  </p>
+  <p>Event delegation is opposite to event bubbling.It's where we put the Listener on
+    one of the parent elements and then we use logic inside of the event handler to target
+    the element that we actually want that click for .
+  </p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j31">Code</button>
+  <div id="j31" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  // EVENT BUBBLING
+
+  document.querySelector('.card-title').addEventListener('click', function(){
+    console.log('card title');
+  });
+  
+  document.querySelector('.card-content').addEventListener('click', function(){
+    console.log('card content');
+  });
+  
+  document.querySelector('.card').addEventListener('click', function(){
+    console.log('card');
+  });
+  
+  document.querySelector('.col').addEventListener('click', function(){
+    console.log('col');
+  });
+  
+  //OP: all those events will be fired off when we click on card title(Task List).
+  
+  // EVENT DELGATION
+  
+  const delItem = document.querySelector('.delete-item');
+  // delItem.addEventListener('click', deleteItem);
+  
+  //the parent could be anything here it is body.
+  document.body.addEventListener('click', deleteItem);
+  
+  function deleteItem(e){
+      // if(e.target.className === 'fa fa-remove'){
+    //   console.log('delete item');
+    // }
+    
+    // if(e.target.parentElement.className === 'delete-item secondary-content'){
+    //   console.log('delete item');
+    // }
+  
+    if(e.target.parentElement.classList.contains('delete-item')){
+      console.log('delete item');
+      e.target.parentElement.parentElement.remove();
+    }
+  }
+</pre>
+</code>
+  </div>
+  <h4>Local & Session Storage</h4>
+  <p>If we look at the window object,we will have a local storage api with a bunch of
+    of methods and properties etc.
+  </p>
+  <p>local storage will only store strings.so we will parse it to json when we get it.And when we store it into local
+    storage we use stringify to make it string.</p>
+  <p>The local storage will stay until you manually clear it out in settings or
+    through your program. But session storage will leave once your browser is closed, i.e
+    once the session ends.
+  </p>
+  <p>See in dev tools in browser for the storage.</p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j32">Code</button>
+  <div id="j32" class="collapse">
+    <code>
+<pre class="code-fullwidth">
+  // set local storage item
+  localStorage.setItem('name', 'John');
+  localStorage.setItem('age', '30');
+  
+  // set session storage item
+  sessionStorage.setItem('name', 'Beth');
+  
+  // remove from storage
+  localStorage.removeItem('name');
+  
+  // get from storage
+  const name = localStorage.getItem('name');
+  const age = localStorage.getItem('age');
+  
+  // clear local storage
+  localStorage.clear();
+  console.log(name, age);
+  
+  document.querySelector('form').addEventListener('submit', function(e){
+    const task = document.getElementById('task').value;
+  
+    let tasks;
+  
+    if(localStorage.getItem('tasks') === null) {
+      tasks = [];
+    } else {
+      tasks = JSON.parse(localStorage.getItem('tasks'));
+    }
+  
+    tasks.push(task);
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+    alert('Task saved');
+    e.preventDefault();
+  });
+  
+  const tasks = JSON.parse(localStorage.getItem('tasks'));
+  tasks.forEach(function(task){
+    console.log(task);
+  });
+
+  //JSON.parse() -  will return an array.
+  //localStorage.getItem() - will just return a string.
+</pre>
+</code>
+  </div>
+
+  <h4>DOM Projects</h4>
+  <h5>Task List</h5>
+
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          index.html
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse " data-parent="#accordion">
+        <div class="card-body">
+          <code>
+<pre class="code-fullwidth">
+
+  &lt!DOCTYPE html>
+  &lthtml lang="en">
+  &lthead>
+    &ltmeta charset="UTF-8">
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+    &ltmeta http-equiv="X-UA-Compatible" content="ie=edge">
+    &ltlink rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    &ltlink href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    &lttitle>Task List&lt/title>
+  &lt/head>
+  &ltbody>
+    &ltdiv class="container">
+      &ltdiv class="row">
+        &ltdiv class="col s12">
+          &ltdiv id="main" class="card">
+            &ltdiv class="card-content">
+              &ltspan class="card-title">Task List&lt/span>
+              &ltdiv class="row">
+                &ltform id="task-form">
+                  &ltdiv class="input-field col s12">
+                    &ltinput type="text" name="task" id="task">
+                    &ltlabel for="task">New Task&lt/label>
+                  &lt/div>
+                  &ltinput type="submit" value="Add Task" class="btn">
+                &lt/form>
+              &lt/div>
+            &lt/div>
+            &ltdiv class="card-action">
+              &lth5 id="task-title">Tasks&lt/h5>
+              &ltdiv class="input-field col s12">
+                &ltinput type="text" name="filter" id="filter">
+                &ltlabel for="filter">Filter Tasks&lt/label>
+              &lt/div>
+              &ltul class="collection">&lt/ul>
+              &lta href="#" class="clear-tasks btn black">Clear Tasks&lt/a>
+            &lt/div>
+          &lt/div>
+        &lt/div>
+      &lt/div>
+    &lt/div>
+
+    &ltscript
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous">&lt/script>
+    &ltscript src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">&lt/script>
+    &ltscript src="app.js">&lt/script>
+  &lt/body>
+  &lt/html>
+
+</pre>
+</code>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+          app.js
+        </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <code>
+<pre class="code-fullwidth">
+  // Define UI Vars
+  const form = document.querySelector('#task-form');
+  const taskList = document.querySelector('.collection');
+  const clearBtn = document.querySelector('.clear-tasks');
+  const filter = document.querySelector('#filter');
+  const taskInput = document.querySelector('#task');
+  
+  // Load all event listeners
+  loadEventListeners();
+  
+  // Load all event listeners
+  function loadEventListeners() {
+    // DOM Load event
+    document.addEventListener('DOMContentLoaded', getTasks);
+    // Add task event
+    form.addEventListener('submit', addTask);
+    // Remove task event
+    taskList.addEventListener('click', removeTask);
+    // Clear task event
+    clearBtn.addEventListener('click', clearTasks);
+    // Filter tasks event
+    filter.addEventListener('keyup', filterTasks);
+  }
+  
+  // Get Tasks from LS
+  function getTasks() {
+    let tasks;
+    if(localStorage.getItem('tasks') === null){
+      tasks = [];
+    } else {
+      tasks = JSON.parse(localStorage.getItem('tasks'));
+    }
+  
+    tasks.forEach(function(task){
+      // Create li element
+      const li = document.createElement('li');
+      // Add class
+      li.className = 'collection-item';
+      // Create text node and append to li
+      li.appendChild(document.createTextNode(task));
+      // Create new link element
+      const link = document.createElement('a');
+      // Add class
+      link.className = 'delete-item secondary-content';
+      // Add icon html
+      link.innerHTML = '&lti class="fa fa-remove">&lt/i>';
+      // Append the link to li
+      li.appendChild(link);
+  
+      // Append li to ul
+      taskList.appendChild(li);
+    });
+  }
+  
+  // Add Task
+  function addTask(e) {
+    if(taskInput.value === '') {
+      alert('Add a task');
+    }
+  
+    // Create li element
+    const li = document.createElement('li');
+    // Add class
+    li.className = 'collection-item';
+    // Create text node and append to li
+    li.appendChild(document.createTextNode(taskInput.value));
+    // Create new link element
+    const link = document.createElement('a');
+    // Add class
+    link.className = 'delete-item secondary-content';
+    // Add icon html
+    link.innerHTML = '&lti class="fa fa-remove">&lt/i>';
+    // Append the link to li
+    li.appendChild(link);
+  
+    // Append li to ul
+    taskList.appendChild(li);
+  
+    // Store in LS
+    storeTaskInLocalStorage(taskInput.value);
+  
+    // Clear input
+    taskInput.value = '';
+  
+    e.preventDefault();
+  }
+  
+  // Store Task
+  function storeTaskInLocalStorage(task) {
+    let tasks;
+    if(localStorage.getItem('tasks') === null){
+      tasks = [];
+    } else {
+      tasks = JSON.parse(localStorage.getItem('tasks'));
+    }
+  
+    tasks.push(task);
+  
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  }
+  
+  // Remove Task
+  function removeTask(e) {
+    if(e.target.parentElement.classList.contains('delete-item')) {
+      if(confirm('Are You Sure?')) {
+        e.target.parentElement.parentElement.remove();
+  
+        // Remove from LS
+        removeTaskFromLocalStorage(e.target.parentElement.parentElement);
+      }
+    }
+  }
+  
+  // Remove from LS
+  function removeTaskFromLocalStorage(taskItem) {
+    let tasks;
+    if(localStorage.getItem('tasks') === null){
+      tasks = [];
+    } else {
+      tasks = JSON.parse(localStorage.getItem('tasks'));
+    }
+  
+    tasks.forEach(function(task, index){
+      if(taskItem.textContent === task){
+        tasks.splice(index, 1);
+      }
+    });
+  
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  }
+  
+  // Clear Tasks
+  function clearTasks() {
+    // taskList.innerHTML = '';
+  
+    // Faster
+    while(taskList.firstChild) {
+      taskList.removeChild(taskList.firstChild);
+    }
+  
+    // https://jsperf.com/innerhtml-vs-removechild
+  
+    // Clear from LS
+    clearTasksFromLocalStorage();
+  }
+  
+  // Clear Tasks from LS
+  function clearTasksFromLocalStorage() {
+    localStorage.clear();
+  }
+  
+  // Filter Tasks
+  function filterTasks(e) {
+    const text = e.target.value.toLowerCase();
+  // queryselectorall returns nodelist so we can use foreach but not getelementbyclass okk
+    document.querySelectorAll('.collection-item').forEach(function(task){
+      const item = task.firstChild.textContent;
+      if(item.toLowerCase().indexOf(text) != -1){
+        task.style.display = 'block';
+      } else {
+        task.style.display = 'none';
+      }
+    });
+  }
+    //if match then block or no need to show so display is none okkk
+    //it tries to match anything in the text ok like substring som
+</pre>
+</code>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="img/bt-js3.jpg" alt="">
+
+  <h5>Loan Calculator</h5>
+  <div id="accordion2">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#c1">
+          index.html
+        </a>
+      </div>
+      <div id="c1" class="collapse " data-parent="#accordion2">
+        <div class="card-body">
+          <code>
+  <pre class="code-fullwidth">
+    &lt!doctype html>
+    &lthtml lang="en">
+      &lthead>
+        &lttitle>Hello, world!&lt/title>
+        &lt!-- Required meta tags -->
+        &ltmeta charset="utf-8">
+        &ltmeta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        &lt!-- Bootstrap CSS -->
+        &ltlink rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        &ltstyle>
+          #loading, #results {
+            display:none;
+          }
+        &lt/style>
+      &lt/head>
+      &ltbody class="bg-dark">
+        &ltdiv class="container">
+          &ltdiv class="row">
+            &ltdiv class="col-md-6 mx-auto">
+              &ltdiv class="card card-body text-center mt-5">
+                &lth1 class="heading display-5 pb-3">Loan Calculator&lt/h1>
+                &ltform id="loan-form">
+                  &ltdiv class="form-group">
+                    &ltdiv class="input-group">
+                      &ltspan class="input-group-addon">$&lt/span>
+                      &ltinput type="number" class="form-control" id="amount" placeholder="Loan Amount">
+                    &lt/div>
+                  &lt/div>
+                  &ltdiv class="form-group">
+                    &ltdiv class="input-group">
+                      &ltspan class="input-group-addon">%&lt/span>
+                      &ltinput type="number" class="form-control" id="interest" placeholder="Interest">
+                    &lt/div>
+                  &lt/div>
+                  &ltdiv class="form-group">
+                    &ltinput type="number" class="form-control" id="years" placeholder="Years To Repay">
+                  &lt/div>
+                  &ltdiv class="forn-group">
+                    &ltinput type="submit" value="Calculate" class="btn btn-dark btn-block">
+                  &lt/div>
+                &lt/form>
+                &lt!-- LOADER -->
+                &ltdiv id="loading">
+                  &ltimg src="img/loading.gif" alt="">
+                &lt/div>
+                &lt!-- RESULTS -->
+                &ltdiv id="results" class="pt-4">
+                  &lth5>Results&lt/h5>
+                  &ltdiv class="form-group">
+                    &ltdiv class="input-group">
+                      &ltspan class="input-group-addon">Monthly Payment&lt/span>
+                      &ltinput type="number" class="form-control" id="monthly-payment" disabled>
+                    &lt/div>
+                  &lt/div>
+    
+                  &ltdiv class="form-group">
+                    &ltdiv class="input-group">
+                      &ltspan class="input-group-addon">Total Payment&lt/span>
+                      &ltinput type="number" class="form-control" id="total-payment" disabled>
+                    &lt/div>
+                  &lt/div>
+    
+                  &ltdiv class="form-group">
+                    &ltdiv class="input-group">
+                      &ltspan class="input-group-addon">Total Interest&lt/span>
+                      &ltinput type="number" class="form-control" id="total-interest" disabled>
+                    &lt/div>
+                  &lt/div>
+                &lt/div>
+              &lt/div>
+            &lt/div>
+          &lt/div>
+        &lt/div>
+    
+        &lt!-- Optional JavaScript -->
+        &lt!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        &ltscript src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">&lt/script>
+        &ltscript src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous">&lt/script>
+        &ltscript src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous">&lt/script>
+        &ltscript src="app.js">&lt/script>
+      &lt/body>
+    &lt/html>
+  </pre>
+  </code>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#c2">
+          app.js
+        </a>
+      </div>
+      <div id="c2" class="collapse" data-parent="#accordion2">
+        <div class="card-body">
+          <code>
+  <pre class="code-fullwidth">
+    // Listen for submit
+    document.getElementById('loan-form').addEventListener('submit', function(e){
+      // Hide results
+      document.getElementById('results').style.display = 'none';
+      
+      // Show loader
+      document.getElementById('loading').style.display = 'block';
+    
+      setTimeout(calculateResults, 2000);
+    
+      e.preventDefault();
+    });
+    
+    // Calculate Results
+    function calculateResults(){
+      console.log('Calculating...');
+      // UI Vars
+      const amount = document.getElementById('amount');
+      const interest = document.getElementById('interest');
+      const years = document.getElementById('years');
+      const monthlyPayment = document.getElementById('monthly-payment');
+      const totalPayment = document.getElementById('total-payment');
+      const totalInterest = document.getElementById('total-interest');
+    
+      const principal = parseFloat(amount.value);
+      const calculatedInterest = parseFloat(interest.value) / 100 / 12;
+      const calculatedPayments = parseFloat(years.value) * 12;
+    
+      // Compute monthly payment
+      const x = Math.pow(1 + calculatedInterest, calculatedPayments);
+      const monthly = (principal*x*calculatedInterest)/(x-1);
+    
+      if(isFinite(monthly)) {
+        monthlyPayment.value = monthly.toFixed(2);
+        totalPayment.value = (monthly * calculatedPayments).toFixed(2);
+        totalInterest.value = ((monthly * calculatedPayments)-principal).toFixed(2);
+    
+        // Show results
+        document.getElementById('results').style.display = 'block';
+    
+        // Hide loader
+        document.getElementById('loading').style.display = 'none';
+    
+      } else {
+        showError('Please check your numbers');
+      }
+    }
+    
+    // Show Error
+    function showError(error){
+      // Hide results
+      document.getElementById('results').style.display = 'none';
+      
+      // Hide loader
+      document.getElementById('loading').style.display = 'none';
+    
+      // Create a div
+      const errorDiv = document.createElement('div');
+    
+      // Get elements
+      const card = document.querySelector('.card');
+      const heading = document.querySelector('.heading');
+    
+      // Add class
+      errorDiv.className = 'alert alert-danger';
+    
+      // Create text node and append to div
+      errorDiv.appendChild(document.createTextNode(error));
+    
+      // Insert error above heading
+      card.insertBefore(errorDiv, heading);
+    
+      // Clear error after 3 seconds
+      setTimeout(clearError, 3000);
+    }
+    
+    // Clear error
+    function clearError(){
+      document.querySelector('.alert').remove();
+    }
+  </pre>
+  </code>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="img/bt-js4.jpg" alt="">
+
+<h5>Number Guesser</h5>
+<div id="accordion3">
+  <div class="card">
+    <div class="card-header">
+      <a class="card-link" data-toggle="collapse" href="#c3">
+        index.html
+      </a>
+    </div>
+    <div id="c3" class="collapse " data-parent="#accordion3">
+      <div class="card-body">
+        <code>
+<pre class="code-fullwidth">
+  &lt!DOCTYPE html>
+  &lthtml lang="en">
+  &lthead>
+    &ltmeta charset="UTF-8">
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+    &ltmeta http-equiv="X-UA-Compatible" content="ie=edge">
+    &ltlink rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+    &lttitle>Number Guesser&lt/title>
+  &lt/head>
+  &ltbody>
+    &ltdiv class="container">
+      &lth1>Number Guesser&lt/h1>
+      &ltdiv id="game">
+        &ltp>Guess a number between &ltspan class="min-num">&lt/span> and &ltspan class="max-num">&lt/span>&lt/p>
+        &ltinput type="number" id="guess-input" placeholder="Enter your guess...">
+        &ltinput type="submit" value="Submit" id="guess-btn">
+        &ltp class="message">&lt/p>
+      &lt/div>
+    &lt/div>
+  
+    &ltscript src="app.js">&lt/script>
+  &lt/body>
+  &lt/html>
+</pre>
+</code>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#c4">
+        app.js
+      </a>
+    </div>
+    <div id="c4" class="collapse" data-parent="#accordion3">
+      <div class="card-body">
+        <code>
+<pre class="code-fullwidth">
+  /*
+  GAME FUNCTION:
+  - Player must guess a number between a min and max
+  - Player gets a certain amount of guesses
+  - Notify player of guesses remaining
+  - Notify the player of the correct answer if loose
+  - Let player choose to play again
+  */
+  
+  // Game values
+  let min = 1,
+      max = 10,
+      winningNum = getRandomNum(min, max),
+      guessesLeft = 3;
+  
+  // UI Elements
+  const game = document.querySelector('#game'),
+        minNum = document.querySelector('.min-num'),
+        maxNum = document.querySelector('.max-num'),
+        guessBtn = document.querySelector('#guess-btn'),
+        guessInput = document.querySelector('#guess-input'),
+        message = document.querySelector('.message');
+  
+  // Assign UI min and max
+  minNum.textContent = min;
+  maxNum.textContent = max;
+  
+  // Play again event listener
+  game.addEventListener('mousedown', function(e){
+    if(e.target.className === 'play-again'){
+      window.location.reload();
+    }
+  });
+        
+  // Listen for guess
+  guessBtn.addEventListener('click', function(){
+    let guess = parseInt(guessInput.value);
+    
+    // Validate
+    if(isNaN(guess) || guess < min || guess > max){
+      setMessage(`Please enter a number between ${min} and ${max}`, 'red');
+    }
+  
+    // Check if won
+    if(guess === winningNum){
+      // Game over - won
+      gameOver(true, `${winningNum} is correct, YOU WIN!`);
+  
+    } else {
+      // Wrong number
+      guessesLeft -= 1;
+  
+      if(guessesLeft === 0){
+        // Game over - lost
+        gameOver(false, `Game Over, you lost. The correct number was ${winningNum}`);
+      } else {
+        // Game continues - answer wrong
+  
+        // Change border color
+        guessInput.style.borderColor = 'red';
+  
+        // Clear Input
+        guessInput.value = '';
+  
+        // Tell user its the wrong number
+        setMessage(`${guess} is not correct, ${guessesLeft} guesses left`, 'red');
+      }
+    }
+  });
+  
+  // Game over
+  function gameOver(won, msg){
+    let color;
+    won === true ? color = 'green' : color = 'red';
+  
+    // Disable input
+    guessInput.disabled = true;
+    // Change border color
+    guessInput.style.borderColor = color;
+    // Set text color
+    message.style.color = color;
+    // Set message
+    setMessage(msg);
+  
+    // PLay Again?
+    guessBtn.value = 'Play Again';
+    guessBtn.className += 'play-again';
+  }
+  
+  // Get Winning Number
+  function getRandomNum(min, max){
+    return Math.floor(Math.random()*(max-min+1)+min);
+  }
+  
+  // Set message
+  function setMessage(msg, color){
+    message.style.color = color;
+    message.textContent = msg;
+  }
+</pre>
+</code>
+      </div>
+    </div>
+  </div>
+</div>
+<img src="img/bt-js5.jpg" alt="">
+
+
+<h3>Object Oriented js-ES5</h3>
+<h4>Constructor & 'this' keyword</h4>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j33">Code</button>
+<div id="j33" class="collapse">
+<code>
+<pre class="code-fullwidth">
+
+  //obj literal
+  const brad = {
+    name:'somu',
+    age:22
+  }
+  console.log(brad);
+  console.log(brad.age);
+  
+  //es5  only one instane i.e obj when want to create multiple objs of a type then we need  the constructor method okk
+  
+  // Person constructor-start wiht cap
+  function Person(name, dob) {
+    console.log(this);//gives the current obj ie,ex:Person{name:'Brad'} likethis..
+    this.name = name;//properties
+    // this.age = age;
+    this.birthday = new Date(dob);
+    //A method is a function inside of an object..
+    this.calculateAge = function(){
+      const diff =  Date.now() - this.birthday.getTime();
+      const ageDate = new Date(diff);
+      return Math.abs(ageDate.getUTCFullYear() - 1970);
+      //Math is an object for which we no need to use the New keyword..
+    }
+  }
+  
+  const brad = new Person('Brad', 36); //to instantiate we use new keyword.
+  const john = new Person('John', 30);
+  
+  console.log(john.age);
+  
+  //this keyword- refers to the current instance of the object.
+  
+  console.log(this); //it gives the window Object, since we used it in a global scope but not in any other inside of functions..
+  this.alert(2); //also works so when this is in global obj it referes to ntg but the window obj
+  
+  const brad = new Person('Brad', '9-10-1981');
+  console.log(brad.calculateAge());
+  
+  
+  
+</pre>
+</code>
+</div>
+<h4>Build-in Constructors</h4>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j34">Code</button>
+<div id="j34" class="collapse">
+  <code>
+<pre class="code-fullwidth">
+  // String
+
+  const name1 = 'Jeff';//sets a premitive value to this variable
+  const name2 = new String('Jeff'); //obj okk so we can also add properties to it as below
+  
+  //name2.foo = 'bar';
+  // console.log(name2);-OP- we get the obj represention of the stored value.
+  
+  console.log(typeof name1); //string
+  console.log(typeof name2); //object
+  
+  if(name2 === 'Jeff'){
+    console.log('YES');
+  } else {
+    console.log('NO');//OP- is NO
+  }
+  
+  // Number
+  const num1 = 5;
+  const num2 = new Number(5);
+  
+  // Boolean
+  const bool1 = true;
+  const bool2 = new Boolean(true);
+  
+  // Function
+  const getSum1 = function(x, y){
+    return x + y;
+  }
+  
+  console.log(getSum1(1,1))//op- 2
+  
+  const getSum2 = new Function('x','y', 'return 1 + 1');
+  console.log(getSum2(1,1))//op- 2
+  
+  // Object
+  const john1 = {name: "John"};
+  const john2 = new Object({name: "John"});
+  console.log(john2);
+  
+  // Arrays
+  const arr1 = [1,2,3,4];
+  const arr2 = new Array(1,2,3,4);
+  
+  // Regular Expressions
+  const re1 = /\w+/;//rap it into froward slashes... op:/\w+/
+  const re2 = new RegExp('\\w+');//to escape okk op:/\w+/
+  
+  console.log(re2);
+</pre>
+</code>
+</div>
+
+<h4>Prototypes</h4>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j35">Code</button>
+<div id="j35" class="collapse">
+  <code>
+<pre class="code-fullwidth">
+  //each object in js has a prototype and a prototype, is an object itself.
+  //all objects inherit their properties and methods fromt their prototype
+  //so when we are dealing with obj literals, then we are inheriting from a prototype called object ;Object.prototype
+  //and when we are dealing with objects that we  created through a constructor eg person  then its going to come from Person.prototype
+  //also there is sth called prototype chain, where you have this prototype(Person.prototype) and you can go up to main, object.prototype
+  
+  
+  
+  //The prototype is not sth that we could access sth, like in for in ,loop i.e loop through properth
+  //But it is given by the browser it is a pseudo property with double undrscore-it represent the person.Prototype as below
+  
+  //__proto__: (person.prototype)
+  //      constructor:
+  //      __proto__:Object (obj.prototype ) and it is at the top of the chain and
+  //              :and it hass its own properties andd methods
+  
+  //Object.prototype
+  //Person.prototype
+  
+  // Person constructor
+  function Person(firstName, lastName, dob) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.birthday = new Date(dob);
+    // this.calculateAge = function(){
+    //   const diff =  Date.now() - this.birthday.getTime();
+    //   const ageDate = new Date(diff);
+    //   return Math.abs(ageDate.getUTCFullYear() - 1970);
+    // }
+    //this is going to be same for every obj of it....so this is sth we should put it inot prototype not into the object.
+  //we do it as below
+  }
+  
+  // Calculate age : we moved that function into peroson.prototype but the working and usage is same as we use it before ( i.e it works as if it is part of obj as before) ok som-see the console
+  Person.prototype.calculateAge = function(){
+    const diff =  Date.now() - this.birthday.getTime();
+    const ageDate = new Date(diff);
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
+  }
+  //Another prototype
+  // Get full name: prototype methods to get sth from it okk
+  Person.prototype.getFullName = function(){
+    return `${this.firstName} ${this.lastName}`;
+  }
+  
+  // Gets Married : prototype method to set sth
+  Person.prototype.getsMaried = function(newLastName){
+    this.lastName = newLastName;
+  }
+  
+  const john = new Person('John', 'Doe', '8-12-90');
+  const mary = new Person('Mary', 'Johnson', 'March 20 1978');
+  
+  console.log(mary);
+  
+  console.log(john.calculateAge());
+  
+  console.log(mary.getFullName());
+  
+  mary.getsMaried('Smith');
+  
+  console.log(mary.getFullName());
+  
+  //also we also have the acces to - object.prototype
+  console.log(mary.hasOwnProperty('firstName')); //true
+  console.log(mary.hasOwnProperty('getFullName'));//false bcz getFullName is in prototype, but not as its own property ok thats the difference som
+  
+</pre>
+</code>
+</div>
+
+<h4>Prototypical Inheritance</h4>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j39">Code</button>
+<div id="j39" class="collapse">
+  <code>
+<pre class="code-fullwidth">
+  // prototypical inheritance-One obj type inherit from another
+
+
+  // Person constructor
+  function Person(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+  
+  // Greeting:prototype method
+  Person.prototype.greeting = function(){
+    return `Hello there ${this.firstName} ${this.lastName}`;
+  }
+  
+  const person1 = new Person('John', 'Doe');
+  
+  console.log(person1.greeting());
+  
+  // Customer constructor
+  function Customer(firstName, lastName, phone, membership) {
+    Person.call(this, firstName, lastName);//call is a function that allows us to call another function from somewhere else in the current context.
+  //first parameter is this,then the whatever properties are in the constructor tht we're inheriting
+  
+  
+    this.phone = phone;
+    this.membership = membership;
+  }
+  // Create customer
+  const customer1 = new Customer('Tom', 'Smith', '555-555-5555', 'Standard');
+  console.log(customer1);
+  //firstName,lastName,phone,membership
+  //clog(customer1.greeting()): error; c1.greeting is not a function so it is not inhering the prototype
+  
+  // Inherit the Person prototype methods
+  Customer.prototype = Object.create(Person.prototype);
+  //clog(customer1.greeting());OP-works Hello there tom smith
+  
+  // Make customer.prototype return Customer()
+  Customer.prototype.constructor = Customer;
+  
+  
+  // Customer greeting-we can overwrite the persons greeting as below
+  Customer.prototype.greeting = function(){
+    return `Hello there ${this.firstName} ${this.lastName} welcome to our company`;
+  }
+  
+  console.log(customer1.greeting());
+</pre>
+</code>
+</div>
+
+
+
+<h4>Using Object.create</h4>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j36">Code</button>
+<div id="j36" class="collapse">
+  <code>
+<pre class="code-fullwidth">
+
+  //obj with different prototype methods
+  const personPrototypes = {
+    greeting: function() {
+      return `Hello there ${this.firstName} ${this.lastName}`;
+    },
+    getsMarried: function(newLastName) {
+      this.lastName = newLastName;
+    }
+  }
+  
+  const mary = Object.create(personPrototypes);//it takes in prototypes
+  //adding properties to mary obj
+  mary.firstName = 'Mary';
+  mary.lastName = 'Williams';
+  mary.age = 30;
+  
+  mary.getsMarried('Thompson');
+  
+  console.log(mary.greeting());
+  
+  const brad = Object.create(personPrototypes, {
+    firstName: {value: 'Brad'},
+    lastName: {value: 'Traversy'},
+    age: {value: 36}
+  });
+  
+  console.log(brad);
+  
+  console.log(brad.greeting());
+</pre>
+</code>
+</div>
+<h4>ES6 Classes</h4>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j37">Code</button>
+<div id="j37" class="collapse">
+  <code>
+<pre class="code-fullwidth">
+  //easier and much easier to write..smlr to python,java,c#
+  //es6 classes
+  
+  class Person {
+    constructor(firstName, lastName, dob) {
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.birthday = new Date(dob);
+    }
+  
+    greeting() {
+      return `Hello there ${this.firstName} ${this.lastName}`;
+    }
+  
+    calculateAge() {
+      const diff = Date.now() - this.birthday.getTime();
+      const ageDate = new Date(diff);
+      return Math.abs(ageDate.getUTCFullYear() - 1970);
+    }
+  
+    getsMarried(newLastName) {
+      this.lastName = newLastName;
+    }
+  
+    static addNumbers(x, y) {
+      return x + y;
+    }
+  }
+  
+  const mary = new Person('Mary', 'Williams', '11-13-1980');
+  
+  mary.getsMarried('Thompson');
+  
+  //any method we add inside the class is actually going to get added to the prototype
+  console.log(mary);
+  
+  console.log(Person.addNumbers(1,2));//not mary. ok Person.
+</pre>
+</code>
+</div>
+<h4>Sub Classes</h4>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j38">Code</button>
+<div id="j38" class="collapse">
+  <code>
+<pre class="code-fullwidth">
+  //inheritance in es6
+
+  class Person {
+    constructor(firstName, lastName) {
+      this.firstName = firstName;
+      this.lastName = lastName;
+    }
+  
+    greeting() {
+      return `Hello there ${this.firstName} ${this.lastName}`;
+    }
+  }
+  
+  class Customer extends Person {
+    constructor(firstName, lastName, phone, membership) {
+      super(firstName, lastName);
+  
+      this.phone = phone;
+      this.membership = membership;
+    }
+  
+    static getMembershipCost() {
+      return 500;
+    }
+  }
+  
+  const john = new Customer('John', 'Doe', '555-555-5555', 'Standard');
+  
+  console.log(john.greeting());
+  
+  console.log(Customer.getMembershipCost());
+</pre>
+</code>
+</div>
+
+
+
+
+
+
+
+
+  <!-- <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#j1">Code</button>
+<div id="j1" class="collapse">
+  <code>
+<pre class="code-fullwidth">
+
+</pre>
+</code>
+</div> -->
+
+
+<!-- <div id="accordion">
+  <div class="card">
+    <div class="card-header">
+      <a class="card-link" data-toggle="collapse" href="#collapseOne">
+        index.html
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse " data-parent="#accordion">
+      <div class="card-body">
+        <code>
+<pre class="code-fullwidth">
+
+</pre>
+</code>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        app.js
+      </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        <code>
+<pre class="code-fullwidth">
+
+</pre>
+</code>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

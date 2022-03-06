@@ -1,0 +1,1893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - The Language</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3>HTML - Introduction</h3>
+    <p>In the web technology world, below are the fundamental building blocks of any web page.</p>
+    <img src="img/h2.jpg" style="height: 300px;width: auto;" alt="">
+    <p>HTML (HyperText Markup Language) is the most fundamental building block of the Web. It defines the meaning and
+        structure of web content.</p>
+    <p>CSS(Cascading Style Sheet) is used for styling and giving better presentation to the web pages</p>
+    <p>JavaScript(JS) is used for implementing behavior required in a web page</p>
+    <h4>Environmental Setup</h4>
+    <p>To develop a web application using HTML, you can use simple editors such as Notepad or go for IDEs like Visual
+        Studio Code(recommended), Eclipse etc. which makes coding easier.</p>
+    <p>And, to execute application, you can use any commonly used browser such as Google Chrome(recommended), Mozilla
+        Firefox etc.</p>
+    <h4>Need of HTML</h4>
+    <p>HTML is needed to fill online forms in web applications.</p>
+    <p>Also, with the help of HTML, we can watch online videos on Youtube.</p>
+    <p>While browsing the Web, when you click on a hyperlink, you navigate to another web page. This is possible with
+        the help of HTML.Do you know, how these web pages with different content types such as text, hyperlinks, forms,
+        images, and videos are created in web applications?You can achieve all these requirements using HTML.</p>
+    <h4>What is HTML?</h4>
+    <p>Hyper Text Markup Language (HTML) is a standard markup language to create the structure of a web page. It
+        annotates the content on a web page using HTML elements.</p>
+    <p>In a web page, all instructions to the browser are given in the form of HTML tags, also known as HTML elements.
+    </p>
+    <p>The content of the web page will be rendered as per the HTML tags in which they are enclosed.</p>
+    <img src="img/h3.png" alt="">
+    <p>The text content "Hello World!" is annotated to the heading, increasing the font-weight when it is enclosed in
+        the HTML tag &lth1>.</p>
+    <p>Likewise, the look and feel of the web page can be defined and the content can be organized on the web page with
+        the help of various HTML elements.</p>
+    <p>Now, let us see the document structure of HTML.</p>
+    <h4>Basic Document Structure</h4>
+    <p>HTML document structure tells the browser how to render the text written in each of the HTML elements of the web
+        page.</p>
+    <p>Consider that we need to create a web page, the basic HTML document structure will be as below:</p>
+    <img src="img/h4.PNG" alt="">
+    <p> The structure of an HTML document is defined using HTML tags. </p>
+    <p>Below is the basic structure of a simple HTML document or web page:</p>
+    <code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml>
+       &lthead>
+        &lttitle>&lt/title>
+      &lt/head>
+      &ltbody>
+      &lt/body>
+    &lt/html>
+</pre>
+</code>
+    <p>Now, let us understand these basic HTML tags in detail.</p>
+    <h4>Basic Document Structure - Elements</h4>
+    <ul>
+        <li>
+            &lt!DOCTYPE html> declaration update the browser about the version of HTML being used. By default, it points
+            to HTML5, the latest version.
+        </li>
+        <li>The &lthtml> tag encapsulates the complete web page content. All other tags are 'nested' within the &ltHTML>
+            tag.</li>
+        <li>Any HTML document or web page consists of two main sections the 'head' and the 'body'. </li>
+    </ul>
+    <p>The following elements can be provided within the head tag.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Tags</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lttitle></td>
+                <td>Defines the title that should be displayed on the browser tab</td>
+            </tr>
+            <tr>
+                <td>&ltmeta></td>
+                <td>Metadata is in-general, data about data.
+
+                    Provides metadata about the HTML document.
+
+                    Metadata will not be displayed on the page but will be machine-readable.
+
+                    Used to specify page description, author of the document, last modified, etc.
+
+                    Used by browsers (control how to display content or reload the page), search engines (keywords), or
+                    other web services.
+
+                    Post HTML5, meta tag also allows web designers to take control over the viewport by setting the meta
+                    viewport tag.</td>
+            </tr>
+            <tr>
+                <td>&ltstyle></td>
+                <td>
+                    Defines style information for the web page</td>
+            </tr>
+            <tr>
+                <td>&ltlink></td>
+                <td>Defines a link to other documents like CSS</td>
+            </tr>
+            <tr>
+                <td>&ltscript></td>
+                <td>Defines script like JavaScript</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>The body section contains actual web page content like text,images etc</p>
+    <p>HTML document/web page is saved with .htm or .html extension.</p>
+    <h4>Case-insensitivity</h4>
+    <p>HTML elements are case-insensitive. The browser understands the HTML tags irrespective of their cases.</p>
+    <h4>Platform-independency</h4>
+    <p>HTML Language is platform-independent. That means the same HTML code can run on different operating systems as
+        shown below.</p>
+    <h4>DOCTYPE Declaration</h4>
+    <p>There are many versions of HTML out there such as - HTML 2.0, HTML 3.0, HTML 3.2, HTML4.0, HTML 4.01 and latest
+        is HTML5.0. In each version, some elements and attributes are either added or depreciated. The appearance of
+        your .html page depends on how the browser renders HTML elements. And how the browser renders HTML elements
+        depends on how the browser understands them.</p>
+    <p>Thus, to ensure that the browser understands all HTML elements specific to a particular version, as a developer
+        you need to tell the browser what version of HTML you have followed while developing your web page.</p>
+    <p>This is done by using &lt!DOCTYPE> declaration which stands for Document Type. It tells the browser what version
+        of HTML it should follow for rendering the web page.</p>
+    <img src="img/h5.png" alt="">
+
+    <p>above image signifies that, the code is written in HTML5.</p>
+    <p>Best Practice:
+        Provide a proper DOCTYPE declaration while designing an HTML web page, so that browser can understand the
+        version and interpret elements of the web page appropriately.</p>
+    <h4>Types of Elements</h4>
+    <p>HTML elements can be broadly categorized into two as below:Container/Empty Elements</p>
+    <img src="img/h6.png" alt="">
+    <p>HTML elements can be further categorized into two as below:Block/Inline Elements</p>
+    <p>Block Element:
+
+        A block element begins on a new line occupying the entire width of the parent tag.</p>
+    <p>Inline Element:
+
+        An inline element occupies the necessary space to accommodate the content in the element. Inline elements can be
+        nested within other inline elements, whereas, block elements cannot be nested within inline elements.</p>
+    <img src="img/h7.png" alt="">
+    <h4>HTML Elements - Attributes</h4>
+    <p>HTML elements can contain attributes that can be considered as an additional feature to set various properties
+        and they are optional. </p>
+    <p>Some of the attributes can be used with any of the HTML elements and there can be referred to as ‘global
+        attributes’. Also, some attributes can be used only with particular elements. Following are some features of
+        attributes:</p>
+    <ul>
+        <li>All the attributes can contain properties like name and value which can be used by a developer to assign
+            respective details for that HTML elements.</li>
+        <li>Attributes are to be set only in the start tag of a container HTML element.
+        <li>
+        </li>Attributes are case-insensitive, but it is recommended to use lowercase as a best practice.</li>
+        <li>The best practice is always to quote attribute value even though we will not get any execution errors if
+            they are not provided in quotes.</li>
+    </ul>
+    <p>Example:
+
+        The lang attribute specifies the language of the content of the HTML page.
+
+    </p>
+    <img src="img/h8.png" alt="">
+    <p>Best Practices:</p>
+    <ul>
+        <li>Always quote attribute value since it will not perform as expected if the attribute value contains any
+            special characters.</li>
+        <li>It is recommended to use double-quotes for the values of the attributes.</li>
+        <li>Use lowercase letters for attribute names for consistency.</li>
+        <li>There should not be duplication for the same attribute in an element.</li>
+    </ul>
+    <h4>Comment</h4>
+    <p>As a developer, you may want to document your code, so that you can easily refer to it in the future.
+
+        For this, comments are used.Comments are ignored by the browser.</p>
+    <img src="img/h9.png" alt="">
+    <p>Best Practices:
+
+        Use proper comment lines for documentation on the HTML page when the application is in progress and delete them
+        from the final code to reduce the page size and increase the page readability. </p>
+    <h4>Metadata element </h4>
+    <p>Suppose you want to search tutorials for HTML5 on the web.</p>
+    <p>In this scenario when you type the search string as "MDN" in any search engine and hit the Enter key, then the
+        search engine generates a list of web pages as a result as seen below: </p>
+    <img src="img/h10.PNG" alt="">
+    <p>Note that there is a description associated with each website which helps the user to understand the summary of
+        the web page even without opening it.</p>
+    <p>The head part of the HTML web page contains the additional information otherwise called meta information for the
+        search engine which will not come as a part of the web page and are provided as
+        <meta> tags.
+    </p>
+    <p>There is an attribute named 'description' that summarizes the contents of your page for the benefit of users and
+        search engines to get to know the content of the web page even without opening it.</p>
+    <p>Syntax of
+        <meta> tag:
+    </p>
+    <img src="img/h11.png" alt="">
+    <p>The metadata element is defined within the head element.</p>
+    <img src="img/h12.png" alt="">
+    <p>Let us learn the attributes of the metadata element.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Attribute</th>
+                <th>Value</th>
+                <th>Description</th>
+            </tr>
+        <tbody>
+            <tr>
+                <td>name</td>
+                <td>
+                    <pre>
+application-name
+author
+description
+generator
+keywords
+            </pre>
+                </td>
+                <td>Specifies name for the metadata</td>
+            </tr>
+            <tr>
+                <td>http-equiv</td>
+                <td>
+                    <pre>
+content-type
+default-style
+refresh
+            </pre>
+                </td>
+                <td>Provides an HTTP reader for information/value of the content attribute</td>
+            </tr>
+            <tr>
+                <td>content</td>
+                <td>text</td>
+                <td>Gives the value associated with http-equiv or name attribute</td>
+            </tr>
+            <tr>
+                <td>charset</td>
+                <td>character_set</td>
+                <td>Specifies character coding for an HTML document</td>
+            </tr>
+        </tbody>
+        </thead>
+    </table>
+    <p>Best Practices</p>
+    <ul>
+        <li>The title element can also be considered as part of the metadata.</li>
+        <li>Any web page should have only one title tag per page.</li>
+        <li>The title should be unique for each web page in the application.</li>
+        <li>Start the title tag with the main keyword.</li>
+        <li>Specify the character encoding of the document.</li>
+        <li>Use UTF-8 encoding while designing the web page. It is not recommended to use ASCII incompatible encodings
+            to avoid security risks because browsers that do not support them may interpret insecure content.</li>
+        <li>Avoid duplicate descriptions inside metadata and try to include the targeted keywords in the description, as
+            search engines index your page based on the description.</li>
+        <li>Use the below http-equiv value to set the HTTP header with content-security-policy by specifying its values
+            with relevant details. This is to update the browser to load the page required resources such as images,
+            scripts to be loaded from the trusted origin only. Therefore helps in preventing security attacks such as
+            cross-site scripting.</li>
+    </ul>
+    <p>Example:
+
+        Below line of code in the web app update browser to load page required resources from 2 origins by specifying
+        values to default-src as:</p>
+    <code>
+<pre>
+    &ltmeta http-equiv="content-security-policy" content="default-src 'self' http://xyz.com">
+</pre>
+</code>
+    <p>self indicates from the current domain to which page belongs to.</p>
+    <p>Explicitly mentioning the http://xyz.com value in the above example indicates that this domain is the trusted
+        origin to load the resources.</p>
+    <p>Use the below meta code line to specify the page content display to be adjusted to the device width being used to
+        view the content with the initial zoom level as 100%. This is useful to display content on different kinds of
+        devices such as desktop, laptop, and mobile devices.</p>
+    <code>
+<pre>
+     &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+</pre>
+</code>
+    <p>You can change the zoom level depending on your requirement by specifying values to the initial-scale attribute
+        as any positive value from 0.0 to 10.0. For example you can consider 0.1 = 10% zoom and 1.0 = 100% respectively.
+    </p>
+    <code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml lang="en-US">
+    &lthead>
+      &lttitle>Meta tag example&lt/title>
+    
+      &lt!-- Specifies the character encoding for the document. -->
+      &lt!-- ISO-8859-1  -->
+      &ltmeta charset="utf-8">
+    
+      &ltmeta name="keywords" content="Online, Shopping" />
+
+      &ltmeta name="author" content="Susan">
+      &ltmeta name="description" content="This is a sample demo to understand HTML.">
+      
+      &lt!-- A web app wants to allow content from a current domain and truste domain xyz 
+        and all its subdomains -->
+      &ltmeta http-equiv="content-security-policy" content="default-src 'self' http://xyz.com" >
+    
+      &lt!-- Specify the preferred style sheet to use.-->
+      &ltmeta http-equiv="default-style" content="/style.css">
+    
+       &lt!-- page content display to be adjusted to the device width being used to view the content with initial zoom level as 100% -->
+      &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+    &lt/head>
+    &ltbody>
+      &ltp> Sample demo to explain meta tag with attributes &lt/p>
+    &lt/body>
+    &lt/html>
+</pre>
+</code>
+    <h4>Sectioning Elements</h4>
+    <p>Web crawlers like Google, Bing, etc. are widely used for searching websites. They lookup each web page code and
+        render the web page as per the HTML tags used and the styling associated.</p>
+    <p>Any regular user who is accessing any website will notice the below observations in most of the web pages of the
+        website:</p>
+    <ol>
+        <li>Right at the beginning of a web page, a header containing the website name is clearly displayed in the form
+            of a logo or text. This helps the user to know which website they are currently referring to.</li>
+        <li>The links to navigate to other web pages of the website are displayed in the header. This makes a website
+            user to figure out easily how to access other web pages of that website.</li>
+        <li>Details like copyright, about us, etc. are usually displayed at the bottom end of the screen, as part of the
+            footer, as these details hold lesser importance, as compared to the actual data that they intend to read in
+            the page.</li>
+    </ol>
+    <p>The below figure illustrates some of the widely used sectioning elements in HTML5.
+    </p>
+    <img src="img/h13.PNG" alt="">
+
+    <p>Below are some of the semantic tags in HTML:</p>
+    <p>&ltheader>:
+
+        The &ltheader> element is used to include header content like web page logo, login link, website settings link,
+        etc. Ideally, every web page has one header. However, multiple headers may also be included as per need.</p>
+
+    <code>
+<pre>
+    &ltheader>
+        &lth3>About Us&lt/h3>
+    &lt/header> 
+</pre>
+</code>
+    <p>&ltfooter>:
+
+        The &ltfooter> element is used to include footer content like copyright, about us, terms and conditions link,
+        etc. One footer is included per page.</p>
+    <code>
+<pre>
+    &ltfooter>
+        Copyright @ WayFar, 2020
+        &lta href="./AboutUs.html">About Us&lt/a>
+    &lt/footer>
+    
+</pre>
+</code>
+    <p> &ltmain>:
+
+        The &ltmain> element is used for demarking the main content of the web page. Only one main tag per web page is
+        allowed.</p>
+    <code>
+<pre>
+    &ltmain>
+        &ltsection>
+            ..
+        &lt/section>
+        &ltsection>
+            &ltarticle>
+                ..
+            &lt/article>
+            &ltarticle>
+                ..
+            &lt/article>
+        &lt/section>
+    &lt/main>
+    
+</pre>
+</code>
+    <p>&ltnav>:
+
+        The &ltnav> element is used for navigational content like navigation menu for the website. There is no limit to
+        the number of times &ltnav> tag can be used on a web page. As long as there are navigation links, links can be
+        wrapped inside
+    <nav>.</p>
+        <code>
+<pre>
+    &ltnav>
+        &lta href="Home.html">Home&lt/a>
+        &lta href="Login.html">Login&lt/a>
+    &lt/nav>
+    
+</pre>
+</code>
+
+        <p>&ltsection>:
+
+            The &ltsection> element is used to organize the web page into different sections.</p>
+        <code>
+<pre>
+    &ltmain>
+        &ltsection>
+            &ltp>Section 1&lt/p>
+        &lt/section>
+        &ltsection>
+            &ltp>Section2&lt/p>
+        &lt/section>
+    &lt/main>
+    
+</pre>
+</code>
+        <p>&ltarticle>:
+
+            The &ltarticle> element is used to include self-contained composition on a web page.</p>
+        <code>
+<pre>
+    &ltarticle>
+        &lth1>MEAN stack&lt/h1>
+        &ltp>MEAN stack training includes discussion on MongoDB, Node,
+     Express and Angular with the corresponding certifications&lt/p>
+    &lt/arcicle>
+    
+</pre>
+</code>
+        <p>&ltaside>:
+
+            The &ltaside> element is used to include content related to the main content of the web page.</p>
+        <code>
+<pre>
+    &ltarticle>
+        &lth1>MEAN stack&lt/h1>
+        &ltp>MEAN stack training includes discussion on MongoDB, Node, Express and Angular with the corresponding certifications&lt/p>
+        &ltaside>
+            &ltp>Visit our official website to attempt our certifications&lt/p>
+        &lt/aside>
+    &lt/arcicle>
+    
+</pre>
+</code>
+
+        <p>&ltaddress>:
+
+            The &ltaddress> element helps to semantically organize address details in HTML content.</p>
+        <code>
+<pre>
+    &ltaddress>
+        John
+        #231A
+        Palace Lane
+        Bangalore
+    &lt/address>>
+    
+</pre>
+</code>
+
+        <p>Make below observation(s) in the given code-snippet:</p>
+        <ol>
+            <li>The &ltheader> element contains header information of the web page.</li>
+            <li>The &ltarticle> element contains the main content of the web page.</li>
+            <li>The &ltsection> element groups thematically related content.</li>
+            <li>The &ltaside> element contains side-info.</li>
+            <li>The &lth1> element defines heading.</li>
+            <li>The &ltnav> element defines navigational links.
+            </li>
+            <li>The &ltfooter> element contains footer information.</li>
+        </ol>
+        <code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml>
+        &ltbody>
+            &ltheader>
+                &ltnav> Login | SignUp &lt/nav> 
+                &lth1> Brand Name &lt/h1>
+            &lt/header>
+    
+            &ltarticle>
+                &ltsection>
+                    &ltp>Paragraph 1&lt/p>
+                    &ltp>Paragraph 2 is thematically related to Paragraph 1&lt/p>
+                &lt/section>
+            &lt/article>
+            &ltaside>
+                Side info 
+            &lt/aside>
+            &ltfooter>
+                &ltnav> About Us | Contact Us &lt/nav>
+            &lt/footer>
+        &lt/body>
+    &lt/html>
+    <img src="img/h14.png" alt="">
+</pre>
+</code>
+
+
+        <h3>Basic HTML Elements</h3>
+        <h4>Grouping Elements - Need</h4>
+        <p>While developing any web page there may be needed for us to develop some pages like About Us, Terms and
+            Conditions, News report, etc. which would contain a lot of textual information, in that situation we might
+            commonly come across the below-mentioned scenarios:</p>
+        <p>1. The need to associate mandatory visual spacing between logical portions of the textual description so as
+            to improve text readability. Have a look at the below About Us page, for example.</p>
+        <img src="img/h15.PNG" alt="">
+        <p>The page provides a basic description of what the website essentially does and also details what it
+            especially offers to its members. Logically, these two descriptions are separate and the same need to be
+            conveyed visually to the user as well so that the readability of webpage content is achieved.</p>
+        <p>2. The need to highlight the topic headings. For example: In the below Terms and Conditions page,</p>
+        <img src="img/h16.PNG" alt="">
+        <p>The topic headers like “Limited License”, “Terms Policy”, etc are highlighted so that the user can quickly
+            differentiate the respective topic description on the webpage.</p>
+        <p>3. The need to group various portions of a web page for various reasons like applying some common styling.
+            For example, in the below screen, descriptions related to Limited License, Copyright, Terms Policy needs to
+            be grouped for applying a common style of black color text</p>
+        <img src="img/h17.PNG" alt="">
+        <p>This is why HTML introduced grouping elements.</p>
+        <p>Grouping elements in HTML5 can be categorized majorly as below:</p>
+        <img src="img/h18.png" alt="">
+        <h4>Paragraph Element</h4>
+        <p>The paragraph element is generally used for denoting a paragraph. Any textual content can be mentioned inside
+            this element.
+
+            It is defined using &ltp>…&lt/p> tag. </p>
+        <p>The paragraph element is a block-level element and hence adds a new line automatically when a paragraph ends.
+            This ensures visual spacing between consecutive paragraphs of text.</p>
+        <p>The paragraph is a block as well as a container element.</p>
+        <code>
+<pre>
+    &ltbody>
+        &ltp>Paragraph 1&lt/p>
+        &ltp>Paragraph 2&lt/p>
+        &ltp>Paragraph 3&lt/p>
+    &lt/body>
+</pre>
+</code>
+        <h4>Division Element</h4>
+        <p>The division element is used to group various other HTML tags. This element helps us in organizing the web
+            page into different sections.</p>
+        <p>If any common rule or style needs to be added to a particular section, the same can be applied to the
+            corresponding division. The rule or style gets applied to all the contents of the division thereby.</p>
+        <p>It is defined using &ltdiv>…&lt/div> tag.</p>
+
+        <h4>Span Element</h4>
+        <p>Similar to the division element, the span element is also used to group various other HTML tags to apply some
+            common styles.</p>
+        <p>It is defined by using &ltspan> ...&lt/span> tag. </p>
+        <p>The span element is by default inline in nature, and hence no new line is added after the span ends. This tag
+            is preferred only when we cannot use any other semantic tags.</p>
+
+        <h4>tryout</h4>
+        <ol>
+            <li>Defining division using a &ltdiv> element.</li>
+            <li>The division acts as a container element (i.e. It is grouping three paragraphs within it).</li>
+            <li>Defining two portions of the same block with the &ltspan> element.</li>
+
+        </ol>
+
+        <code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml>
+        &ltbody>
+            &ltdiv> &lt!-- Groups all 3 paragraphs -->
+                &ltp>Paragraph 1&lt/p>
+                &ltp>Paragraph 2&lt/p>
+                &ltp>Paragraph 3&lt/p>
+                &ltspan>first portion &lt/span>&ltspan> second portion &lt/span>
+            &lt/div>
+        &lt/body>
+    &lt/html>
+    <img src="img/h19.png" alt="">
+</pre>
+</code>
+
+        <h4>List Element</h4>
+        <p>We commonly come across requirements in our web applications where we need to group and display related items
+            in an easily readable manner to the end-user. </p>
+        <p>With HTML Lists, we can group related items and display the items one after the other. This makes it easy to
+            locate a particular item on the web page. In short, HTML Lists help in adding structure and order to related
+            items on a web page, thereby ensuring better readability of related content.</p>
+        <p>HTML lists come in three basic flavors and each one has a specific implementation & specific purpose and
+            meaning. </p>
+        <img src="img/h20.png" alt="">
+        <h4>Unordered List - Syntax</h4>
+        <p>An unordered list is used to create a list of related items, in no specific order</p>
+        <img src="img/h21.png" alt="">
+        <code>
+<pre>
+    &lth1>Courses offered:&lt/h1>
+    &ltul>
+        &ltli>HTML5&lt/li>
+        &ltli>CSS&lt/li>
+        &ltli>JS&lt/li>
+        &ltli>Bootstrap&lt/li>
+    &lt/ul>
+
+</pre>
+</code>
+        <h4>Unordered List - Bullet Types</h4>
+        <p>The types of bullet points can be customized in an unordered list by using the list-style-type property
+            provided by CSS.
+
+            For example, if we want our list to be displayed as below:</p>
+        <img src="img/h22.png" alt="">
+        <code>
+<pre>
+    &lth1>Courses offered:&lt/h1>
+    &ltul style="list-style-type: square;">
+        &ltli>HTML5&lt/li>
+        &ltli>CSS&lt/li>
+        &ltli>JS&lt/li>
+        &ltli>Bootstrap&lt/li>
+    &lt/ul>
+
+</pre>
+</code>
+        <p>The possible values for the list-style-type property are :disc,circle,square.</p>
+        <p>By default, the value 'disc' will be assigned to the property.
+        </p>
+        <h4>Unordered List - Nesting</h4>
+        <p>In HTML, it is also possible to nest lists into different levels.
+
+            For example, if you want to create a nested list as shown below:</p>
+        <img src="img/h23.png" alt="">
+
+        <code>
+<pre>
+    &lth1>Courses Offered:&lt/h1>
+    &ltul>
+        &ltli>Markup
+              &ltul>
+                  &ltli> Basics of HTML 
+                      &ltul>
+                          &ltli> First level course on HTML &lt/li>
+                      &lt/ul>
+                  &lt/li>
+                  &ltli> Adaptive HTML &lt/li>
+              &lt/ul>
+        &lt/li>
+        &ltli>Styling
+        &ltul>
+                  &ltli> CSS3
+                      &ltul>
+                          &ltli> Latest version of CSS &lt/li>
+                      &lt/ul>
+                  &lt/li>
+              &lt/ul>
+        &lt/li>
+      &lt/ul>
+
+</pre>
+</code>
+        <p>If you observe the above-given code snippet, based on the enclosure of the inner &ltul>... &lt/ul> elements
+            on various lines, the default bullet styling of unordered list element has been populated on to the web
+            page. </p>
+        <h4>Ordered List - Syntax</h4>
+        <p>An ordered list is used when the order of items is important and we want to create a list of related items,
+            in a specific order.</p>
+        <img src="img/h24.png" alt="">
+        <code>
+<pre>
+    &lth1>Courses offered:&lt/h1>
+    &ltol>
+        &ltli>HTML5&lt/li>
+        &ltli>CSS&lt/li>
+        &ltli>JS&lt/li>
+        &ltli>Bootstrap&lt/li>
+    &lt/ol>
+</pre>
+</code>
+        <p>Best Practice:
+            It is a good practice to avoid more than one list item per line.</p>
+
+        <h4>Ordered List - Bullet Types</h4>
+        <p> The types of bullet points can be customized in an ordered list by using the list-style-type property
+            provided by CSS.</p>
+        <img src="img/h25.png" alt="">
+        <code>
+<pre>
+    &lth1>Courses offered:&lt/h1>
+    &ltol style="list-style-type: upper-roman;">
+        &ltli>HTML5&lt/li>
+        &ltli>CSS&lt/li>
+        &ltli>JS&lt/li>
+        &ltli>Bootstrap&lt/li>
+    &lt/ol>
+
+</pre>
+</code>
+        <p>Some of the following values for the list-style-type property
+            are:decimal,upper-roman,lower-roman,upper-latin,lower-latin.</p>
+        <p>By default, the 'decimal' value will be set to the CSS property. We can also have 'none' value for the
+            list-style-type property if we do not need any bullets to be present in the list.</p>
+        <p>Let us have a glance over some of the attributes which help us to customize the ordered list while designing
+            a web page. </p>
+        <h4>Ordered List - Attributes</h4>
+        <p>Some of the attributes which can be used with this element are:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>start</td>
+                    <td> Specifies the initial value of the list.</td>
+                </tr>
+                <tr>
+                    <td>reversed</td>
+                    <td>Specifies the pattern to be rendered in reversed order.</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>
+                        <ul>Specifies the different numbering values like :
+                            <li> 1 for number (default).</li>
+                            <li> a for lowercase alphabets.</li>
+                            <li> A for uppercase alphabets. </li>
+                            <li> i for lowercase roman numeral value. </li>
+                            <li> I for uppercase roman numeral value. </li>
+
+
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>For example:</p>
+        <code>
+<pre>
+    &lth1>Courses offered:&lt/h1>
+    &ltol type="a" start="d" reversed>
+        &ltli>HTML5&lt/li>
+        &ltli>CSS&lt/li>
+        &ltli>JS&lt/li>
+        &ltli>Bootstrap&lt/li>
+    &lt/ol>
+
+</pre>
+</code>
+        <img src="img/h26.png" alt="">
+        <p>Best Practice:
+
+            It is recommended to use list-style-type CSS property instead of the &ltol> ... &lt/ol> type attribute
+            unless the pattern of numbering ordering of the list is considered to be very important. </p>
+        <h4>Ordered List - Nesting</h4>
+        <p>Ordered lists can be nested with ordered lists or unordered lists.
+
+            For example, if you want to create a nested list as shown below:</p>
+        <img src="img/h27.png" alt="">
+        <code>
+<pre>
+    &lth1>Courses Offered:&lt/h1>
+    &ltol>
+        &ltli>Markup
+              &ltol>
+                  &ltli> Basics of HTML 
+                      &ltul>
+                          &ltli> First level course on HTML &lt/li>
+                      &lt/ul>
+                  &lt/li>
+                  &ltli> Adaptive HTML &lt/li>
+              &lt/ol>
+        &lt/li>
+        &ltli>Styling
+        &ltol>
+                  &ltli> CSS3
+                      &ltul>
+                          &ltli> Latest version of CSS &lt/li>
+                      &lt/ul>
+                  &lt/li>
+              &lt/ol>
+        &lt/li>
+      &lt/ol>
+
+</pre>
+</code>
+        <h4>Description List</h4>
+        <p>Description lists are used to contain name-value groups, where names can be a list of terms and values can be
+            their related descriptions.</p>
+        <p>The description list otherwise called definition list arranges items in the same way as the meaning
+            associated with each word is arranged in a dictionary as below:</p>
+        <img src="img/h28.PNG" alt="">
+        <p>Description lists are created with the &ltdl> tag.
+
+            The term is placed within &ltdt>.. &lt/dt> tag and description is placed between &ltdd>...&lt/dd> tag.</p>
+
+        <p>Let us see the syntax now:</p>
+        <code>
+<pre>
+    &ltdl>
+        &ltdt> Description Term 1 &lt/dt>
+        &ltdd> Description Definiton 1 &lt/dd>
+        &ltdt> Description Term 2 &lt/dt>
+        &ltdd> Description Definition 2 &lt/dd>
+    &lt/dl>
+        
+</pre>
+</code>
+        <p>Best Practice:
+
+            It is recommended not to use the
+            &ltdl> tag while designing any dialogues concepts.</p>
+        <h4>Quotation Element and Citation Element</h4>
+        <p>While designing a website, we might include quotations or blocks of text from another source on our web page.
+            For example:</p>
+        <img src="img/h29.PNG" alt="">
+        <p>Visually, such quotes if included, should be identifiable. Also, the browser needs to render this
+            appropriately. This is why the quotation and citation element is introduced in HTML.
+
+        </p>
+        <p>The quotation element helps to display the quotation texts with an alignment such that it looks unique and
+            different from the remaining textual content.</p>
+        <p>By default, the quotation element is rendered visually with indentation by the browsers.
+        </p>
+        <p>The quotation element also helps to include the citation, i.e., the URL from where the quote has been picked.
+            This helps to retain the reference courtesy to the original site.</p>
+        <p>Quotation element is defined using &ltblockquote>...&lt/blockquote> tag.</p>
+        <p>The source of the quote is mentioned in the cite attribute of the blockquote element.</p>
+        <code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml>  
+        &ltbody>
+            Below line has been referred from OWASP website: 
+            &ltblockquote cite="https://owasp.org/">
+                The Open Web Application Security Project® (OWASP) is a nonprofit foundation that works to improve the security of software.
+            &lt/blockquote>
+        &lt/body>
+    &lt/html>
+    
+</pre>
+</code>
+        <p>The content enclosed inside &ltblockquote>...&lt/blockquote> will appear in Chrome browser with default
+            indentation</p>
+        <p>Note: The output may vary in different browsers.</p>
+        <h4>Link Element</h4>
+        <p>A website necessarily is a collection of related web pages, where each web page is typically created for a
+            particular purpose.</p>
+        <p>Below are the advantages if hyperlinks are used:</p>
+        <p>1. We can create connections or links between HTML documents/web pages and users can navigate from one web
+            page to another by clicking on "hyperlinks".
+        </p>
+        <p>2. We would now feel that we have a website which is a collection of interconnected web pages.</p>
+        <h4>Link Element - Syntax</h4>
+        <p>Link elements are defined using &lta> .. &lt/a> tag as below:</p>
+        <img src="img/h30.png" alt="">
+        <p>Text / Image can be used as link.
+
+            Text / Image that provides such a link is called "hyperlink".</p>
+
+        <h4>Link Element - Types</h4>
+        <p>A hyperlink is a prime way in which users can navigate from one web page to another. A hyperlink can point to
+            another web page, or website, or files, or even specific locations on the same web page.</p>
+        <p>Lets discuss various hyperlinksj and how they are created in an HTML page.</p>
+        <p>Text hyperlink:
+            A clickable text is used to take the user to another web page. Largely, we use text-based hyperlinks.
+            This text usually appears with an underline and in a different color.
+            This color mapping is automatically done by the browser for all text hyperlinks.</p>
+        The text is mentioned within the start tag &lta> and end tag &lt/a> and is displayed on the screen in a
+        clickable manner
+        <code>
+        <pre>
+            &lta href="Enquire.html"> Click here to connect to us &lt/a>&ltbr/>
+            &lta href="http://www.google.com"> Click here to go to Google website &lt/a>
+        </pre>
+        </code>
+        <p>Image hyperlink:
+            A clickable image is used to take the user to another web page.</p>
+        We can also have an image-based hyperlink. For this, we need to wrap the image inside an anchor tag.
+        On click of the image, the user gets redirected and the google.com website gets loaded in the browser tab.
+        <code>
+        <pre>
+            &lta href="http://www.google.com">
+                &ltimg src="google.jpg" />
+            &lt/a>
+        </pre>
+        </code>
+        <p>Bookmark hyperlink:
+            A clickable text/image is used to take the user to another part of the same web page.</p>
+
+        When a web page is lengthy, we commonly come across icons or links that say "Go to Top" or "Go to Bottom". Click
+        on these links does take the user to the top of the page or bottom, as applicable. Sometimes we also observe, on
+        click of a text in the menu bar, the page auto scrolls to that particular section on that page. This is achieved
+        by using the Bookmarking concept and the same is implemented by using hyperlinks.
+        <code>
+        <pre>
+            &lth2 id="top">Topic&lt/h2>
+            &ltp>Detail……&lt/p>
+            &ltp>Detail……&lt/p>
+            &ltp>Detail……&lt/p>
+            &lta href="#top">Go to Top&lt/a>
+        </pre>
+        </code>
+
+        <p>Email hyperlink:
+            It allows users to send an email by clicking on that link.
+            To send an email on click of a hyperlink, use the below syntax:
+            On click of the link, the installed mail client on the computer gets activated for sending the email. An
+            installed email client should necessarily be installed on the computer for this to work.</p>
+        <code>
+        <pre>
+            &lta href="mailto:someone@xyz.com?Subject=Hello%20again">Send Mail&lt/a>
+        </pre>
+        </code>
+        <p>Contact number hyperlink:
+            It allows the user to call a number by clicking on that link.
+            To make a call to a number on click of a hyperlink, use the below syntax:
+        </p>
+        <code>
+        <pre>
+            &lta href="tel:+9999">Call Us&lt/a>
+        </pre>
+        </code>
+        <h4>Link Element - Target Attribute</h4>
+        <p>Link element has an attribute named 'target' which specifies in which window, the hyperlinked content should
+            appear.
+
+            The target attribute can hold the following values: </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>The Possible value of "target"</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>_blank </td>
+                    <td>Opens a web page in a new window or tab</td>
+                </tr>
+                <tr>
+                    <td>_self</td>
+                    <td>Opens a web page in the same window (default)</td>
+                </tr>
+                <tr>
+                    <td>_parent</td>
+                    <td>Opens a web page in the parent frame</td>
+                </tr>
+                <tr>
+                    <td>_top</td>
+                    <td>Opens a web page in the full body of the window</td>
+                </tr>
+                <tr>
+                    <td>frame-name</td>
+                    <td>Opens a web page in a named frame</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>For example:</p>
+        <code>
+<pre>
+    &lta href="https://owasp.org/" target="_blank">Link to OWASP web site&lt/a>
+</pre>
+</code>
+        <h4>Link Element - Best Practices</h4>
+        <ul>
+            <li>It is a best practice to use href and rel attributes for links based on the requirement.</li>
+            <li>It is recommended to use the values like noopener and noreferrer for the rel attribute in links to avoid
+                security threats such as reverse tabnabbing.</li>
+        </ul>
+        <code>
+<pre>
+    &lta href="http://example.com" target="_blank" rel="noopener noreferrer">
+        Example site
+        &lt/a>        
+</pre>
+</code>
+        <ul>
+            <li>rel=”noopener” attribute prevents the new page to be accessed by the window.opener property by ensuring
+                it executes in a separate process.</li>
+            <li>rel=”noreferrer” attribute is similar to noopener along with it prevents passing on the referrer details
+                to the new page.</li>
+        </ul>
+        <h4>Text - level Semantic Elements - Need</h4>
+        <p>When displaying any content, specifically some kind of text/numerals on web pages, we might need to format
+            certain portions of the content.
+
+            Consider the below screenshot:</p>
+        <img src="img/h31.PNG" alt="">
+        <ul>
+            <li>The phone number is the quickest connection as it invites instant response and hence the number is in
+                bold.</li>
+            <li>The email should be clearly readable and distinguishable and hence shown in italics.</li>
+            <li>Business Timings details need to be considered as very important and it should be noted by the user to
+                know when the company team would be available to reachable to solve their queries. This field can be
+                underlined.</li>
+        </ul>
+        <p>Adding a bit of formatting to the text can help in adding appropriate emphasis and makes it easier for the
+            user to figure the important information on the screen very quickly.</p>
+        <h4>Widely Used Text-Level Semantic Elements</h4>
+        <p>Widely Used Text-Level Semantic Elements</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Element</th>
+                    <th>Description</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>abbr</td>
+                    <td>Defines abbreviation or acronym</td>
+                </tr>
+                <tr>
+                    <td>q</td>
+                    <td>Represents text quoted from another source by adding quotation mark (" ")</td>
+                </tr>
+                <tr>
+                    <td>small</td>
+                    <td>Displays text in relatively smaller font-size</td>
+
+                </tr>
+                <tr>
+                    <td>mark</td>
+                    <td>Highlights text</td>
+
+                </tr>
+                <tr>
+                    <td>strong</td>
+                    <td>Displays text in bold</td>
+
+                </tr>
+                <tr>
+                    <td>em</td>
+                    <td>Displays text in the italic or emphasized format</td>
+
+                </tr>
+                <tr>
+                    <td>sub</td>
+                    <td>Displays text as subscript</td>
+
+                </tr>
+                <tr>
+                    <td>sup</td>
+                    <td>Displays text as superscript</td>
+
+                </tr>
+                <tr>
+                    <td>span</td>
+                    <td>Provides styling to text</td>
+                </tr>
+                <tr>
+                    <td>br</td>
+                    <td>Breaks line of text</td>
+                </tr>
+                <tr>
+                    <td>del</td>
+                    <td>strikethrough text</td>
+
+                </tr>
+            </tbody>
+        </table>
+        <p>Note: The &ltsup> and &ltsub> elements can be replaced by the CSS property "vertical-align" especially while
+            designing a logo of a product or a business that uses a raised baseline.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>code</th>
+                    <th>output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lth2>Text &ltsmall>Small&lt/small> in HTML&lt/h2>
+                    </td>
+                    <td><img src="img/h32.PNG" alt=""></td>
+                </tr>
+                <tr>
+                    <td>HTML &ltmark>Marked&lt/mark> Formatting
+                    </td>
+                    <td><img src="img/h33.PNG" alt=""></td>
+                </tr>
+                <tr>
+                    <td>&ltstrong>Text in bold&lt/strong>
+                    </td>
+                    <td><img src="img/h34.PNG" alt=""></td>
+                </tr>
+                <tr>
+                    <td>&ltem>Text emphasizedlt/em>
+                    </td>
+                    <td><img src="img/h35.PNG" alt=""></td>
+                </tr>
+                <tr>
+                    <td>Example of &ltsub>subscripted&lt/sub> text.
+                    </td>
+                    <td><img src="img/h36.PNG" alt=""></td>
+                </tr>
+                <tr>
+                    <td>Example of &ltsup>superscripted&lt/sup> text.
+                    </td>
+                    <td><img src="img/h37.PNG" alt=""></td>
+                </tr>
+                <tr>
+                    <td>This is &ltdel>deleted&lt/del> content.
+                    </td>
+                    <td><img src="img/h38.PNG" alt=""></td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Best Practices:</h4>
+        <ul>
+            <li>Do not use the &ltem> element to display any warning /caution content in any web page creation.</li>
+            <li>Avoid using &ltem> just to apply italic styling instead it is recommended to use CSS font-style property
+                for italic styling.</li>
+            <li>Avoid &lts>,&lti>,&ltb> and &ltu> elements while coding any web page.</li>
+            <li>It is a best practice to include Title Attribute for &ltabbr> element.</li>
+            <li>Avoid the &ltspan> element as much as possible.</li>
+
+        </ul>
+        <h4>Character Entities</h4>
+        <p>Some characters are reserved in HTML.
+
+            For example: If you use the less than (&lt) or greater than (>) sign in your content, the browser may mix
+            them with HTML tags.
+
+            Also, some characters are unavailable on the keyboard.</p>
+        <p>For example: ©
+
+            Character entities are used to include such character content on a web page.</p>
+        <img src="img/h39.png" alt="">
+        <p>The table below lists widely used character entities supported in HTML5.</p>
+<img src="img/h40.png" alt="">
+   <h4>Global Attributes</h4>     
+<p>Attributes that can be used with all HTML elements are called "Global attributes".</p>
+<p>The table below lists a few global attributes supported in HTML5.
+</p>
+<img src="img/h41.png" alt="">
+<code>
+<pre>
+    &ltdiv>
+        &ltp contenteditable="true" spellcheck="true">This is editable&lt/p>
+        &ltp dir="rtl">The direction of the text is from right to left&lt/p>
+        &ltp title="mydemo">Hover your mouse here to see the title&lt/p>
+        &ltp id="id1">ID should be unoque for each element&lt/p>
+    &lt/div>
+    
+</pre>
+</code>
+
+<h3>Table Elements</h3>
+<p>HTML Tables provide a means by which we can create a tabular format of data on the web.</p>
+<p>HTML table arranges content into rows and columns and can be used on websites for the effective display of information in a tabular structure. 
+
+    We can create a simple table, with or without borders. </p>
+    Additionally, an HTML table can also have a caption
+<p>We can also create a complex tabular structure where contents can span across multiple columns/multiple rows. </p>
+<img src="img/h42.PNG" alt="">
+<h4>Table Element - Syntax</h4>
+<p>The table element is defined in HTML using &lttable>...&lt/table> tag
+
+    It contains table header and table body.
+    
+    The table header is for adding header information like column headers and the table body is for table contents.</p>
+<img src="img/h43.png" alt="">
+<p>The following elements are used within the table element:</p>
+<img src="img/h44.png" alt="">
+<code>
+<pre>
+    &lttable>
+        &ltcaption>Table heading&lt/caption>
+        &ltthead>
+            &lttr> 
+                &ltth>Column 1 heading&lt/th>
+                &ltth>Column 2 Heading&lt/th>
+            &lt/tr>
+        &lt/thead>
+        &lttbody>
+            &lttr>
+                &lttd>Column 1 data&lt/td>
+                &lttd>Column 2 data&lt/td>
+            &lt/tr>
+        &lt/tbody>
+    &lt/table>
+    
+</pre>
+</code>
+<img src="img/h45.png" alt="">
+<p>The &lttable> element encloses all the other table elements in it.
+
+    The optional &ltthead> and &lttbody> elements helps us to logically divide the table content.
+    
+    The &ltth> element is used to define the column heading.
+    
+    The &lttr> element creates a new row.
+    
+    The &lttd> element creates a new table column.</p>
+<p>Example:Suppose the developer has to design an HTML table as shown below:</p>
+<img src="img/h46.png" alt="">
+<p>Note that, Node and Express are logically related columns, and the same styling should be applied for both.</p>
+<p>The <colgroup> element in HTML helps us to group the related columns especially to provide some common CSS property.</p>
+<p>The HTML code snippet to achieve the above requirement is:</p>
+<code>
+<pre>
+    &lttable>
+        &ltcaption>MERN stack developer program&lt/caption>
+        &ltcolgroup>
+            &ltcol style="background-color:lightblue;">
+            &ltcol span="2" style="background-color: lightgreen;">
+            &ltcol style="background-color: lightpink;">
+        &lt/colgroup>
+        &lttr>
+            &ltth>Technology&lt/th>
+            &lttd >MongoDB&lt/td>
+            &lttd >Node&lt/td>
+            &lttd >Express&lt/td>
+            &lttd>React&lt/td>
+        &lt/tr>
+        &lttr>
+            &ltth >Description&lt/th>
+            &lttd>The database&lt/td>
+            &lttd>Node is the base for server side scripting&lt/td>
+            &lttd>JS framework for web server development&lt/td>
+            &lttd>JS library to design the front end&lt/td>
+        &lt/tr>
+    &lt/table>
+</pre>
+</code>
+<p>The &lttable> element encloses all the other table elements in it.
+
+    Line numbers 3-7 code which has been enclosed between the &ltcolgroup> element helps us to logically group the related column data and also customize the default look and feel of the respective column through CSS properties. 
+    
+    The &ltcolgroup> element has an attribute "span" which carries the information regarding how many columns are to be grouped together. The default value of this span attribute is 1.
+    
+    The &lttr> element helps to create a new table row.
+    
+    The &lttd> element helps to create a new table column.</p>
+<h4>Best Practices:</h4>
+<ul>
+    <li>It is important that the table should be accessible to visually impaired users and hence it is recommended to provide a table description using the &ltcaption> element.</li>
+<li>It is a best practice to associate table headers &ltth> elements with their &lttd> cells.</li>
+<li>A table can be styled using appropriate CSS properties like height, and width for customizing the default look and feel of this element.</li>
+</ul>
+
+<h4>Colspan and Rowspan Attributes</h4>
+<p>The elements &lttd > and &ltth>  supports the attributes namely colspan and rowspan which helps to merge the table cells accordingly.</p>
+<p>The colspan attribute accepts a numeric value and merges specified numeric value of columns together whereas, the rowspan attribute accepts a numeric value and merges specified numeric value of rows together.
+
+    Consider the below table with 4 rows and 4 columns.</p>
+<img src="img/h47.png" alt="">
+<p>The "colspan" attribute merge columns.</p>
+<p>For example, if we provide colspan attribute with a value 2, then 2 columns of the table will be merged as shown below:</p>
+<img src="img/h48.png" alt="">
+<p>The "rowspan" attribute merge rows.</p>
+<p>And, if we provide rowspan attribute with a value 2, then 2 rows of the table will be merged as shown below:</p>
+<img src="img/h49.png" alt="">
+<p>Example:</p>
+<code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml>
+        &ltbody>
+          &lttable border="2">
+                &ltcaption>Training Status of the Team&lt/caption>
+                &lttr>
+                    &ltth colspan="2">Employee Details&lt/th>
+                    &ltth>Training Status&lt/th>
+                &lt/tr>
+                &lttr> 
+                    &lttd rowspan="2">Oct'20&lt/td>
+                    &lttd>Jacob, #1002&lt/td>
+                    &lttd>Completed&lt/td>
+                &lt/tr>
+                &lttr>
+                    &lttd>Jeenie, #3001&lt/td>
+                    &lttd>In progress&lt/td>
+                &lt/tr>
+            &lt/table>
+        &lt/body>
+    &lt/html>  
+</pre>
+</code>
+<img src="img/h50.png" alt="">
+
+<h3>Form Elements</h3>
+<h4>Form Elements - need</h4>
+<p>In a web application, providing user's inputs is required in various contexts such as:</p>
+<ul>
+    <li>Provide users' information to create his/her account with a website</li>
+<li>Provide a username and password to login into the account.</li>
+<li>Provide feedback on a tour package the user had used, etc.</li>
+</ul>
+<p>There has to be a mechanism through which a website can capture user inputs. This is why HTML forms have been introduced.
+
+    HTML Forms, also known as Web Forms, help in capturing information from the user of a web application.
+   
+   Users can key-in the details such as name, email, phone numbers, comments, dates, and other needed values using the HTML form inputs. Users can also select from a predefined set of values.
+   
+   A sample form is illustrated below:
+   
+   </p>
+
+<img src="img/h51.png" alt="">
+<h4>Form Elements - Syntax</h4>
+<p>The form can be created using &ltform>...&lt/form> tag of HTML. 
+
+    The &ltform> tag has the below attributes:</p>
+<ul>
+    <li>method: Defaults to HTTP "get" method of submission to the server. To use HTTP "post", use method="post"    </li>
+<li>action: The URL to which the form data has to be submitted</li>
+<li>target: Specifies if the submitted result will open in the current window, a new tab, or on a new frame</li>
+</ul>
+<img src="img/h52.png" alt="">
+
+<h4>Form Input Elements - Syntax</h4>
+
+<p>The form input element is used to collect details from the user.</p>
+<img src="img/h53.png" alt="">
+<p>The table below lists the various types of input elements.</p>
+<img src="img/h54.png" alt="">
+
+<p>Let us learn some of the basic input types of HTML form and understand their implementation in short.</p>
+<p>Input type - text: 
+
+    A single-line text field. The value attribute defines the value of the input field.</p>
+<img src="img/h55.png" alt="">
+<p>Input type - password: 
+
+    An input field can be used to enter a password.</p>
+<img src="img/h56.png" alt="">
+<p>Input type - email: 
+
+    An input field that accepts email addresses. 
+    
+    It has in-built validation for an email.</p>
+<img src="img/h57.png" alt="">
+<p>Input type - number: </p>
+<ul>
+<li>Defines an input text box, where the user can enter only numerical input. </li>
+<li>Gives an error on form submission if the value entered goes beyond the min and max limits and includes built-in validation to reject non-numerical values. </li>
+<li>Attributes min and max can be used to define a boundary and step attribute value which can be used for defining the difference between consecutive numbers.</li>
+
+</ul>
+<img src="img/h58.png" alt="">
+<p>  Input type - checkbox: </p>
+<ul>
+    <li>Defines a checkbox.</li>
+    <li>The checked attribute checks that particular checkbox value. </li>
+    <li>Also, multiple checkboxes can be checked at a time.</li>
+</ul>
+<img src="img/h59.png" alt="">
+<p>Input type- radio:</p>
+<ul>
+    <li>Defines a radio button.</li>
+    <li> The name attribute specifies the associated name of that radio button.</li>
+    <li>Radio buttons in a group should have the same name.</li>
+</ul>
+<img src="img/h60.png" alt="">
+<p>Input type - file: 
+
+    Creates a control to upload a file to the server.</p>
+    <img src="img/h61.png" alt="">
+<p>  &ltbutton>  element:</p>
+<ul>
+    <li>Defines a clickable button that can be used to submit the form</li>
+    <li>The button can be of 3 types:
+        <ul>
+            <li>submit (default with &ltbutton> tag)</li>
+            <li>reset (to reset the form)</li>
+            <li>button (just a clickable button)</li>
+        </ul>
+    </li>
+</ul>
+<img src="img/h62.png" alt="">
+<p>Input type - URL: 
+
+    Defines a text input that can capture any input value starting with http:// or https://. If there is a pattern mismatch, it shows an error on form submission.</p>
+<img src="img/h63.png" alt="">
+
+<p>&lttextarea> element: </p>
+<ul>
+    <li>Defines a multi-line text field.</li>
+    <li>It is not possible to set a default text using the value attribute. Hence, default text can be placed into &lttextarea>…&lt/textarea> tag.</li>
+</ul>
+<img src="img/h64.png" alt="">
+
+<p>Input type: Hidden:
+
+    You may want to submit supplementary data (such as users' language of user input) to the server, without any user interaction.
+    
+    This can be done using a hidden element.</p>
+<img src="img/h65.png" alt="">
+<h4>Label</h4>
+<p>The &ltlabel> element is used to associate a text label with a form &ltinput> field. The label is used to tell users the value that should be entered in the associated input field.</p>
+<p>Additionally, the "for" attribute of the label can point to the "id" of input control. This ensures the cursor focuses on the respective input control on the click of the label.</p>
+<p>It also enhances the usability, by allowing the user to toggle the control by clicking on text written within &ltlabel>…&lt/label> tag.</p>
+<img src="img/h66.png" alt="">
+
+<h4>practice</h4>
+<code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml>
+        &ltbody>
+            &ltform>
+                &lth4>Register for Online Trainings&lt/h4>
+    
+                &lt!-- input fields types text/password/email/number  -->
+                Username:&ltinput type="text"/> &ltbr/>
+                Password:&ltinput type="password"/> &ltbr/>
+                Contact:&ltinput type="number"/> &ltbr/>&ltbr/>
+    
+                &lt!-- input fields type checkbox -->
+                Select technologies needed: 
+                &ltinput type="checkbox" value="HTML" checked /> HTML
+                &ltinput type="checkbox" value="CSS"/> CSS 
+                &ltinput type="checkbox" value="JS"/> JS&ltbr/>&ltbr/>
+    
+                &lt!-- input field type radio button -->
+                Select training mode: 
+                &ltinput type="radio" name="training" value="classroom" checked /> Classroom
+                &ltinput type="radio" name="training" value="VCR" /> VCR &ltbr/>
+    
+                &lt!-- input field type hidden -->
+                &ltinput type="hidden" name="language" value="english" /> &ltbr/>&ltbr/>
+                
+                Enter the URL of the certified training if any: &ltinput type="url" /> &ltbr/> &ltbr/>
+    
+                &lt!-- input field type button -->
+                &ltinput type="button" value="Click here to see the available trainings"/> &nbsp;&nbsp;
+                &lt!-- input field type submit -->
+                &ltinput type="submit"/> &nbsp;&nbsp;
+    
+            &lt/form>
+        &lt/body>
+    &lt/html>
+</pre>
+</code>
+<img src="img/h67.png" alt="">
+<h4>Color and Date Pickers</h4>
+<p>Input type - color: 
+
+    Defines a color picker.</p>
+<img src="img/h68.png" alt="">
+<p> Input type - date: 
+
+    Creates a date-picker which is used to collect dates.
+    
+    </p>
+<img src="img/h69.png" alt="">
+<p>Input type – datetime-local:
+
+    Defines a date-time picker, where the user can pick a date as well as time</p>
+    <img src="img/h70.png" alt="">
+<p>Input type – week: 
+
+    Defines a date picker, where the user can pick a week. </p>
+    <img src="img/h71.png" alt="">
+<p>Input type – month: 
+
+    Defines a date picker, where the user can pick a month. </p>
+    <img src="img/h72.png" alt="">
+<h4>Select and Datalist Elements</h4>
+<p>We have &ltselect> and &ltdatalist> elements in HTML which helps to collect input data from user as a drop-downs.
+
+    Let us see them in detail:</p>
+<p>&ltselect> element : </p>
+<ul>
+    <li>Defines a drop-down list.</li>
+    <li>The "multiple" attribute can be used for having a multi-select dropdown menu.</li>
+</ul>
+<img src="img/h73.png" alt="">
+
+<p> &ltdatalist> element: </p>
+<ul>
+    <li>Defines a set of pre-defined options available to choose for an &ltinput> element.</li>
+    <li>In the below example list attribute holds lists of possible options, the value assigned to the list attribute of the input element and id attribute of datalist attribute should be the same and the value sent to the server should be assigned to the option element value attribute. </li>
+</ul>
+<img src="img/h74.png" alt="">
+<p>Note: &ltselect> allows the user to select from some pre-defined options.
+
+    Whereas, for the &ltdatalist> element, even though it is suggested to select from the given options, the user can actually enter the data to the input field as any other input field.
+    
+    Also, Output may vary for some input elements according to the browser</p>
+    <p>selected attribute</p>
+    <code>
+    <pre>
+        &ltoption value="WD" selected>Web Developer &lt/option>
+        :
+        selected is an attribute ok
+    </pre>
+    </code>
+<p>An &ltoption> element is used to create menu-items.
+
+    The &ltselected> attribute selects value by-default.</p>
+<h4>Other Form Elements</h4>
+<p>Let us see some other input elements in HTML where the data can be collected from the user as a slider.</p>
+<p> Input type – range: 
+
+    Defines a range slider, where the user can select input. </p>
+<img src="img/h75.png" alt="">
+<p>Meter: 
+
+    Can be used to represent a scalar measurement within a known range.</p>
+<img src="img/h76.png" alt="">
+<p>Progress: 
+
+    Can be used to represent the progress of a task. </p>
+
+<img src="img/h77.png" alt="">
+<p>Note: &ltprogress> can be used to mark up the completion rate/degree of progress of an "in progress" task through a progress bar.
+    Whereas, &ltmeter> is used to represent a gauge or to represent a measurement in a known scale.</p>
+<p>Output:
+
+    Displays the output of user input.
+    
+    For example, consider the below code snippet:</p>
+<img src="img/h78.png" alt="">
+<p>The 'oninput' attribute carries the logic of generating the output, and the 'for' attribute of &ltoutput> tag specifies the control for which output has to be calculated. </p>
+<p>The above-given code would populate two input fields on the web page and the sum of the values of these two input fields is generated dynamically based on user activity on this page. </p>
+<p>The output of the above code snippet will be as shown below:</p>
+
+<img src="img/h79.png" alt="">
+<p>Note: A disabled attribute can be used with any input type to restrict user interaction. 
+
+    For example, a button can be made non-clickable, Checkbox can be made non-selectable.  
+    
+    The output may vary for some input elements according to the browser. </p>
+<code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml>
+        &ltbody>
+            &ltform oninput="O1.value = parseInt(R1.value)">
+                Rate your experience:&ltinput type="range" id="R1" min="0" max="100" step="10" />
+                &ltoutput for="R1" id="O1">&lt/output>
+            &lt/form>
+        &lt/body>
+    &lt/html>
+</pre>
+</code>
+   <img src="img/h80.png" alt="">   
+
+<h4>Input Elements - Attributes</h4>
+<p>The following are some of the attributes which can be used with HTML input elements.</p>
+<ul>
+    <li>Placeholder</li>
+<li>Pattern</li>
+<li>Min</li>
+<li>Max</li>
+<li>Step</li>
+<li>Required</li>
+<li>Multiple</li>
+<li>Form-override</li>
+</ul>
+<p>Placeholder:
+
+    The placeholder attribute specifies a value that appears in the textbox as below:</p>
+<img src="img/h81.png" alt="">
+<p>Pattern:
+
+    The pattern attribute creates a custom pattern validator.
+    
+    The value entered by the user is checked for validity against a specified pattern.
+    
+    If the user input value does not match with a specified pattern, an error message appears.</p>
+
+<img src="img/h82.png" alt="">
+<p>Min, Max, and Step:
+
+    The following are some of the attributes which are used only with range and number input types</p>
+<ul>
+    <li>min: Specifies a minimum acceptable value.</li>
+<li>max: Specifies maximum acceptable value.</li>
+<li>step: Specifies a difference of consecutive values when the user uses the range/number input element.</li>
+</ul>
+<img src="img/h83.png" alt="">
+
+<p>Required:
+
+    The required attribute specifies that user input is a must. 
+    
+    If the user does not enter any value in the input field which is associated with this attribute, a default error message appears on the screen.</p>
+<img src="img/h84.png" alt="">
+<p>Multiple:
+ 
+    The multiple attribute value allows the user to enter/select/upload more than one value.</p>
+<img src="img/h85.png" alt="">
+
+<p>Form-Override:
+
+    The override attributes can be used to override the form-level built-in attribute functionalities using the submit/image input elements.</p>
+<img src="img/h86.png" alt="">
+<p>In the below example, you can observe that the default form submission method 'GET' has been overridden to the 'POST' method due to the usage of 'formmethod' attribute in the submit input tag. </p>
+<img src="img/h87.png" alt="">
+<p>Novalidate</p>
+<p>Need of novalidate attribute:
+
+    Suppose we are developing a form having multiple input fields as shown below:</p>
+<img src="img/h88.PNG" alt="">
+<p>To test the form's functionality we may want to temporarily by-pass in-built validations done by form input type elements. This can be done by novalidate attribute.</p>
+<p>For example, if we want to bypass an email validation, you can use the below code:</p>
+<img src="img/h89.png" alt="">
+<p>Autocomplete and Autofocus</p>
+<p>autocomplete: 
+
+    It allows the browser to predict user input value.
+    
+    When the user starts typing, the browser displays possible options, based on earlier typed values.
+    
+    Possible values of autocomplete are on and off where the default value is "on"</p>
+<p>autofocus:
+
+    Specifies that an element should automatically get focus when a web page loads.
+   
+   Example:</p>
+<img src="img/h90.png" alt="">
+
+<p>Hidden:
+
+    In a web page, when an element is not directly relevant to the page's current state, it's a good choice to hide it.
+    
+    The hidden attribute is used for this requirement.
+    
+    Possible values are " " (Empty string) or hidden.
+    
+    For example, the below-given input field for the language will not be shown to the end-user. </p>
+
+<img src="img/h91.png" alt="">
+<h4>Editing Elements</h4>
+<p>While developing any content-based application, there may be a requirement to get it reviewed.
+
+    While reviewing the content of our web page, the reviewer may want to add or delete some content.
+    
+    For this scenario, editing elements can be used.</p>
+
+<img src="img/h92.png" alt="">
+
+<p>The following are elements used for editing.</p>
+<ul>
+<li>del: It defines deleted text by striking on it</li>
+<li>ins: It defines inserted text by underlining it</li>
+</ul>
+<img src="img/h93.png" alt="">
+<h4>Form Elements - Best Practices</h4>
+<p>The following are the best practices to be followed while designing an HTML form.</p>
+
+<ul>
+<li>Do not nest a form inside another form. If forms are nested this leads to unpredictable behavior of the form.</li>
+<li>Use &ltlabel> tag to wrap each form-controls.</li>
+<li>Use appropriate Input types for &ltinput> element.</li>
+<li>Avoid placeholder attribute while designing Label for a web page.</li>
+<li>Include min and max attributes appropriately for &ltmeter> and &ltprogress> elements.</li>
+<li>All the form input values should be sanitized and validated to avoid security threats such as HTML injection.</li>
+
+</ul>
+
+<h3>Embedded Elements</h3>
+<h4>Embedded Elements - Need</h4>
+
+<p>Any website must be able to engage well with its visitors, be entertaining, and be able to quickly deliver information.</p>
+<p>Embedding content like audio clips, videos, images, maps, and so on... are a great way of engaging, be entertaining and be able to quickly deliver information to the website users.</p>
+<p>Pictures or moving pictures, maps, etc. typically draw user attention and trigger quite a lot of emotions. Humans find it easy to connect to such information, rather than having to go through textual information.</p>
+<p>This is why HTML provides tags for embedding media content like audio, video, and images and also for embedding external content like maps.</p>
+<p>HTML5 supports the following types of embedded elements:</p>
+<img src="img/h94.png" alt="">
+<h4>Image Element:</h4>
+
+<p>Embedding images to a web page can be done with the &ltimg>...&lt/img> tag. The &Ltimg> tag has attributes 'src' and 'alt' where src defines the location of the image and alt defines the alternative text if it is failed to load the image inside the web page.</p>
+<img src="img/h95.png" alt="">
+
+<h4>Image Captions</h4>
+<p>We can also provide a caption for the embedded images.
+
+    HTML provides a semantic element &ltfigure> along with &ltfigcaption> element which help us to provide caption for our images.
+    
+    For example, consider the following code.
+    
+    </p>
+<p>Note: The &ltfigure> element in HTML is commonly used along with a diagram, illustration, or image to represent them as self-contained content.</p>
+<img src="img/h96.png" alt="">
+<img src="img/h97.png" alt="">
+<h4>Audio Element:</h4>
+<p>Embedding audio to a web page can be done with <audio>...</audio> tag. The <audio> tag has an attribute 'src' which defines the location of the audio file. It also has an attribute 'controls' which specifies whether to display the player controls.</p>
+<img src="img/h98.png" alt="">
+<p>Some of the attributes which are supported by the audio element are as follows:</p>
+<img src="img/h99.png" alt="">
+<h4> Video Element:</h4>
+<p>Videos can be embedded into web pages using &ltvideo>…&lt/video> tag. The &ltvideo> tag has an attribute 'src' which defines the location of the audio file.  It also has an attribute 'controls' which specifies whether to display the player controls.</p>
+<img src="img/h100.png" alt="">
+<p>Some of the attributes which are supported by video element are as follows:</p>
+<img src="img/h101.png" alt="">
+
+<h4>Source Element:</h4>
+<p>All browsers do not support all audio/video formats. Therefore, the audio/video element allows you to list multiple sources with the &ltsource> element. The &ltsource> element has an attribute 'type' which specifies the type of the file.</p>
+<p>The browser iterates through all sources one by one until it finds one which it can play. It should be noted that while listing the audio/video formats, it should be in the order from most desirable to least desirable to avoid the number of unnecessary iterations.</p>
+<p>Also, it is suggested to use the &ltsource> element within the audio/video element instead of the src attribute.</p>
+<img src="img/h102.png" alt="">
+
+<h4>iframe</h4>
+<p>We might have requirements to include documents, videos, interactive videos, or even other web content into a web page directly from external sources.</p>
+<p>The &ltiframe> element is used to meet the above requirement. Using the iframe element, contents from external sources can be integrated anywhere on our web page 
+
+    It is defined using &ltiframe>…&lt/iframe> tag.</p>
+<img src="img/h103.png" alt="">
+<p>The below example demonstrates including a web page myPage.html on clicking on the hyperlink.
+</p>
+<img src="img/h104.png" alt="">
+<code>
+<pre>
+    Create a web page called demo.html as below-mentioned:
+
+    &lthtml>  
+        &ltbody>
+            &ltiframe src="https://owasp.org/"
+            width="1000" height="1000">&lt/iframe>       
+        &lt/body>
+    &lt/html>
+      
+</pre>
+</code>
+<code>
+<pre>
+    Create a web page called demo.html as below-mentioned:
+
+    &lt!DOCTYPE html>
+    &lthtml>  
+        &ltbody>
+            &ltp>This demo loads the target of hyperlink into the same web page using iframe&lt/p>
+            &lta href="https://owasp.org/" target="myFrame"> 
+               Click here to load webpage content into iframe.
+            &lt/a>&lt/br>
+            &ltiframe name="myFrame" width="600" height="400">&lt/iframe>
+        &lt/body>
+    &lt/html>
+    
+</pre>
+</code>
+<h4>Embedded Elements - Best Practices</h4>
+<ul>
+<li>Use meaningful descriptive text for the alt attribute.</li>
+<li>The src attribute should not be empty.</li>
+<li>Ensure the usage of sandbox attribute to the iframe to avoid security threats such as clickjacking.</li>
+</ul>
+<p>Let us discuss the sandbox attribute in detail.</p>
+<h4>Sandbox Attribute</h4>
+<p>This attribute helps the developer to apply extra restrictions for the content which can be embedded into the iframe element.</p>
+<p>Some of the scenarios where this attribute can be used are:</p>
+<ul>
+<li>To validate whether the content is populated from a unique origin or not.</li>
+<li>To block the form submission and script execution.</li>
+<li>APIs invocation can be disabled.</li>
+<li>Other browser context linking and usage of various plugins like &ltapplet>, &ltembed> can be prevented.</li>
+<li>Navigating to a Top-level browsing context can be avoided.</li>
+<li>Auto video/audio pre-load features can be restricted.</li>
+</ul>
+<p>Example:</p>
+<code>
+<pre>
+    &ltiframe sandbox="">
+</pre>
+</code>
+<p>The sandbox attribute with an empty value enables all the default restrictions automatically. </p>
+<p>Also, the developer has been provided with different attribute values for disabling respective restrictions based on their requirement of the application.</p>
+<p>Now let us have a glance over some of the attribute values.</p>
+<img src="img/h105.png" alt="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

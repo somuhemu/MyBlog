@@ -1,0 +1,2851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>CSS</h3>
+    <h4>About CSS3</h4>
+    <p>CSS3 is the newer version of CSS used for styling web pages more effectively. CSS3 has introduced a lot of enhanced features. CSS3 is divided into modules which makes styling of the web pages simpler and easier. </p>
+<p>Developers choose CSS3 to style web pages without using any additional tools. It helps in creating attractive web pages and makes the web layout very simple. CSS3 can help in creating dynamic web pages without using JavaScript. It also helps in creating responsive web pages.</p>
+<h3>Getting Started with CSS3</h3>
+<h4>Why CSS3 ?</h4>
+<p>CSS refers to Cascading Style Sheets. CSS helps in styling the HTML pages.</p>
+<ul>
+    <li>CSS3 is the latest version of CSS.</li>
+    <li>CSS3 adds new features to help developers solve a number of problems without writing complex code.</li>
+    <li>we can use CSS3 to achieve rounded corners and shadow effects, transit multiple properties, and achieve animation.</li>
+</ul>
+<ul>
+    <li>We can rotate and pop out a particular image in an image gallery on the hover of the mouse.</li>
+<li>The menu items are blurred, underlined, and rendered in lowercase when the page is loaded.</li>
+<li>can make the movement of the rocket that can be transited during a time interval on a webpage.</li>
+<li>the loader can be created by using the animation concept.</li>
+</ul>
+<img src="img/c1.jpg" alt="">
+<p>Many of the web page features can be directly implemented using CSS3 instead of using JavaScript frameworks.</p>
+<p>Before CSS3, to achieve the above concepts we were using JavaScript frameworks, which was a performance overhead.</p>
+<p>Best Practice: Always create an HTML page before linking your CSS code. </p>
+<h4>What is CSS3?</h4>
+<p>CSS3 is the latest version of CSS. CSS3 provides new styling elements using which we can style webpages without any additional tools.</p>
+<p>Unlike the previous versions, CSS3 is divided into Modules. It contains the "old CSS specification" which has been split into smaller pieces. In addition, new modules like border, shadow, color, transition, animation, and many more have been added.</p>
+<p>Most of the new CSS3 properties are supported by modern browsers.</p>
+<img src="img/c2.jpg" alt="">
+<h4>History of CSS3</h4>
+<p>Let us have a glance over the CSS3 evolution: 
+
+    Below are the new features added to each version.</p>
+<p>CSS3 is backward compatible with its previous versions. All the properties supported in CSS1 and CSS2 are supported in CSS3 as well.</p>
+<img src="img/c3.jpg" alt="">
+<h4>How to write CSS style rules?</h4>
+<p>CSS is a style sheet markup language. CSS styles are written as a property value pair.</p>
+<code>
+<pre>
+    Syntax:
+
+    property: value   
+ 
+    Example:
+ 
+    color: green;
+</pre>
+</code>
+<p>The style rules are applied to the HTML elements using selectors.</p>
+<img src="img/c4.PNG" alt="">
+<p>In CSS, selectors are used in targeting the HTML elements on our web pages that we want to style.
+
+    Observe how styling is applied in the below HTML code.</p>
+<img src="img/c5.PNG" alt="">
+<h4>Ways of specifying style sheets</h4>
+<p>There are different ways of specifying style rules</p>
+<ul>
+<li>Inline styling</li>
+<li>Internal styling</li>
+<li>External styling</li>
+<li>Importing style sheet</li>
+</ul>
+<h4>Inline Styling</h4>
+<p>We can use the style attribute to specify the styling. This is referred to as inline styling. We can style only one element at a time using Inline styling</p>
+<code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml>
+    &lthead>
+        &lttitle>Inline Styling&lt/title>
+    &lt/head>
+    &ltbody>
+        &lth1 style="color: #607d8b; text-align: center;"> HTML and CSS&lt/h1>
+        &ltp style="color: blue; font-family: sans-serif; font-weight: bold; text-align: center;">
+            HTML stands for Hypertext markup language.
+            HTML is a markup language for describing web pages.
+        &lt/p>
+        &ltp style="color: green; text-align: center;">
+            CSS stands for cascading style sheets.
+            CSS is used for styling the HTML Elements.
+        &lt/p>
+    &lt/body>
+    &lt/html>
+    
+</pre>
+</code>
+<img src="img/c6.PNG" alt="">
+<h4>Internal Styling</h4>
+<p>We can specify the style rules separately within the style tag in an HTML web page. This is referred to as internal/embedded styling as we embed the styling along with HTML</p>
+<p>Internal styling affects only the HTML elements of the webpage in which the internal style rules are written</p>
+<code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml>
+    &lthead>
+        &lttitle>Login Page&lt/title>
+        &ltstyle>
+      input {
+        font-weight: bold;
+        background-color: rgba(0, 0, 255, 0.29);
+        color: white;
+      }
+        &lt/style>
+    &lt/head>
+    &ltbody>
+        &ltform id="login_form">
+            &lth1>Login&lt/h1>
+            Enter your Username: &ltinput type="text">&ltbr>&ltbr>
+            Enter your Password: &ltinput type="password"> &ltbr>&ltbr>
+            &ltinput id="login_button" type="submit" value="Login">
+            &ltinput id="reset_button" type="submit" value="Reset">
+        &lt/form>
+    &lt/body>
+    &lt/html>
+    
+</pre>
+</code>
+<img src="img/c7.PNGs" alt="">
+<p>The input fields are rendered with background-color blue and the buttons are rendered with background-color blue and text-color white with bold font</p>
+<h4>External Styling</h4>
+<p>Internal style sheets have few disadvantages</p>
+<ul>
+<li>They affect only one web page.</li>
+<li>They can sometimes affect the page load time.</li>
+
+</ul>
+<p>We can specify the styling in a separate file. This is referred to as external styling.</p>
+<p>We save the external file with a .css extension. The external CSS file is included in the HTML webpage using the Link tag</p>
+<code>
+<pre>
+    &ltlink rel="stylesheet" type="text/css" href="style.css">
+
+</pre>
+</code>
+<p>the link tag is used to link an external CSS file to the webpage
+
+    rel attribute specifies the relationship between the current document and the linked document
+    
+    The type attribute specifies the media type of the linked document 
+    
+    The href attribute specifies the name and path of the external CSS file to be included</p>
+
+<code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml>
+    &lthead>
+        &lttitle>Technology and Organizations&lt/title>
+        &ltlink rel="stylesheet" type="text/css"
+            href="mystyle1.css">
+    &lt/head>
+    &ltbody>
+        &lth1>Technology and Organizations&lt/h1>
+        &ltp> Technology plays vital role on business operations. Technology helps in automating lot or processes.
+        &lt/p>
+        &ltp>Most of the organizations adopt a sustainable approach to business. Organizations needs to take care of the
+            employees.&lt/p>
+    &lt/body>
+    &lt/html>
+    
+</pre>
+</code>
+<p>mystyle.css</p>
+<code>
+<pre>
+    body {
+        font-size: large;
+      }
+      h1 {
+        border: 1px solid darkred;
+        color: green;
+        text-align: center;
+      }
+      p {
+        color: green;
+      }
+      
+</pre>
+</code>
+<p>Output</p>
+<img src="img/c8.PNG" alt="">
+<h4>Importing Style Sheets</h4>
+<p>In order to import CSS files, we need to write the import statement within the style tag.</p>
+<p>Syntax:</p>
+<code>
+<pre>
+    &ltstyle type="text/css">
+        @import url("http://www.xyz.com/style.css")
+   &lt/style>
+   
+</pre>
+</code>
+<p>It is possible to import a CSS file within another CSS file
+
+    Consider a CSS file style.css</p>
+<code>
+<pre>
+    body {
+        background-color: lightgrey;
+      }
+      .red {
+        color: red;
+      }
+      #pid {
+        background-color: yellow;
+        color: green;
+      }
+      
+</pre>
+</code>
+<p>If you need to import this style.css file within another CSS file say sample.css file, then you can import as shown below</p>
+
+<code>
+<pre>
+    @import url('style.css')
+    div {
+      border: lightgrey dashed 3px;
+      padding: 20px;
+      margin: 60px;
+      width: 220px;
+      height: 125px;
+    }
+    
+</pre>
+</code>
+<p>While importing we need to provide the complete URL of the CSS file.</p>
+
+<h3>Selectors</h3>
+<h4>why Selectors ?</h4>
+<p>Selectors are used for targetting the HTML elements and style them appropriately.</p>
+<h4>What are Selectors ?</h4>
+<p>There are different types of selectors available in CSS.</p>
+
+<h4>Element Selectors</h4>
+<p>Element selectors are used for styling elements </p>
+<p>We can style the elements by selecting them using element selector as shown below</p>
+<code>
+<pre>
+    body {
+        background-color: lightgrey;
+      }
+      
+</pre>
+</code>
+<img src="img/c9.PNG" alt="">
+<p>In the above webpage, the body is applied with a light grey background-color using element selectors</p>
+<h4>Id Selector</h4>
+<p>Id selectors are used for styling an element specifically</p>
+<p>We can use the id selector as shown below</p>
+<code>
+<pre>
+    #pid {
+        background-color: yellow;
+        color: green;
+      }
+      
+</pre>
+</code>
+<p>We can add an id attribute to the HTML element as shown below</p>
+<code>
+<pre>
+    &ltp id="pid">Paragraph1</p>
+
+</pre>
+</code>
+
+<img src="img/c10.PNG" alt="">
+<p>The first paragraph is styled with green color and yellow background-color using the id selector</p>
+
+<h4>Class Selectors</h4>
+<p>Class selectors are used for providing the same styling for multiple elements.</p>
+<p>Class selectors can be used as shown below</p>
+<code>
+<pre>
+    .red {
+        color: red;
+    }
+    
+</pre>
+</code>
+<p>We apply a class to the HTML using the class attribute</p>
+<code>
+<pre>
+    &ltp class="red">Paragraph1&lt/p>
+    &ltp class="red">Paragraph2&lt/p>
+    
+</pre>
+</code>
+
+<img src="img/c11.PNG" alt="">
+<p>All the paragraphs are styled in red color using class selectors.</p>
+<h4>Contextual Selectors</h4>
+<p>Contextual selectors are used when we want selectors to match elements that appear in a context.
+
+    Context is referred to as a parent/child relationship between HTML elements.
+    
+    We separate the parent and child elements using space while writing the style rules using contextual selectors.</p>
+<p>We can use contextual selectors as shown below</p>
+<code>
+<pre>
+    &ltdiv>
+        &ltp class="red">Paragraph1&lt/p>
+        &ltp class="red">Paragraph2&lt/p>
+    &lt/div>
+    
+</pre>
+</code>
+<code>
+<pre>
+    div p {
+        background-color: yellow;
+        color: green;
+      }
+      
+</pre>
+</code>
+
+
+    <img src="img/c12.png" alt="">
+<p>The first two paragraphs are present within the div element
+
+    When styled using div p contextual selectors, it styles only the first 2 paragraphs and not the next 2 paragraphs</p>
+<h4>Grouping of selectors</h4>
+<p>When we have the same styling for multiple elements we can group the elements and style together.
+
+    Grouping of selectors helps in reducing the repetitive styling statements.
+    
+    The multiple HTML elements that we group to provide a common styling should be separated using a comma.</p>
+<p>We can group the selectors as shown below</p>
+<code>
+<pre>
+    h1,h2,h3 {
+        color: maroon;
+      }
+      
+</pre>
+</code>
+
+
+
+
+    <img src="img/c13.PNG" alt="">
+<p>The text CSS, Selectors, and Grouping are rendered using h1, h2, and h3 elements.
+
+    Since all the headings need the same styling, we can group the selectors.</p>
+<h4>Inheritance</h4>
+<p>The child elements can inherit the style properties from the parent element, but some of the stylings cannot be inherited by child elements automatically.</p>
+<p>Some of the CSS style properties have “inherit” value associated with them. For example, Font and Text properties are inherited but the border and margin properties are not inherited.</p>
+<p>If the “inherit” value is associated with the property then styling is also inherited. Otherwise, styling is not inherited.</p>
+<p>If we want the styling which is not inherited by default to be inherited then we have to specify inherit to the style attribute explicitly.</p>
+<p>Example:
+</p>
+<code>
+<pre>
+    border: inherit
+</pre>
+</code>
+
+
+<img src="img/c14.PNG" alt="">
+<p>Both the first and second paragraphs are present within a div tag, and the div tag is applied with color and background-color, but the paragraphs are not applied with any styling. But the paragraph tags inherit the styling from their parent element.</p>
+<p>Observe the below code </p>
+<code>
+<pre>
+    &lth1>Train Reservation Login&lt/h1> 
+	&ltp style="font-size: 20px;"> Train reservation system website can be used to book trains for different destinations.&ltbr>
+		&ltspan style="font-size: 80%;">Please login to book your train.&lt/span> 
+	&lt/p> 
+</pre>
+</code>
+<p>The font-size of the paragraph is 20px and the span is applied with a font-size of 80%. Since span is the child element of the span element, the font-size of the span will be 16px(80% of 20px)</p>
+<p>If the span is not applied with font-size then it will inherit from the paragraph and the font-size of p will be 20px.</p>
+<p>Observe the below code</p>
+<code>
+<pre>
+    &ltbody>
+        &lth1>Train Reservation Login&lt/h1> 
+            &ltp style="font-size: 20px;"> Train reservation system website can be used to book trains for different destinations.&ltbr>
+                &ltspan style="font-size: 80%;">Please login to book your train.&lt/span> 
+            &lt/p> 
+        &ltform id="login_form">&ltbr>
+            Enter your Username: &ltinput type="text">&ltbr>&ltbr>
+            Enter your Password: &ltinput type="password">&ltbr>&ltbr>                
+            &ltinput id="login_button" type="submit" value="Login">&lt/input> 
+            &ltinput id="reset_button" type="submit" value="Reset">&lt/input>
+        &lt/form>
+        &lt/body>
+        
+</pre>
+</code>
+<code>
+<pre>
+    body {
+        width: 500px;
+        height: 300px;
+        border: 2px solid;
+      }
+      
+</pre>
+</code>
+<p>The border property is applied to the body tag but the h1, p, and form tags will not be applied with border. This is because border property is not inherited.</p>
+<p>But if we provide border: inherit to the form tag then the form will inherit the border property.</p>
+<code>
+<pre>
+    &ltform style="border:inherit" id="login_form">&ltbr>
+        Enter your Username: &ltinput type="text">&ltbr>&ltbr>
+        Enter your Password: &ltinput type="password">&ltbr>&ltbr>                
+        &ltinput id="login_button" type="submit" value="Login">&lt/input> 
+        &ltinput id="reset_button" type="submit" value="Reset">&lt/input>
+    &lt/form>
+    
+</pre>
+</code>
+
+<h4>Pseudo-classes</h4>
+<p>CSS pseudo-class is a keyword that can be applied to selectors. Pseudo-classes specifies the state of the element to be selected</p>
+<p>Link related pseudoclasses:
+
+    The link is highlighted when hovered. This is achieved using :hover pseudoclass</p>
+    <img src="img/c15.png" alt="">
+<p>The visited links appear in purple color. This is achieved using :visited pseudo class
+</p>
+
+<img src="img/c16.PNG" alt="">
+
+<code>
+<pre>
+    &ltbody>
+        &lta href="Home.html">Home&lt/a>|
+        &lta href="Login.html">Login&lt/a>|
+        &lta href="Register.html">Register&lt/a>|
+        &lta href="About.html">About&lt/a>
+    &lt/body>
+</pre>
+</code>
+<p>We can apply pseudo-classes to link as shown below</p>
+<code>
+<pre>
+    a:hover {
+        background-color: black;
+        color: white;
+      }
+      a::visited {
+        color: purple;
+      }
+      
+</pre>
+</code>
+
+<p>Input related pseudo-classes:
+
+    The Last Name is an enabled text field, which is applied with light blue background-color using :enabled pseudoclass. The Last Name field is a mandatory field, which is applied with red background-color using :required pseudoclass.
+    
+    </p>
+   
+<code>
+<pre>
+    &ltbody>
+        &lth1>Register Form&lt/h1>
+        &ltform>
+            First Name:&ltinput type="text" required/>&ltbr/>&ltbr/>
+            Last Name:&ltinput type="text" />&ltbr/>&ltbr/>
+            Age: &ltinput type="number" />&ltbr/>&ltbr/>
+            Tel No. : &ltinput type="number"/>&ltbr/>&ltbr/>
+            &ltbutton>Register&lt/button>
+        &lt/form>
+    &lt/body>
+</pre>
+</code>
+<p>We can apply pseudo-classes to input elements as shown below</p>
+<code>
+<pre>
+    input[type="text"]:enabled {
+        background-color: lightblue;
+      }
+      input[type="text"]:required {
+        background-color: red;
+      }
+      
+</pre>
+</code>
+<img src="img/c17.PNG" alt="">
+<p>The first letter of the paragraph is rendered in bigger font-size and purple color using the :first-letter pseudo-class.
+<p>We can apply the :first-letter pseudo-class as shown below</p>
+<code>
+<pre>
+    p::first-letter {
+        color: #8a2be2;
+        font-size: 200%;
+      }
+      
+</pre>
+</code>
+</p>
+<img src="img/c18.PNG" alt="">
+<h4>Advanced Selectors</h4>
+<p>In CSS3 new selectors have been introduced for efficient selection of HTML elements.</p>
+<p>These selectors have been categorized into the following.</p>
+<ul>
+    <li>Relational Selectors</li>
+    <li>Attribute Selectors</li>
+</ul>
+<h4>Relational Selectors</h4>
+<p>Consider a scenario where we want to style only the direct child element of a parent ignoring the nested child elements or if we have a requirement where we want to style the sibling of an element </p>
+<p>In these scenarios, we can use relational selectors.</p>
+<p>Let us explore relational selector</p>
+<img src="img/c19.png" alt="">
+<p> Let us see the usage of relational selectors in the below example.</p>
+<code>
+<pre>
+    &lthtml>
+        &lthead>
+        &lttitle>Relational Selectors&lt/title>
+        &ltlink rel="stylesheet" type="text/css" href="selector.css">
+         
+        &lt/head>
+         
+        &ltbody>
+        &lth1>CSS3 Selectors&lt/h1>
+        &lth3>Relational Selectors&lt/h3>
+        &ltp>This is a &lt;p&gt; element. Child of &lt;body&gt; element. &lt/p> 
+         
+        &ltsection>
+        &ltp>This is a &lt;p&gt; element. Grand child of &lt;body&gt; element. 
+        Placed inside &lt;section&gt; element.&lt/p> 
+        &lt/section>
+         
+        &ltp>This is a &lt;p&gt; element. Child of &lt;body&gt; element. 
+        Placed immediately after &lt;section&gt; element.&lt/p>  
+        &lt/body>
+    &lt/html>
+        
+</pre>
+</code>
+<p>selector.css</p>
+<code>
+<pre>
+    p
+    {
+        margin-left:50px;
+        
+    }
+    h1
+    {
+        text-align:center;
+    }
+    h3
+    {
+        margin-left:50px;
+    } 
+    body p{
+        font-size:30px;
+        font-family:helvetica;
+    }
+     
+    body>p{
+        color:red;
+    }
+     
+    section+p
+    {
+        color:maroon;
+    }
+    
+</pre>
+</code>
+<p>Output</p>
+<img src="img/c21.jpg" alt="">
+
+<ul>
+    <li>Line 14: body p will set the font size of all the paragraphs within the body will be 20px and the font-family will be "Helvetica".</li>
+<li>Line 19: body > p will set the text color of child paragraph inside the body element will be rendered in red color.
+</li>
+<li>Line 23: section + p will set the text color of the paragraph appearing immediately after the section will be rendered in maroon color.</li>
+</ul>
+
+<p>Tryout : Relational Selectors</p>
+<ul>
+    <li>Observe how the paragraphs that are a direct child of element div is styled using relational selectors. </li>
+<li>Display the adjacent sibling of div element(div+p) with text color blue and font-weight bold.</li>
+<li>Display all the siblings of the div element (div~p) in uppercase and underline.</li>
+
+</ul>
+<code>
+<pre>
+    &lt!DOCTYPE html>
+
+    &lthead>
+        &ltmeta charset="UTF-8">
+        &lttitle>Relational selectors&lt/title>
+        &ltstyle>
+            div > p {
+                    background-color: lightblue;
+                    color: green;
+            }
+            div+p{
+                color: blue;
+                font-weight: bold;
+            } 
+            div~p{
+                text-decoration: underline;
+                text-transform: uppercase;
+            }
+        &lt/style>
+    &lt/head> 
+    
+    &ltbody>
+        &ltdiv>
+            &ltp>This is a paragraph inside a div element.&lt/p>
+            &ltp>This is another paragraph inside a div element.&lt/p>
+        &lt/div>
+        &ltp>This is a paragraph, not inside a div element.&lt/p>
+        &ltp>This is another paragraph, not inside a div element.&lt/p>
+    &lt/body>
+    
+    &lt/html>
+</pre>
+</code>
+<p>output</p>
+<img src="img/c22.png" alt="">
+<h4>Attribute Selectors</h4>
+<p>If we have a requirement to style an element based on the attribute of the element or based on the value of the attribute of the element.
+
+    In this scenario, we can use attribute selectors.</p>
+<p>Now let us discuss how to work with attribute selectors.</p>
+<img src="img/c20.png" alt="">
+<p> Let us see the usage of attribute selectors in the below example.</p>
+<p>Attributeselector.html</p>
+<code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml> 
+    &lthead>
+        &ltmeta charset="UTF-8">  
+        &lttitle>Attribute Selectors&lt/title>
+        &ltlink rel="stylesheet" type="text/css" href="attribute.css"> 
+    &lt/head> 
+    &ltbody> 
+        &ltform>
+            &lth1>Login Form&lt/h1> 
+            Username: &ltinput type="text" />&ltbr/>&ltbr/>
+            Password: &ltinput type="text" />&ltbr/>&ltbr/>
+            &ltinput type="button" value="Login">	
+        &lt/form> 
+    &lt/body> 
+    &lt/html> 
+    
+</pre>
+</code>
+<p>selector.css</p>
+<code>
+<pre>
+    input[type="text"] {
+        background-color: lightblue;
+        width: 150px;
+    }
+    input[type="button"] {
+        width: 120px;
+    }
+    
+</pre>
+</code>
+<p>In the above code snippet, you can observe that,</p>
+<ul>
+<li>Line 1: input[type="text"] will select all input elements with attribute value as text.</li>
+    <li>Line 6: input[type="button"] will select all input elements with attribute value as button.</li>
+</ul>
+<p>Output</p>
+<img src="img/c23.jpg" alt="">
+<code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml>
+    
+    &lthead>
+        &ltmeta charset="UTF-10">
+        &lttitle>Attribute Selectors&lt/title>
+        &ltstyle>
+            a[target] {
+                  text-decoration: none;
+            }
+                
+                a[target=_blank] {
+                  font-size: x-large;
+            }
+                
+                section[class$="para"]::first-letter {
+                  font-size: 200%;
+                  color: purple;
+            }
+            
+            section[class*="para"]{
+                font-style: italic;
+                
+            }
+              section[class^="last"]{
+                text-decoration: underline;
+                
+            }
+    
+        &lt/style> 
+    &lt/head>
+    &ltbody>
+        &ltnav> 
+            &ltul>
+                &ltli>&lta href="#">Home&lt/a>&lt/li>
+                &ltli>&lta href="#" target="_blank">Information&lt/a>&lt/li>
+                &ltli>&lta href="#" target="_self">Contact us&lt/a>&lt/li>
+            &lt/ul>
+        &lt/nav>
+        &ltsection class="para_section">
+            &lth2>The is the paragraph within the first section tag.&lt/h2>
+            &ltp>The class name of the section is "para"
+            &lt/p>
+        &lt/section>
+        &ltdiv class="para">
+            &ltp>This is the paragraph element within the div tag with the target styling&lt/p>
+        &lt/div>
+    
+        &ltsection class="last_para">
+            &lth2>This is the last section of the page&lt/h2>
+        &lt/section>
+        &ltdiv class="last">
+            This div class value contains 'par' value in it
+        &lt/div>
+    
+   &lt/body>
+    
+&lt/html>
+</pre>
+</code>
+<img src="img/c24.png" alt="">
+
+
+
+
+<p> Best Practice :
+</p>
+<ul>
+    <li>If multiple selectors are used inside CSS, keep it in a separate line.</li>
+<li>Including descendant selectors in the CSS style sheet is a good practice to improve efficiency.</li>
+
+<li>Avoid usage of ID selectors as much as possible, since they are of higher specificity, it is difficult to override them at a later point.</li>
+</ul>
+<code>
+<pre>
+    p,
+    h4,
+    h5{
+    text-align: left /* Appropriate way to apply CSS for multiple selectors */
+    }
+    
+</pre>
+</code>
+<code>
+<pre>
+    p,h4,h5{
+        text-align: left /* Not an appropriate way to apply CSS for multiple selectors. */
+        }
+        
+</pre>
+</code>
+
+
+<h3>Cascading Order</h3>
+
+<h4>Why Cascading order ?</h4>
+<p>Consider a company that has multiple roles. An employee needs to complete some tasks as part of his/her job. Assume his /her immediate manager gives a task to an employee. When the employee is working on the task, say the team lead provides another high-priority task, and then suddenly the Project manager assigns another task to the employee. The employee would prioritize the work in the following order</p>
+<ol>
+    <li>Project manager</li>
+<li>Team Lead</li>
+<li>Manager</li>
+<li>Employee</li>
+
+
+</ol>
+<p>Similar to the above scenario, CSS also prioritizes when there are multiple styling and applies one styling.</p>
+<h4>What is Cascading Order ?</h4>
+<p>CSS stands for Cascading style sheets, the first-word cascade is important to understand. When there is a conflict between multiple style rules, which rule to apply is decided using cascade and specificity concepts.</p>
+<p>If styling is mentioned using multiple ways ultimately they cascade to one style.</p>
+<p>Priority order/ Cascading order</p>
+<ol>
+<li>Inline</li>
+<li>Internal and/or impor</li>
+<li>External</li>
+    <li>Browser default</li>
+</ol>
+<h4>Selector’s precedence</h4>
+<p>If there are multiple styles specified for the same HTML element then the priority is as below.</p>
+<ol>
+<li>id</li>
+<li>class</li>
+    <li>element</li>
+</ol>
+<p>Thumb Rule: If two rules have the same weight, the latter wins.</p>
+<p>For example, the internal style sheets and imported style sheets carry the same weight, but since imported styles must always appear at the start of the style sheet, the latter will win i.e.,  internal style sheets. </p>
+<h4>Specificity</h4>
+<p>When there are multiple styles specified using multiple selectors in a style rule, then the priority is to be  decided based on the specificity</p>
+<p>A Specificity is a 3-digit number.
+
+    if the specificity of a style rule is 123 then,</p>
+<p>1 refers to the number of id selectors</p>
+<p>2 refers to the number of class selectors</p>
+<p>3 refers to the number of elements</p>
+<p>The style rule with the highest specificity always wins.</p>
+<code>
+<pre>
+    &ltsection class="sclass" id="sid"> 
+        &ltp class="pclass" id="pid">Cascading order&lt/p> 
+    &lt/section> 
+    
+</pre>
+</code>
+<code>
+<pre>
+    #sid #pid {
+        color: blue;
+      }
+      section.sclass p#pid.pclass {
+        color: green;
+      }
+      
+</pre>
+</code>
+<p>There are 2 styling statements and both are styling the paragraph element present within the section element</p>
+<p>The specificity of the first statement is 200 (2 id selectors, 0 class selectors, and 0 element selectors)</p>
+<p>The specificity of the second statement is 122 (1 id selector, 2 class selectors, and 2 element selectors)</p>
+<p>The highest specificity (200) wins so the first styling statement will be prioritized.</p>
+
+<h4>!important Keyword </h4>
+<p>In case if any style property is important, and should not be overwritten by any, other selectors, we can specify the !important keyword against the property. </p>
+<code>
+<pre>
+    color: limegreen !important; 
+
+</pre>
+</code>
+<p>This property will not be overwritten, even if the specificity of the selector is the largest. </p>
+<h4>Overview of Cascading Order</h4>
+<p>Selectors priority:</p>
+<code>
+<pre>
+    &ltbody> 
+        &ltsection class="sclass" id="sid"> 
+            &ltp class="pclass" id="pid">Cascading order&lt/p> 
+        &lt/section> 
+    &lt/body> 
+    
+</pre>
+</code>
+<code>
+<pre>
+    #sid {
+        color: red !important;
+      }
+      p {
+        color: green;
+      }
+      
+</pre>
+</code>
+<p>Line 1: The styling is specified using id to the section and has !important. So the color red will be inherited by paragraph</p>
+<p>Line 2: Targeting the paragraph elements directly will win over the inheritance. Hence this styling statement wins and the text color of the paragraph will be green.</p>
+<p>Hence paragraph will be rendered in green color</p>
+
+<p>!important Keyword:</p>
+<code>
+<pre>
+    #pid {
+        color: red !important;
+      }
+      
+</pre>
+</code>
+<p>The paragraph with id "pid" will be rendered with red color regardless of any other rule applied.</p>
+<p>The style rule is applied with !important. The !important keyword should be specified after the style rule preceded with "!" mark </p>
+
+<p>Specificity:</p>
+<code>
+    &ltsection class="sclass" id="sid"> 
+        &ltp class="pclass" id="pid">Cascading order&lt/p> 
+    &lt/section> 
+    
+</code>
+<code>
+<pre>
+    p#pid {
+        color: green;
+      }
+      #sid p {
+        color: red;
+      }
+      
+</pre>
+</code>
+<p>Both the above styling statements carry the same weight because both have 1 id and 1 tag but since the red color appears latter it wins</p>
+<p>Hence paragraph will be rendered in red color</p>
+
+<code>
+<pre>
+    #sid #pid {
+        color: blue;
+      }
+      section.sclass p#pid.pclass {
+        color: green;
+      }
+      
+</pre>
+</code>
+<p>Line 1: The specificity of this statement is 200 (2 ids)</p>
+<p>Line 2: The specificity of this statement is 122 (1 id, 2 class, and 2 tag names).</p>
+<p>The highest specificity (200) wins so the text color of the paragraph will be blue.</p>
+
+<h4>Browser Styling</h4>
+<p>The browser adds some minimal styling to the web page. The browser styling will be overwritten when the developer includes styling to the webpage
+
+    The styling added by the browser is not consistent across different browsers. Each browser has its own default styling.
+    
+    When you create a paragraph in HTML and when you check the styling in developer tools you will observe some default style is added by the browser</p>
+<code>
+<pre>
+    p {
+        display: block;
+        -webkit-margin-before: 1em;
+        -webkit-margin-after: 1em;
+        -webkit-margin-start: 0;
+        -webkit-margin-end: 0;
+      }
+      
+</pre>
+</code>
+<p>Similarly, the links will be underlined by default and will be in blue color</p>
+
+<h4>Demo : Cascading Order</h4>
+<p>Understand the usage of attribute selectors</p>
+<code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml> 
+    &lthead> 
+        &ltmeta charset="UTF-8"> 
+        &lttitle>Cascading order&lt/title> 
+        &ltlink rel="stylesheet" type="text/css" href="css/cascading.css"> 
+    &lt/head> 
+    &ltbody> 
+        &ltsection class="sclass" id="sid"> 
+            &ltp class="pclass" id="pid">Cascading order&lt/p> 
+        &lt/section> 
+    &lt/body> 
+    &lt/html> 
+    
+</pre>
+</code>
+<code>
+<pre>
+    sid {
+        color: blue;
+        font-size: 10px;
+      }
+      #sid p {
+        color: red !important;
+      }
+      section #pid {
+        color: green;
+        font-size: 150%;
+      }
+      #sid #pid {
+        color: blue;
+      }
+      section.sclass p#pid.pclass {
+        color: green;
+      }
+      p {
+        color: limegreen !important;
+      }
+      
+</pre>
+</code>
+<p>output</p>
+<img src="img/c25.PNG" alt="">
+<h4>Tryout : Cascading order</h4>
+<p>Observe the following result from the given code:</p>
+<ul>
+<li>How id selector takes priority over class selector. Hence the paragraph is rendered in light blue color.</li>
+<li>How the first styling statement wins because the specificity of the first statement is greater than the second styling statement.</li>
+<li>How the second styling statement wins over the first because the latter wins when the specificity is the same.</li>
+<li></li>
+
+</ul>
+<code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml>
+    &lthead>
+        &lttitle>Cascading order&lt/title>
+        &ltstyle>
+            #sid #pid {
+              color: blue;
+            }
+            
+            .pclass {
+              background-color: pink;
+            }
+            
+            #pid {
+              background-color: lightblue;
+            }
+            
+            p#para1 {
+              color: green;
+            }
+            
+            #secid p {
+              color: red;
+    }
+        &lt/style>
+        &ltmeta charset="UTF-8"> 
+    &lt/head>
+    
+    &ltbody>
+        &ltsection class="sclass" id="sid">
+            &ltp class="pclass" id="pid">Cascading order&lt/p>
+        &lt/section>
+        &ltsection class="sec" id="secid">
+            &ltp id="para1">This is a sample paragraph&lt/p>
+        &lt/section>
+    &lt/body>
+    
+    &lt/html>
+</pre>
+</code>
+<img src="img/c26.png" alt="">
+
+<h3>Typography</h3>
+<h4>Why Typography ?</h4>
+<p>Typography refers to the art of arranging type.</p>
+<p>Typography plays a very important role in advertising and sales.</p>
+<p>The right choice of scale of the text, color, and most importantly the font not only makes the readers curious to read the content completely sometimes also elicit some emotions.</p>
+
+<h4>What is Typography ?</h4>
+<p>Typography refers to the technique of presenting the text of a website in a legitimate, readable, and appealing way 
+
+    Elements of good typography included</p>
+<ul>
+<li>Color: Background and text-color</li>
+<li>Spacing: letter-spacing,line-height</li>
+<li>Font: font-style and font-size</li>
+    <li>Alignment:  text-align</li>
+</ul>
+<p>The choice of background color and text color and font makes the web page attractive.
+
+    However, the proper colors should be chosen so that the text is readable.
+    
+    The wrong choice of color makes the text unreadable.</p>
+<p>The font-family chosen adds more aesthetic value to the web page. The font-size should be properly decided. The headings should be displayed with bigger font and paragraph text with a lesser font. Aligning the text appropriately also plays a major role in good typography.</p>
+<h4>Color Models</h4>
+<p>In CSS3, color models have been introduced by using which we can customize the default color of HTML element with opacity property.
+
+    Let us learn about opacity property.</p>
+<p>We can use the opacity property to change the opacity or transparency level of the HTML elements. Using this property the opacity of the entire element changes.</p>
+<code>
+<pre>
+    div
+    {
+       background-color:red;
+       opacity:0.5;
+    }
+    
+</pre>
+</code>
+<ul>
+
+<li>The opacity value ranges between 0 and 1 where 0 indicates fully transparent and 1 indicated fully opaque.</li>
+    <li>The default value of opacity is 1.If the parent element has this property then all its child elements will have the same opacity applied.</li>
+</ul>
+<p>opacity.html</p>
+<code>
+<pre>
+    &lthtml>
+        &lthead>
+        &lttitle>Opacity Property&lt/title>
+        &ltlink rel="stylesheet" type="text/css" href="opacity.css"> 
+        &lt/head>
+        
+        &ltbody>
+            &ltdiv id="parent">
+                &ltdiv id="child">This is a child&lt/div>
+            &lt/div>
+        &lt/body>
+    &lt/html>
+     
+    
+</pre>
+</code>
+<p>opacity.css</p>
+<code>
+<pre>
+    #parent
+    {
+        background-color:#2196f3;
+        border: 1px solid white;
+        height:200px;
+        width:200px;
+    }
+    #child
+    {
+        background-color:grey;
+        border: 1px solid white;
+        height:200px;
+        margin-left:50px;
+        margin-top:50px;
+        width:400px;
+        opacity:0.5;
+        color:white;
+    }
+    
+</pre>
+</code>
+<p>Here in the above example,
+    Line 17: opacity 0.5 is applied to the child element.
+     </p>
+<p>Output without opacity</p>
+<img src="img/c27.jpg" alt="">
+<p>Output with opacity</p>
+<img src="img/c28.jpg" alt="">
+
+<h4>RGBA Color Model</h4>
+<p>In the previous example what if we want to apply opacity only to the background-color to the child element and not to the text color.
+
+    We can use the RGBA color model of CSS3 to achieve the above requirement.
+    
+    RGBA( Red, Green, Blue, Alpha). Apart from red, green, and blue, there is a new value alpha.</p>
+<p>Ex: RGBA(0,255,0,0.7);</p>
+<img src="img/c29.jpg" alt="">
+<code>
+<pre>
+    #parent
+    {
+        background-color:#2196f3;
+        border: 1px solid white;
+        height:200px;
+        width:200px;
+    }
+    #child
+    {
+        background-color:RGBA(128,128,128,0.5);
+        border: 1px solid white;
+        height:200px;
+        margin-left:50px;
+        margin-top:50px;
+        width:400px;
+        color:white;
+    }
+    
+</pre>
+</code>
+<p>Line 11: Opacity is applied using the RGBA color model.</p>
+<p>output</p>
+<img src="img/c30.jpg" alt="">
+
+<h4>HSL and HSLA Color Model</h4>
+<p>CSS3 has introduced two more color models HSL and HSLA.
+
+    Colors can be defined more naturally using HSL and HSLA color space.</p>
+<img src="img/c31.jpg" alt="">
+<p>The advantages of HSL/HSLA color models over the RGBA color model are:</p>
+<ul>
+<li>The range of colors is more in HSL/HSLA color model.</li>
+    <li>Along with opacity, we will be able to specify saturation and lightness.</li>
+</ul>
+<code>
+<pre>
+    Ex : HSL(240,100%,50%);
+
+    Ex: HSLA(128,70%,20%,0.15);
+</pre>
+</code>
+<h4>Demo : Color Models</h4>
+<code>
+<pre>
+    &lthtml>
+        &lthead>
+        &lttitle>CSS3 Colors&lt/title>
+        &ltlink rel="stylesheet" type="text/css" href="color.css"> 
+        &lt/head>
+        &ltbody>
+            &ltsection id="color_rgba">
+            &lth1>Organization&lt/h1>
+            &ltp>Commitment to the communities in which it operates helps any organization to create opportunities and strive towards a more equitable society. 
+            &lt/p>
+            &lt/section>
+            &ltsection id="color_hsl">
+            &lth2>Technology&lt/h2>
+            &ltp>Technology plays vital role on business operations. Technology helps in automating lot of processes.&lt/p>
+            &lt/section>
+            &ltsection id="color_hsla">
+            &lth3>Organizations&lt/h3>
+            &ltp>Most of the organizations adopt a sustainable approach to business. Organizations needs to take care of the employees.&lt/p>
+            &lt/section>
+        &lt/body>
+    &lt/html>   
+</pre>
+</code>
+<code>
+<pre>
+    #color_rgba {
+        background-color:rgba(255, 193,7,0.38);
+        color:#fff;
+    }
+    #color_hsl {
+        background-color:hsl(235, 100%, 86%);
+        color:#fff;
+    }
+    #color_hsla {
+        background-color:hsla(291, 64%, 42%, 0.28);
+        color:#fff;
+    }
+    #color_rgba,#color_hsl,#color_hsla
+    {
+    padding:5px;
+    }
+    
+</pre>
+</code>
+<ul>
+    <li>Line 2: The color is specified using the RGBA color model. An opacity of 0.38 is specified.</li>
+<li>Line 6: The color is specified using the HSL color model.</li>
+    <li>Line 10: The color is specified using the HSLA color model with alpha(opacity) value of 0.28.</li>
+</ul>
+<p>Output</p>
+<img src="img/c32.jpg" alt="">
+<h4>Tryout : Color Models</h4>
+<p>Observe how colors are applied to the div elements using RGBA, HSL, and HSLA color models.</p>
+<code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml>
+    
+    &lthead>
+        &ltmeta charset="UTF-8">
+        &lttitle>Color Models&lt/title>
+        &ltlink rel="stylesheet" href="./styles.css">
+        &ltstyle>
+    div {
+      width: 305px;
+      height: 45px;
+    }
+    
+    .div1 {
+      background-color: black;
+      background-color: rgba(255, 0, 0, 0.3);
+    }
+    
+    .div2 {
+      background-color: black;
+      background-color: rgba(0, 255, 0, 0.3);
+    }
+    
+    .div3 {
+      background-color: black;
+      background-color: rgba(0, 0, 255, 0.3);
+    }
+    
+    .div4 {
+      background-color: black;
+      background-color: hsl(120, 60%, 70%);
+    }
+    
+    .div5 {
+      background-color: black;
+      background-color: hsl(290, 100%, 50%);
+    }
+    .div6 {
+        background-color: black;
+        background-color: hsl(290, 60%, 70%);
+    }
+
+        .div7 {
+        background-color: black;
+        background-color: hsla(120, 60%, 70%, 0.3);
+    }
+
+        .div8 {
+        background-color: black;
+        background-color: hsla(290, 100%, 50%, 0.3);
+    }
+
+        .div9 {
+        background-color: black;
+        background-color: hsla(290, 60%, 70%, 0.3);
+    }
+
+    &lt/style> 
+    &lt/head> 
+    &ltbody>
+        &ltdiv>CSS3 colors:&lt/div>
+        &ltdiv class="div1">&lt/div>
+        &ltdiv class="div2">&lt/div>
+        &ltdiv class="div3">&lt/div>
+        &ltdiv class="div4">&lt/div>
+        &ltdiv class="div5">&lt/div>
+        &ltdiv class="div6">&lt/div>
+        &ltdiv class="div7">&lt/div>
+        &ltdiv class="div8">&lt/div>
+        &ltdiv class="div9">&lt/div>
+    &lt/body>
+
+&lt/html>
+</pre>
+</code>
+<p>Output
+</p>
+<img src="img/c33.png" alt="">
+
+<h4>CSS Units : Absolute units</h4>
+<p>The absolute length units that we specify for CSS properties will appear as exactly that size.</p>
+<img src="img/c34.png" alt="">
+
+<h4>Relative units</h4>
+<p>Relative units specified will be relative to another property</p>
+<img src="img/c35.png" alt="">
+<h4>Font Properties</h4>
+<p>The font property is a shorthand for font-style, font-variant, font-weight, font-stretch, font-size, line-height, and font-family
+</p>
+<p>The font property is a shorthand for font-style, font-variant, font-weight, font-stretch, font-size, line-height, and font-family
+</p>
+<code>
+<pre>
+    font-family: "comic sans ms", Arial;
+</pre>
+</code>
+<p>font-style: Specifies the style of the font. Values can be normal (default), italic, oblique</p>
+<code>
+<pre>
+    font-style: italic;
+</pre>
+</code>
+<p>font-variant: Specifies the variant of the font. Values can be normal (default) and small-caps</p>
+<code>
+<pre>
+    font-variant: small-caps;
+</pre>
+</code>
+<p>font-size: Specifies the size of the font. Values can be x-small, small, medium, large, and can be a specific number with pixels unit.</p>
+<code>
+<pre>
+    font-size: x-small;
+    font-size: 20px;    
+</pre>
+</code>
+<p>font-weight: Specifies the weight of the font. Values can be normal, bold, bolder, light, x-large.</p>
+<code>
+<pre>
+    font-weight: bold;
+</pre>
+</code>
+<p>line-height: Specifies the height of the line.When line-height is specified without unit, then the number will be multiplied with font-size.</p>
+<code>
+<pre>
+    line-height: 10px;
+    line-height: 1cm;
+    line-height: 0.5;    
+</pre>
+</code>
+<h4>Custom Font</h4>
+<p>We can specify a custom font using the @font-face rule </p>
+<p>Web fonts allow developers/designers to include fonts that are not installed on the user's computer.</p>
+<p>The @font-face rule helps in loading custom fonts on a webpage. It instructs the browser to download the custom font specified in the style sheet from where it is hosted and display it.</p>
+<p>We can create a custom font file using online tools or download the available fonts from the internet, and store it on the server. Whenever needed the font file will be downloaded.</p>
+<p>Assign a name to our custom font and specify the source of our font file.</p>
+<p>syntax </p>
+<code>
+<pre>
+    @font-face {
+        font-family: name;
+        src: url(“pathofthecustomfontfile.”);
+      }
+      
+</pre>
+</code>
+<h4>Demo : Font Properties</h4>
+<code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml> 
+    &lthead> 
+        &ltmeta charset="UTF-8"> 
+        &lttitle>Font properties&lt/title> 
+        &ltlink rel="stylesheet" type="text/css" href="css/font.css"> 
+    &lt/head> 
+    &ltbody> 
+        &lth1 class="fontfamily">Business&lt/h1> 
+        &ltp class="fontvariant">Most of the organizations adopt a sustainable approach to business. Organization's are aware that growth is directly proportional to the well being of employees and business partners, local communities and the environment.&lt/p> 
+        &lth2 class="fontweight customFont">Technology&lt/h2> 
+        &ltp class="lineHeight">Technology plays vital role on business operations. Technology helps in automating lot of processes that helps in increasing  productivity&lt/p> 
+        &ltfooter class="fontstyle">Copyright &copy; Copyright. All rights reserved.&lt/footer> 
+    &lt/body> 
+    &lt/html> 
+    
+</pre>
+</code>
+<code>
+<pre>
+    .fontfamily {
+        font-family: "comic sans ms", Arial;
+      }
+      .customFont {
+        font-family: navBrandFont;
+      }
+      .fontstyle {
+        font-style: italic;
+      }
+      .fontvariant {
+        font-variant: small-caps;
+      }
+      .fontweight {
+        font-weight: bold;
+      }
+      .lineHeight {
+        line-height: 40px;
+      }
+      @font-face {
+        font-family: navBrandFont;
+        src: url(blackjack.otf);
+      }
+      
+</pre>
+</code>
+<p>The blackjack.otf web font can be downloaded  and placed in the same folder where the HTML is present </p>
+<p>output</p>
+<img src="img/c36.PNG" alt="">
+<h4>Demo : Font Properties</h4>
+<code>
+<pre>
+    &lthtml>
+        &lthead>
+        &lttitle>Login Page&lt/title>
+        &ltlink rel="stylesheet" type="text/css" href="webfont.css">
+        &lt/head> 
+        &ltbody>
+        &ltform id="login_form">
+            &lth1>Learners Login&lt/h1>
+            &ltinput type="email" placeholder="Email" required="">
+            &ltinput type="password" placeholder="Enter your password" required="">                 
+            &ltinput id="login_button" type="submit" value="Login">&lt/input> &ltbr>&ltbr>
+            &lta href="forgotpassword.html">Forgot password?&lt/a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &lta href="signup.html">Create account&lt/a>
+        &lt/form>
+        &lt/body>
+        &lt/html>
+        
+</pre>
+</code>
+<code>
+<pre>
+    #login_form
+    {
+        width: 400px;
+        height: 300px;
+        margin-top:50px;
+        margin-left:80px;
+        padding: 20px;
+        border: 2px solid rgba(128,128,128,0.17);//#808080;
+        border-radius:20px;
+        box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+     }
+    @font-face
+    {
+    font-family: myFirstFont1;
+    src: url('Pacifico.ttf'); 
+    }
+    h1 
+    {
+        text-align: center;
+        margin: 0 0 20px;
+        font-family:myFirstFont;
+        // text-shadow: 3px 3px 2px #3F51B5, -3px -3px 2px #E91E63;
+        text-shadow: 0px 0px 10px rgba(255,0,0,1);
+    }
+    input{
+        margin: 5px 0;
+        padding: 15px;
+        width: 90%;
+        border: 1px solid rgba(128,128,128,0.17);//grey;
+        border-radius:20px;
+    }
+    #login_button{
+        margin: 20px 0 0 0;
+        padding: 15px 8px;          
+        width: 20%;
+        height:22%;
+        border: 1px solid hsla(0,72%,27%,0);
+        font: bold 1.2em myFirstFont1;
+        color: #fff;
+        background-color: #4d90fe;
+        border-radius:20px;
+    } 
+    input:focus
+    {
+        outline:0;
+        box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+    } 
+    a
+    {
+        font-family:myFirstFont;
+    }
+    
+</pre>
+</code>
+<p>Output</p>
+<img src="img/c37.jpg" alt="">
+
+<h4>Text Properties</h4>
+<p>We may want to present our text in a more appealing way like spacing, capitalizing, indenting and underlining, etc
+
+    CSS provides the following text properties.</p>
+
+<p>text-align: Specifies the horizontal alignment of the text</p>
+<code>
+<pre>
+    text-align: right;
+
+</pre>
+</code>
+<p>text-decoration: Specifies whether the text should be underlined or overlined. Values can be none (default), underline, overline, line-through</p>
+<code>
+<pre>
+    text-decoration: underline;
+
+</pre>
+</code>
+<p>text-transform: Specifies whether the text should be rendered in uppercase, lowercase, or camelcase. Values can be capitalized, uppercase, lowercase.</p>
+<code>
+<pre>
+    text-transform: capitalize;
+
+</pre>
+</code>
+<p>letter-spacing: Specifies the spacing between the letters</p>
+<code>
+<pre>
+    letter-spacing: 90px;
+
+</pre>
+</code>
+<p>word-spacing: Specifies the spacing between the words</p>
+<code>
+<pre>
+    word-spacing: 90px;
+
+</pre>
+</code>
+<p>text-indent: Specifies the indentation of the text. Values can be left, right, center and justify</p>
+<code>
+<pre>
+    text-indent: 90px;
+
+</pre>
+</code>
+<p>Text Shadow:
+
+    The text-shadow property adds a shadow to the text of any HTML element</p>
+<code>
+<pre>
+    text-shadow: 10px 6px 2px black;
+
+</pre>
+</code>
+<p>The first value specifies the horizontal offset. Positive value creates a shadow to the right. Negative value creates the shadow to the left.</p>
+<p>The second value specifies the vertical offset. Positive value creates a shadow to the left. Negative value creates the shadow to the right.</p>
+<p>The third value specifies the blur distance. An optional value that decides the percentage of blur effect and takes a positive value.</p>
+<p>The fourth value specifies the shadow color. </p>
+<h4>Demo</h4>
+<code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml> 
+    &lthead> 
+        &ltmeta charset="UTF-8"> 
+        &lttitle>Text Properties&lt/title> 
+        &ltlink rel="stylesheet" type="text/css" href="css/text.css"> 
+    &lt/head> 
+    &ltbody> 
+        &lth1 class="uppercase shadow">training offerings&lt/h1> 
+        &lth2 class="decorate">UI courses&lt/h2> 
+        &ltp class="indent"> Our focus is to enable participants to develop single page applications efficiently. The popular courses are:	
+        &ltul> 
+            &ltli>HTML5&lt/li> 
+            &ltli>JavaScript&lt/li> 
+            &ltli>React&lt/li> 
+            &ltli>Angular&lt/li> 
+        &lt/ul> 
+        &lt/p> 
+    &lt/body> 
+    &lt/html> 
+    
+</pre>
+</code>
+<code>
+<pre>
+    .uppercase {
+        text-transform: uppercase;
+      }
+      .shadow {
+        text-shadow: 3px 3px 2px grey;
+      }
+      .decorate {
+        text-decoration: underline;
+      }
+      .indent {
+        text-indent: 20px;
+      }
+      
+</pre>
+</code>
+<p>output</p>
+<img src="img/c38.PNG" alt="">
+<h4>Demo : Text Shadow</h4>
+<code>
+<pre>
+    &lthtml>
+        &lthead>
+        &lttitle>Login Page&lt/title>
+        &ltlink rel="stylesheet" type="text/css" href="homepage.css">
+        &lt/head> 
+        &ltbody>
+        &ltform id="login_form">
+            &lth1>Learners Login&lt/h1>
+            &ltinput type="email" placeholder="Email" required="">
+            &ltinput type="password" placeholder="Enter your password" required="">                 
+            &ltinput id="login_button" type="submit" value="Login">&lt/input> &ltbr>&ltbr>
+            &lta href="forgotpassword.html">Forgot password?&lt/a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &lta href="signup.html">Create account&lt/a>
+        &lt/form>
+        &lt/body>
+        &lt/html>
+        
+</pre>
+</code>
+<code>
+<pre>
+    #login_form
+    {
+        width: 400px;
+        height: 300px;
+        margin-top:50px;
+        margin-left:80px;
+        padding: 20px;
+        border: 2px solid #808080;
+        border-radius:20px;
+        box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+     }
+    h1 
+    {
+        text-align: center;
+        margin: 0 0 20px;
+        text-shadow: 2px 2px 2px rgb(255,0,0,1);
+    }
+    input{
+        margin: 5px 0;
+        padding: 15px;
+        width: 90%;
+        border: 1px solid grey;
+        border-radius:20px;
+    }
+    #login_button{
+        margin: 20px 0 0 0;
+        padding: 15px 8px;          
+        width: 20%;
+        height:20%;
+        border: 1px solid hsla(0,72%,27%,0);
+        font: bold 1.2em myFirstFont;
+        color: #fff;
+        background-color: #4d90fe;
+        border-radius:20px;
+        box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+     }
+    input:focus
+    {
+        outline:0;
+        box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+    } 
+    
+</pre>
+</code>
+<p>Output</p>
+<img src="img/c39.jpg" alt="">
+<h4>Demo : Multiple Text Shadows</h4>
+<p>We can provide multiple shadows to the text-shadow property by providing comma-separated values.</p>
+<code>
+<pre>
+    #login_form
+    {
+        width: 400px;
+        height: 300px;
+        margin-top:50px;
+        margin-left:80px;
+        padding: 20px;
+        border: 2px solid #808080;
+        border-radius:20px;
+        box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+     }
+    h1 
+    {
+        text-align: center;
+        margin: 0 0 20px;
+        text-shadow: 4px 4px 2px #3F51B5, -4px -4px 3px #E91E63; 
+    }
+    input{
+        margin: 5px 0;
+        padding: 15px;
+        width: 90%;
+        border: 1px solid grey;
+        border-radius:20px;
+    }
+    #login_button{
+        margin: 20px 0 0 0;
+        padding: 15px 8px;          
+        width: 20%;
+        height:20%;
+        border: 1px solid hsla(0,72%,27%,0);
+        font: bold 1.2em myFirstFont;
+        color: #fff;
+        background-color: #4d90fe;
+        border-radius:20px;
+        box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+     }
+    input:focus
+    {
+        outline:0;
+        box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+    } 
+    
+</pre>
+</code>
+<p>Output</p>
+<img src="img/c40.jpg" alt="">
+<h4>Demo : Glow Effect</h4>
+<p>Glow effect can be produced by providing zero value to the horizontal and vertical distance properties and by providing high value to blur distance property to the text-shadow property.</p>
+<code>
+<pre>
+    #login_form
+    {
+        width: 400px;
+        height: 300px;
+        margin-top:50px;
+        margin-left:80px;
+        padding: 20px;
+        border: 2px solid #808080;
+        border-radius:20px;
+        box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+     }
+    h1 
+    {
+        text-align: center;
+        margin: 0 0 20px;
+        text-shadow: 0px 0px 10px rgba(255,0,0,1); 
+    }
+    input{
+        margin: 5px 0;
+        padding: 15px;
+        width: 90%;
+        border: 1px solid grey;
+        border-radius:20px;
+    }
+    #login_button{
+        margin: 20px 0 0 0;
+        padding: 15px 8px;          
+        width: 20%;
+        height:20%;
+        border: 1px solid hsla(0,72%,27%,0);
+        font: bold 1.2em myFirstFont;
+        color: #fff;
+        background-color: #4d90fe;
+        border-radius:20px;
+        box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+     }
+    input:focus
+    {
+        outline:0;
+        box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+    } 
+    
+</pre>
+</code>
+<p>Line 16: Glow effect is produced by providing high blur value and keeping horizontal and vertical values as zero.</p>
+<p>Output</p>
+<img src="img/c41.jpg" alt="">
+<h4>Tryout : Text Shadow</h4>
+<p>Observe how the text-shadow property is applied to the heading.</p>
+<code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml>
+    &lthead>
+        &lttitle>text Shadows&lt/title>
+         &ltmeta charset="UTF-8">
+         &ltstyle>
+            .heading1 {
+              text-shadow: 0 0 3px #fff, -1px -1px 0 hsl(172, 70%, 35%), -2px -2px 1px hsl(172, 36%, 48%), -2px -2px 2px hsl(80, 28%, 17%);
+            }
+         &lt/style>
+    &lt/head>
+    &ltbody>
+        &lth1 class="heading1">Text Shadows&lt/h1>
+    &lt/body>
+    &lt/html> 
+</pre>
+</code>
+<img src="img/c42.png" alt="">
+
+
+<h3>Box Model</h3>
+ <h4>Why Box Model ?</h4>
+<img src="img/c43.jpeg" alt="">
+<p>CSS box model can be related to the above example.</p>
+<p>Each photo frame can be considered as an HTML element. The photo present in each frame can be considered as the HTML content. The spacing from the photo to the frame is equivalent to padding. The frame itself is the border, The distance between the inner boundary to the outer boundary (the width of the brown portion in the above image shown ) is equivalent to the border width. The spacing between one frame to another frame or the wall is the margin.</p>
+<h4>What is Box Model ?</h4>
+<p>The CSS box model is a container, which wraps around every HTML element. It consists of margins, borders, padding along with the actual content.</p>
+<img src="img/c44.PNG" alt="">
+<p>The space from the content to the border is padding. The green box around the element is the border and the thickness of the border is the width of the border. The spacing from the HTML element to the neighboring elements is the margin. The width and height of an element include padding, border, and margin.</p>
+<p>The padding, margin, and border are the CSS properties, which helps in providing proper spacing to the HTML element so that the webpage is readable by the end-users.</p>
+<h4>Border Property</h4>
+<p>Let us understand how to provide a border to an HTML element. We can use the border property.</p>
+<code>
+<pre>
+    &ltbody>
+        &lth3>Box model&lt/h3>
+        &ltdiv>
+        &ltp>This text is the content of the box.&lt/p>
+        &ltp>This text is the content of the box.&lt/p>
+        &ltp>This text is the content of the box.&lt/p>
+        &lt/div>
+        &lt/body>
+        
+</pre>
+</code>
+<code>
+<pre>
+    div {
+        border: 2px solid lightgrey;
+      }
+      
+</pre>
+</code>
+<p>Output</p>
+<img src="img/c45.PNG" alt="">
+<p>The first argument 2px specifies the width of the border. The second value solid specifies the border-style and the third argument specifies the color of the border</p>
+<p>The order of the values specified to the border property can be changed.</p>
+<p>The second argument border-style can take different values. We can provide solid, dotted, dashed, etc as values.</p>
+<p>The border-style property can be specified as border-style-left, border-style-right, border-style-top, border-style-bottom</p>
+
+<code>
+<pre>
+    border: 3px dashed lightgrey;
+
+</pre>
+</code>
+<img src="img/c46.PNG" alt="">
+<p>The border is the shorthand property. We can specify the border-left, border-right, border-top and border-bottom specifically.</p>
+
+<h4>Border- radius</h4>
+<p>Border property adds a sharp border to our HTML element.</p>
+<p>If we need rounded corners for our border, we can achieve the requirement using the border-radius property of CSS3.</p>
+<p>The border-radius is a shorthand property. Border radius value can be expressed using px or %. Percentage(%) is used when we want border-radius to be directly correlated with elements width.</p>
+<p>border-radius is a combination of below four properties. </p>
+<p>border-top-left: can be used to provide top left radius</p>
+<p>border-top-right: can be used to provide top right radius</p>
+<p>border-bottom-left: can be used to provide bottom left radius</p>
+<p>border-bottom-right: can be used to provide bottom right radius</p>
+
+<code>
+<pre>
+    border: lightgrey dashed 3px;
+    border-radius: 30px 15px 25px 50px;
+    
+</pre>
+</code>
+<img src="img/c47.PNG" alt="">
+<h4>Width and Height property</h4>
+<p>We can specify the width and height to an HTML element as shown below</p>
+
+<code>
+<pre>
+    &ltbody>
+        &lth3>Box model&lt/h3>
+        &ltdiv>
+        &ltp>This text is the content of the box.&lt/p>
+        &ltp>This text is the content of the box.&lt/p>
+        &ltp>This text is the content of the box.&lt/p>
+        &lt/div>
+        &lt/body>
+        
+</pre>
+</code>
+<code>
+<pre>
+    div {
+        border: lightgrey dashed 3px;
+        width: 220px;
+        height: 125px;
+      }
+      
+</pre>
+</code>
+<img src="img/c48.PNG" alt="">
+<h4>Padding Property</h4>
+<p>Let us check out how we provide padding to the HTML element</p>
+<code>
+<pre>
+    border: lightgrey dashed 3px;
+    padding: 20px;
+    
+</pre>
+</code>
+<img src="img/c49.PNG" alt="">
+<p>Padding is the shorthand property for padding-top, padding-right, padding-bottom and padding-left
+
+    We can provide top, right, bottom and left padding specifically also</p>
+<code>
+<pre>
+    div {
+        border: lightgrey dashed 3px;
+        padding: 10px 20px 30px 40px;
+        width: 220px;
+        height: 125px;
+      }
+      
+</pre>
+</code>
+<img src="img/c50.PNG" alt="">
+
+<h4>CSS short hand proerties</h4>
+<p>CSS has many shorthand properties. The shorthand properties in CSS can take from 1 to 4 values. The order of these values are top, right, bottom and left</p>
+<p>If 1 value is specified then the same value is considered for all other 3 values.</p>
+<p>If 2 values are specified then the first value is considered as top and bottom values and the second value is considered as left and right values.</p>
+<p>If 3 values are specified then the first value is considered as the top value and the second value is considered as left and right values and the third value is considered as bottom value.</p>
+
+<h4>Margin Property</h4>
+
+<p>Margin is also a shorthand property like padding.
+
+    We can provide margin-top, margin-right, margin-bottom,margin-left values</p>
+<code>
+<pre>
+    div {
+        border: lightgrey dashed 3px;
+        padding: 20px;
+        margin: 60px;
+        width: 220px;
+        height: 125px;
+      }
+      
+</pre>
+</code>
+<img src="img/c51.PNG" alt="">
+<h4>Total width and Height of the element</h4>
+<p>When we specify the width and height property for any HTML element using CSS, we are actually setting the width and height of the content not the width and height of the complete element.</p>
+<p>The complete width and height of an element include the padding, border</p>
+<p>Total element width = width + left padding + right padding + left border + right border</p>
+<p>Total element height = height + top padding + bottom padding + top border + bottom border</p>
+
+<h4>display property</h4>
+<p>The display property specifies how the element should be rendered.</p>
+<p>The most common values provided to the display property are inline, block, inline-block, flex, and grid</p>
+<p>inline: The HTML element applied with this property will be rendered inline. We cannot apply height and width properties.</p>
+<p>block: The HTML element applied with this property will be rendered as a block element in the next line</p>
+<p>inline-block: The HTML element will behave like an inline element but we can apply width and height properties</p>
+
+<h4>Tryout:Box Model</h4>
+<code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml lang="en">
+      &lthead>
+         &ltmeta charset="UTF-8"> 
+        &lttitle>Contact Us&lt/title>
+        &ltstyle>
+            body {
+              font-family: sans-serif; 
+            }
+            ul
+            {
+                margin-top: 50px;
+            }
+            ul li {
+              display: inline;
+              padding:4px;
+            }
+            
+            ul li a {
+              text-decoration: none;
+              background-color: black;
+              color: white;
+            }
+            
+            h1,
+            p {
+              background-color: #dde0e3;
+            }
+            
+            h1 {
+              padding: 50px;
+              border: 2px solid blue;
+              border-radius: 10px;
+            }
+            
+            p {
+              padding: 20px 10px;
+              margin-bottom: 50px;
+            }
+        &lt/style>
+      &lt/head>
+      &ltbody>
+          
+        &ltmain>
+        &ltul>
+            &ltli>&lta href="#">Home&lt/a>&lt/li>
+            &ltli>&lta href="#">Contact&lt/a>&lt/li>
+            &ltli>&lta href="#">About&lt/a>&lt/li>
+        &lt/ul>
+        &lth1>Contact Us&lt/h1>
+        
+        &ltdiv>
+            &ltp>Thanks for visiting our web site; you are requested send us the following information enabling us to design the best tour for you:
+            Travel period month/year, No. of Days for your tour, Total number of people traveling, Area of Interest in India, Preference of hotels, or per day per person budget, Preference of destinations you wish to cover.&lt/p>
+            &ltp>And submit the form with your suggestions and feedback the tour programme will be customized as per your interest. &lt/p>
+        &lt/div>
+    &lt/main>
+       
+        &ltfooter>
+          &ltp>Copyright @ TravelIndia, 2020&lt/p>
+        &lt/footer>
+      &lt/body>
+    &lt/html>
+    
+</pre>
+</code>
+<img src="img/c52.png" alt="">
+<h4>Border Radius</h4>
+<p>Border property adds a sharp border to our HTML element.</p>
+<p>If we need rounded corners for our border, we can achieve the requirement using the border-radius property of CSS3.</p>
+<p>We can use slashes(“/”) between 2 values to specify elliptical corners.</p>
+<p>Ex : border-radius: 10px/20px; /* horizontal radius/vertical radius */</p>
+<p>Border radius is short-hand property. Border radius value can be expressed using px or %. Percentage(%) is used when we want border-radius to be directly correlated with elements width.</p>
+<p>border-radius is combinations of the below four properties. </p>
+<ul>
+<li>border-top-left: can be used to provide top left radius</li>
+<li>border-top-right: can be used to provide top right radius</li>
+<li>border-bottom-right: can be used to provide bottom right radius</li>
+    <li>border-bottom-left: can be used to provide bottom left radius</li>
+</ul>
+<p>In border-radius CSS property:</p>
+<ul>
+<li>if only one value is set, this radius applies to all 4 corners.</li>
+<li>If two values are set, the first value applies to top-left and bottom-right corner, the second value applies to top-right and bottom-left corner.</li>
+<li>If all values are set, they apply to the top-left, top-right, bottom-right, bottom-left corner in that particular order.</li>
+
+</ul>
+<h4>Demo : Border Radius</h4>
+<code>
+<pre>
+    &lthtml>
+        &lthead>
+        &lttitle>Border-radius&lt/title>
+        &ltlink rel="stylesheet" type="text/css" href="borderradius.css"> 
+        &lt/head>
+        &ltbody>
+        &ltdiv>&lt/div>
+        &lt/body>
+     &lt/html>
+        
+</pre>
+</code>
+<code>
+<pre>
+    div{
+        width:200px;
+        height:200px;
+        border: 1px solid hotpink;
+        background-color:RGBA(255,192,203,0.45);
+        border-radius:30px 15px 25px 50px;
+        }
+        
+</pre>
+</code>
+<img src="img/c53.jpg" alt="">
+<p> we observe that Each corner has a different border-radius value.</p>
+<h4>Tryout : Border Radius</h4>
+<code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml>
+    
+    &lthead>
+        &ltmeta charset="UTF-8">
+        &lttitle>Border Radius Tryout&lt/title>
+        &ltstyle>
+            .div1 {
+                  margin-left: 10px; 
+                  border: 2px solid blue;
+                  padding: 10px 40px; 
+                  background: aqua;
+                  width: 100px;
+                  height: 100px;
+                  border-radius: 50%;
+                }
+    
+            .div2 {
+              margin-left: 200px;
+              border: 2px solid green;
+              padding: 10px 40px;
+              background: lightgreen;
+              width: 100px;
+              height: 100px;
+              border-radius: 5px 70px 15px 70px;
+            }
+        &lt/style>
+    &lt/head>
+    
+    &ltbody>
+        &ltdiv class="div1">&lt/div>
+        &ltdiv class="div2">&lt/div>
+    &lt/body>
+    
+    &lt/html>
+</pre>
+</code>
+<img src="img/c54.png" alt="">
+
+<h4>Box Shadow</h4>
+<p>CSS3 allows us to add shadow to any element in the web page using the box-shadow property.</p>
+<code>
+<pre>
+    box-shadow:5px 10px 6px 2px rgba(30,50,40,0.5);
+
+</pre>
+</code>
+<ul>
+<li>5px indicates horizontal offset</li>
+<li>10px indicates Vertical offset</li>
+<li>6px indicates Blur Distance</li>
+<li>2px indicates Spread Distance</li>
+    <li>rgba(30,50,40,0.5) is used to apply shadow color</li>
+</ul>
+<p>Let us have a glance over these properties and understand how to write with them. </p>
+<img src="img/c55.png" alt="">
+
+<h4>Best Practice:</h4>
+<ul>
+    <li>Shadow to any element in the webpage can be provided using the box-shadow property.</li>
+<li>Blur radius can be used, which is set to 0 the shadow will be sharp, the higher the number, the more blurred it will be.
+</li>
+    <li>By using the spread radius, positive values increase the size of the shadow, negative values decrease the size. The Default value is 0, where the shadow is the same size as the blur</li>
+</ul>
+<h4>Demo : Box Shadow</h4>
+<code>
+<pre>
+    &lthtml>
+        &lthead>
+        &lttitle>Login Page&lt/title>
+        &ltlink rel="stylesheet" type="text/css" href="homepage.css">
+        &lt/head> 
+        &ltbody>
+        &ltform id="login_form">
+            &lth1>Learners Login&lt/h1>
+            &ltinput type="email" placeholder="Email" required="">
+            &ltinput type="password" placeholder="Enter your password" required="">                 
+            &ltinput id="login_button" type="submit" value="Login">&lt/input> &ltbr>&ltbr>
+            &lta href="forgotpassword.html">Forgot password?&lt/a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &lta href="signup.html">Create account&lt/a>
+        &lt/form>
+        &lt/body>
+        &lt/html>
+        
+</pre>
+</code>
+<code>
+<pre>
+    #login_form
+    {
+        width: 400px;
+        height: 300px;
+        margin-top:50px;
+        margin-left:80px;
+        padding: 20px;
+        border: 2px solid #808080;
+        border-radius:20px;
+        box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+     }
+    h1 
+    {
+        text-align: center;
+        margin: 0 0 20px;
+    }
+    input{
+        margin: 5px 0;
+        padding: 15px;
+        width: 90%;
+        border: 1px solid grey;
+        border-radius:20px;
+    }
+    #login_button{
+        margin: 20px 0 0 0;
+        padding: 15px 8px;          
+        width: 20%;
+        height:20%;
+        border: 1px solid hsla(0,72%,27%,0);
+        font: bold 1.2em myFirstFont;
+        color: #fff;
+        background-color: #4d90fe;
+        border-radius:20px;
+        box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+     }
+    input:focus
+    {
+        outline:0;
+        box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+    } 
+    
+</pre>
+</code>
+<img src="img/c56.jpg" alt="">
+
+<h4>Tryout : Box Shadow</h4>
+<p>Change the horizontal offset and vertical offset to negative values and also change the blur distance values of box-shadow property and observe the changes.</p>
+<code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml>
+     
+    &lthead>
+        &ltmeta charset="UTF-8">
+        &lttitle>Box Shadow&lt/title>
+        &ltstyle>
+            div {
+      width: 300px;
+      height: 100px;
+      background-color: aqua;
+      box-shadow: 10px 10px 25px #888;
+    }
+        &lt/style>
+    &lt/head>
+    
+    &ltbody>
+        &ltdiv>Div element with box-shadow&lt/div>
+    &lt/body>
+    
+    &lt/html>
+</pre>
+</code>
+<img src="img/c57.png" alt="">
+
+<h4>Border Image</h4>
+<p>We apply different border styles to our HTML elements.
+
+    What if we want to apply the image as a border to our HTML element.
+    
+    Using CSS we need to use additional software to apply the image as a border.</p>
+<p>But in CSS3 we don’t require any software/tool to achieve this requirement, we can use the border-image property.
+
+    Let us explore the border-image property.</p>
+<p>Border image is used to specify an image as a border around the HTML element. Border image is a short-hand property to set border-source, border-image-slice, border-width, border-outset, border repeat.</p>
+<img src="img/c58.png" alt="">
+<p>Border Image slice property specifies how to slice the image.</p>
+<p>The image to be added as a border will be divided into 9 sections based on the image slice value of the border-image property.</p>
+<p>Once the image is divided into 9 sections. The corners of the image would be placed at the corners of the element and the edges of the image would be placed at the edges of the element.</p>
+<p>The edges of the image are repeated or scaled based on the border-repeat value.</p>
+
+<p>Example</p>
+<img src="img/c59.jpg" alt="">
+<p>The border-repeat property specifies whether to stretch, repeat, round or scale the edges of the image.</p>
+<img src="img/c60.png" alt="">
+<h4>Demo : Border Image</h4>
+<p> Let us see the usage of the border-image shorthand property in the below example.</p>
+
+<code>
+<pre>
+    &lthtml>
+        &lthead>
+        &lttitle>Border-Image&lt/title>
+        &ltlink rel="stylesheet" type="text/css" href="borderimage.css">
+        &lt/head>
+        &ltbody>
+        &ltimg src="images/monalisa01.jpg" alt="Image cannot be loaded">&lt/img>
+        &lt/body>
+        &lt/html>
+        
+</pre>
+</code>
+<code>
+<pre>
+    img
+    {
+        margin-left:150px;
+        margin-top:50px;
+        border: 50px solid transparent;
+        border-image:url(images/frame1.jpg) 13% 17% 14% 15%;
+    }
+    
+</pre>
+</code>
+<p>Here in the above code snippet,</p>
+<ul>
+    <li>Line 5 : Border property has to be specified for border-image property to work.</li>
+<li>Line 6 : The image is stretched at the edges, since there is no border-repeat value specified.Stretch is the default value.</li>
+
+</ul>
+<p>monalisa01.jpg</p>
+<img src="img/c61.jpg" alt="">
+<p>frame1.jpg</p>
+<img src="img/c62.jpg" alt="">
+<p>output</p>
+<img src="img/c63.jpg" alt="">
+
+<h4>Demo : Border Image</h4>
+<p> Let us see the usage of the border-image property by specifying the properties individually in the below example.</p>
+<code>
+<pre>
+    &lthtml> 
+        &lthead> 
+            &lttitle>Border Image&lt/title>
+            &ltlink rel="stylesheet" type="text/css" href="borderimage.css">	
+        &lt/head> 
+        &ltbody> 
+            &ltdiv id="myDIV">This div is applied with border image&lt/div> 
+        &lt/body> 
+        &lt/html> 
+        
+</pre>
+</code>
+<code>
+<pre>
+    #myDIV 
+    { 
+        border: 15px solid transparent; 
+        border-image: url(images/border.jpg); 
+        border-image-slice: 30; 
+        border-image-repeat: round; 
+        border-image-outset:10px; 
+        height: 50px; 
+        padding: 15px; 
+        width: 200px; 
+    } 
+    
+</pre>
+</code>
+<p>Line 8 : The border-image extends 10px beyond the border.</p>
+<p>Output</p>
+<img src="img/c64.jpg" alt="">
+
+<h3>Transformations</h3>
+<h4>Why Transformations ?</h4>
+<p>You might have observed an HTML element getting transformed such as the element gets rotated or scaled upon hover of the mouse.</p>
+<p>These transformations were generally achieved through JavaScript or JavaScript frameworks.</p>
+<p>CSS3 has introduced the transformations using which we can transform our HTML elements using the transform property of CSS3.</p>
+<p>Transformations are applied to create dynamic web pages.</p>
+
+<p>CSS3 enables us to move, tilt, scale any element of our web page with ease with the concept of transforms.</p>
+<p>We can rotate and pop out a particular image in an image gallery on the hover of the mouse.</p>
+<img src="img/c65.jpg" alt="">
+
+<p>CSS3 supports the following transformations</p>
+<ul>
+    <li>Translate</li>
+<li>Scale</li>
+<li>Rotate</li>
+    <li>Skew</li>
+</ul>
+<h4>Translate</h4>
+<p>CSS3 translate() function is used to move an element from one position to another position.</p>
+<p>An element can be moved to the right, left, top, bottom.</p>
+<p>Syntax: translate (x,y) -> moves the element to right by x-value, and y-value down from its current position.</p>
+<p>An element can be moved in only one direction i.e. horizontal/vertical using translateX and translateY functions.</p>
+<p>Example:</p>
+<ol>
+    <li>translate(20px, 30px) -> moves the element to right by 20px and 30px down from the current position.</li>
+<li>translate(-40px, 20px) -> moves the element to left by 40px and 20px down from the current position.</li>
+    <li>translate(-30px, -25px) -> moves the element to left by 30px and 25px up from the current position.</li>
+</ol>
+
+<h4> Demo : Translate</h4>
+<code>
+<pre>
+    &lthtml>
+        &lthead>
+            &lttitle>Translate Demo&lt/title>
+            &ltlink rel="stylesheet" type="text/css" href="translate.css">
+        &lt/head>
+        &ltbody>
+        &ltbr />
+        &ltimg src="images/Toy.jpg" alt="Toy">&lt/img>
+        &ltimg id="translate" src="images/Toy.jpg" alt="ToyTranslate">&lt/img>
+        &lt/body>
+        &lt/html>
+        
+</pre>
+</code>
+<code>
+<pre>
+    img
+    {
+       width:200px;
+       height:200px;
+       border:1px solid black;
+    }
+    img#translate
+    {
+       width:200px;
+       height:200px;
+       border:1px solid black;
+       transform:translate(45px,70px);
+    }
+    
+</pre>
+</code>
+<p>The translate transformation is applied to the image.</p>
+<p>Output without translate transformation</p>
+<img src="img/c66.jpg" alt="">
+<p>Output with translate transformation</p>
+<img src="img/c67.jpg" alt="">
+<h4>Scale</h4>
+<p>CSS3 scale() function is used to change(increase/decrease) the size of any element.</p>
+<p>Syntax: scale(x,y) -> scales the element width(x-value) & height(y value)</p>
+<p>If only one value is supplied to the scale(value) function, then that value will be considered as both x & y parameters</p>
+<p>Example:</p>
+
+<ol>
+<li>scale(2,1) -> The width of the element will be doubled and height remains the same.</li>
+<li>scale(0.5) -> will decrease the element size by half</li>
+<li>scale(1)-> element size will remain same</li>
+    <li>scale(2)-> doubles the element size</li>
+</ol>
+<h4>Demo : Scale</h4>
+<code>
+<pre>
+    &ltbody>
+        &ltimg src="images/Toy.jpg" alt="Toy">&lt/img>
+        &ltimg id="scale" src="images/Toy.jpg" alt="ToyTranslate">&lt/img>
+    &lt/body>
+</pre>
+</code>
+<code>
+<pre>
+    img
+    {
+       width:200px;
+       height:200px;
+       border:1px solid black;;
+    }
+    img#scale
+    {
+       width:200px;
+       height:200px;
+       border:1px solid black;
+       margin-top:70px;
+       transform:scale(1.5,1.5);
+    }
+    
+</pre>
+</code>
+<p>Line 13: The scale transformation is applied to the image.</p>
+<p>Output
+</p>
+<img src="img/c68.jpg" alt="">
+<p>In the above output,</p>
+<ul>
+<li>The scaled image has overlapped the original image.
+</li>
+    <li>The width and height of the image is been increased by 1.5 times.</li>
+</ul>
+
+<h4>Rotate</h4>
+<p>CSS3 rotate() function is used to rotate an element from its origin point up to a specified angle. The angle is specified in degrees.</p>
+<p>Syntax: rotate(x) -> Rotates the element. </p>
+<p>If the angle specified is a positive value then the element rotates clockwise. if the angle specified is a negative value then the element rotates anti-clockwise. </p>
+<p>Example:</p>
+
+<ol>
+<li>rotate(20deg) -> Rotates the element by 20 degrees in clockwise direction.</li>
+    <li>rotate(-50deg) -> Rotates the element by 50 degrees in anti-clockwise direction.</li>
+</ol>
+<h4>Demo : Rotate</h4>
+<code>
+<pre>
+    &ltbody>
+        &ltimg src="images/Toy.jpg" alt="Toy">&lt/img>
+        &ltimg id="rotate" src="images/Toy.jpg" alt="ToyRotate">&lt/img>
+    &lt/body>
+</pre>
+</code>
+<code>
+<pre>
+    img
+{
+   width:200px;
+   height:200px;
+   border:1px solid black;
+}
+img#rotate
+{
+   width:200px;
+   height:200px;
+   border:1px solid black;
+   margin-top:70px;
+   transform:rotate(45deg);
+}
+
+</pre>
+</code>
+<p>The rotate transformation is applied to the image.</p>
+<p>The image is rotated by 45 degrees.</p>
+<p>Output</p>
+<img src="img/c69.jpg" alt="">
+
+<h4>Demo : Rotate</h4>
+<code>
+<pre>
+    &lt!DOCTYPE html>
+    &lthtml>
+    &lthead>
+        &ltmeta charset="UTF-8">
+        &lttitle>Rotate Demo&lt/title>
+        &ltstyle>
+            table {
+                margin: 20px;
+                border: #ccc 1px solid;
+            }
+            table th, table td {
+                border-top: 1px solid #fafafa;
+                border-bottom: 1px solid #e0e0e0;
+                border-left: 1px solid #e0e0e0;
+                border-right: 1px solid #e0e0e0;
+                width: 200px
+            }
+        &lt/style>
+    &lt/head>
+    &ltbody>
+        &lttable>
+            &lttr>
+                &ltth>Item&lt/th>
+                &ltth>Price&lt/th>
+            &lt/tr>
+            &lttr>
+                &lttd>Pen&lt/td>
+                &lttd>100&lt/td>
+            &lt/tr>
+            &lttr>
+                &lttd>Book&lt/td>
+                &lttd>200&lt/td>
+            &lt/tr>
+            &lttr>
+                &lttd>Shirt&lt/td>
+                &lttd>1000&lt/td>
+            &lt/tr>
+            &lttr>
+                &lttd>Paint&lt/td>
+                &lttd>2000&lt/td>
+            &lt/tr>
+        &lt/table>
+    &lt/body>
+    &lt/html>
+    
+</pre>
+</code>
+<img src="img/c70.png" alt="">
+<code>
+<pre>
+ptable tr:hover{
+    transform:rotate(5deg);
+    background-color:#aaa;
+}
+
+</pre>
+</code>
+<p>The above page has the below features added</p>
+<p>Whenever we hover on any of the rows of the table the row rotates</p>
+<p>The webpage will now look like the below after changes are done.</p>
+<img src="img/c71.png" alt="">
+
+<h4>Skew</h4>
+<p>CSS3 skew() function is used to turn/skew any element to any angle.</p>
+<p>The turning/skewing is dependent on the parameters specified for the vertical & horizontal axis.</p>
+<p>Syntax: skew(x,y) -> skews the element from x degrees from the x-axis & y- degrees from the y-axis.</p>
+<p>if the y-axis value is not specified then it has a zero value.</p>
+<p>To skew an element across a single axis, we can use skewX() and skewY() functions.</p>
+<p>Example:</p>
+<ol>
+<li>skew(20deg) -> skew an element by 20 degrees across x-axis.</li>
+<skew(30deg, 10deg) -> skews an element by 30 degrees across x-axis and 10 degrees across y-axis.</li>
+<li>skewX(15deg) -> skews an element by 15 degrees across x-axis.</li>
+    <li>skewY(45deg) -> skews an element by 45 degrees across y-axis.</li>
+</ol>
+<h4>Demo : Skew</h4>
+<code>
+<pre>
+    &ltbody>
+        &ltimg src="images/Toy.jpg" alt="Toy">&lt/img>
+        &ltimg id="skew" src="images/Toy.jpg" alt="ToySkew">&lt/img>
+    &lt/body>
+</pre>
+</code>
+<code>
+<pre>
+    img
+    {
+    width:200px;
+    height:200px;
+    border:1px solid #440000;
+    }
+    img#skew
+    {
+    width:200px;
+    height:200px;
+    border:1px solid #440000;
+    margin-top:70px;
+    transform:skew(30deg,20deg);
+    }
+    
+</pre>
+</code>
+<p> The skew transformation is applied to the image.</p>
+<p>The image is skewed by 30 degrees at the x-axis and 20 degrees at the y-axis.</p>
+<p>Output</p>
+<img src="img/c72.jpg" alt="">
+
+<h4>Demo : Skew</h4>
+<code>
+<pre>
+    table tr:hover{
+        transform: skew(7deg,7deg);
+        background-color:#aaa;
+    }
+    
+</pre>
+</code>
+<p>Whenever we hover on any of the rows of the table the row shows the skew effect.</p>
+<p>The webpage will now look like the below after changes are done.</p>
+<img src="img/c73.png" alt="">
+
+<h4>Tryout : Transformations</h4>
+<code>
+<pre>
+    &lt!doctype html>
+    &lthead>
+        &lttitle>Transformations&lt/title>
+        &ltmeta charset="UTF-8"> 
+    &ltstyle type="text/css"> 
+    div
+    {
+    width:200px;
+    height:200px;
+    border:1px solid hotpink;
+    background-color:lightpink
+    }
+    div#translate
+    {
+    width:200px;
+    height:200px;
+    border:1px solid blue;
+    transform:translate(40px,70px) scale(1.2,1.2);
+    background-color:lightblue;
+    }
+    
+     
+    &lt/style>
+    &lt/head>
+    &ltbody>
+        &ltdiv>&lt/div>
+        &ltdiv id="translate">&lt/div>
+    &lt/body>
+    &lt/html>
+</pre>
+</code>
+<img src="img/c74.png" alt="">
+
+<h3>Transitions </h3>
+<h4>Why Transitions ?
+</h4>
+<p>If we have a requirement to show the gradual changes in the CSS properties of an element during an interval of time.</p>
+<p>For example, you might want to show an element changing its size in an interval of 2 seconds upon hover of the mouse. We can use the CSS3 transition property.
+</p>
+<h4>What are Transitions ?</h4>
+<p>Transitions are used for moving the element from one state to another state by transiting the CSS properties of an element over a period of time.</p>
+<p>We can mention the initial state and final state with transitions and it happens when some event occurs.</p>
+<p>Observe how the movement of the rocket can be transited during a time interval on a webpage.</p>
+<img src="img/c75.png" alt="">
+<p>Transitions are gradual changes in the properties of an element when it changes from one style to another.</p>
+<p>Using CSS3 transition effects can be added to elements without the need for any scripting or additional software like Flash.</p>
+<p>To add a transition, two things must be specified:</p>
+<ul>
+<li>The CSS property to which the effect should be added.</li>
+    <li>The duration of the effect.</li>
+</ul>
+<code>
+<pre>
+    transition: height 3s;
+
+</pre>
+</code>
+<p>height is the CSS property to be transited.3s is the duration for the animation</p>
+<p>Transition is a short-hand property to specify the properties mentioned below</p>
+<img src="img/c76.png" alt="">
+<h4>Transition Timing Function</h4>
+<p>The transition timing function is used to specify the pace/speed of transition.
+
+    This can be done in 2 ways.</p>
+<p>Specifying the pre-defined functions.</p>
+<img src="img/c77.png" alt="">
+<p>Defining a custom function by specifying four co-ordinates to define a cubic bezier curve.</p>
+<p>The Cubic Bezier curve is defined by 4 points P0, P1, P2, and P3.</p>
+<p>P0 and P3 are the start and end of the curve hence they have values 0 and 1 by default. We specify the x and y coordinate values for P1 and P2 to the cubic bezier curve function.</p>
+<code>
+<pre>
+    cubic-bezier(x1,y1,x2,y2)
+
+</pre>
+</code>
+<p>In the above syntax,
+    x1,y1,x2, and y2 are the x and y-coordinates of points P1 and P2.</p>
+<h4>Steps Transition Function</h4>
+<p>steps() timing function enables us to break the transition into steps.</p>
+<p>For example: If I want to transit a square that moves 400px to right on hover in 4 seconds then the square would move 100 pixels to right for every second.</p>
+<p>This function accepts 2 arguments.</p>
+<p>steps(int, start|end)</p>
+<p>The first parameter specifies the number of intervals to which the transition should be broken. This should be a positive number greater than 0.</p>
+<p>If the second parameter value is 'start' then the transition will happen at the beginning of each step.</p>
+<p>If the second parameter value is 'end' then the transition will happen at the end of each step.</p>
+<p>There are 2 pre-defined variants of the steps function</p>
+<ul>
+<li>There are 2 pre-defined variants of the steps function</li>
+    <li>step-end which is equivalent to steps(1, end)</li>
+</ul>
+<code>
+<pre>
+    div
+    {
+        transition: 4s steps(4);
+    }
+    div:hover
+    {
+        left: 400px;
+    }
+    
+</pre>
+</code>
+<p>Line 3: The transition will be broken into 4 intervals.</p>
+<h4>Demo : Transitions</h4>
+<code>
+<pre>
+    &ltbody>
+        &ltimg src="images/Toy.jpg" alt="ToyImage">&lt/img>
+    &lt/body>
+</pre>
+</code>
+<code>
+<pre>
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+        margin-left: 50px;
+        margin-top:50px;
+        transition: 3s linear;
+        }
+        img:hover {
+        width: 200px;
+        height: 200px;
+        margin-left: 400px;
+        transform:rotate(360deg);
+        box-shadow: -5px -5px 5px #888;
+        }
+        
+</pre>
+</code>
+<img src="img/c78.jpg" alt="">
+<p>The image is transited within 3 seconds in a linear motion.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
