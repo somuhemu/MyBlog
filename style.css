@@ -119,6 +119,7 @@ hr {
   body{
     margin: 2% auto;
     max-width: 100%;
+    text-align: justify;
   }
   p{
     width: 100%;
